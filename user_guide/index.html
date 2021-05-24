@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Guide &#8212; ansys.mapdl.core 0.58.9 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>User Guide &#8212; ansys.mapdl.core 0.59.0 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery-binder.css" />
@@ -33,7 +34,7 @@
     
   <link rel="preload" as="script" href="../_static/js/index.d8bbf5861d671d414e1a.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
@@ -79,8 +80,14 @@
 </li>
 
 <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../api/index.html">
+ <a class="reference internal nav-link" href="../pymapdl_api/index.html">
   API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../mapdl_commands/index.html">
+  MAPDL Commands
  </a>
 </li>
 
@@ -231,13 +238,13 @@
               
               <div>
                 
-  <div class="section" id="user-guide">
+  <section id="user-guide">
 <span id="ref-user-guide"></span><h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
 <p>This guide provides a general overview of the basics and usage of the
 PyMAPDL module <code class="docutils literal notranslate"><span class="pre">ansys-mapdl-core</span></code>.</p>
 <div class="toctree-wrapper compound">
 </div>
-<div class="section" id="pymapdl-basic-overview">
+<section id="pymapdl-basic-overview">
 <h2>PyMAPDL Basic Overview<a class="headerlink" href="#pymapdl-basic-overview" title="Permalink to this headline">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">launch_mapdl</span></code> function within the <code class="docutils literal notranslate"><span class="pre">ansys-mapdl-core</span></code> module
 creates an instance of of <code class="docutils literal notranslate"><span class="pre">MAPDL</span></code> in the background and sends
@@ -297,7 +304,7 @@ MAPDL and includes higher level wrapping allowing for better scripting
 and interaction with MAPDL.  See the <a class="reference internal" href="../examples/index.html#ref-example-gallery"><span class="std std-ref">Examples</span></a> for an
 overview of the various advanced methods to visualize, script, and
 interact with MAPDL.</p>
-<div class="section" id="calling-mapdl-pythonically">
+<section id="calling-mapdl-pythonically">
 <h3>Calling MAPDL Pythonically<a class="headerlink" href="#calling-mapdl-pythonically" title="Permalink to this headline">¶</a></h3>
 <p>MAPDL functions can be called directly from an <code class="docutils literal notranslate"><span class="pre">Mapdl</span></code> instance in a
 pythonic manner.  This is to simplify calling ANSYS, especially when
@@ -394,7 +401,7 @@ within it.  For example:</p>
 <span class="go">    a toroidal system is not recommended.</span>
 </pre></div>
 </div>
-<div class="section" id="stability-considerations">
+<section id="stability-considerations">
 <h4>Stability Considerations<a class="headerlink" href="#stability-considerations" title="Permalink to this headline">¶</a></h4>
 <p>When connecting to a remote instance of MAPDL, there are some cases
 where the MAPDL server will exit unexpectedly.  These issues are being
@@ -411,10 +418,10 @@ verbosity when needed.</p></li>
 and elements and read them in via <code class="docutils literal notranslate"><span class="pre">nread</span></code> and <code class="docutils literal notranslate"><span class="pre">eread</span></code>.  This is
 less than ideal and will be corrected in 2021R2.</p></li>
 </ul>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
               </div>
@@ -441,7 +448,7 @@ less than ideal and will be corrected in 2021R2.</p></li>
   <div class="container">
     <p>
           &copy; Copyright 2021, ANSYS.<br/>
-        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
     </p>
   </div>
 </footer>

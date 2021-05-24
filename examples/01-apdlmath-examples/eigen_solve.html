@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Using APDLMath to solve Eigenproblems &#8212; ansys.mapdl.core 0.58.9 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Using APDLMath to solve Eigenproblems &#8212; ansys.mapdl.core 0.59.0 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/gallery.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/gallery-binder.css" />
@@ -33,13 +34,13 @@
     
   <link rel="preload" as="script" href="../../_static/js/index.d8bbf5861d671d414e1a.js">
 
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Binary MAPDL File Explorer" href="explore_mapdl_files.html" />
@@ -80,8 +81,14 @@
 </li>
 
 <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../api/index.html">
+ <a class="reference internal nav-link" href="../../pymapdl_api/index.html">
   API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../mapdl_commands/index.html">
+  MAPDL Commands
  </a>
 </li>
 
@@ -273,7 +280,7 @@
 <p>Click <a class="reference internal" href="#sphx-glr-download-examples-01-apdlmath-examples-eigen-solve-py"><span class="std std-ref">here</span></a>
 to download the full example code</p>
 </div>
-<div class="sphx-glr-example-title section" id="using-apdlmath-to-solve-eigenproblems">
+<section class="sphx-glr-example-title" id="using-apdlmath-to-solve-eigenproblems">
 <span id="ref-mapdl-math-eigen-solve"></span><span id="sphx-glr-examples-01-apdlmath-examples-eigen-solve-py"></span><h1>Using APDLMath to solve Eigenproblems<a class="headerlink" href="#using-apdlmath-to-solve-eigenproblems" title="Permalink to this headline">¶</a></h1>
 <p>Use APDLMath to solve eigenproblems.</p>
 <p>This example uses a verification manual input file, but you can use
@@ -331,7 +338,7 @@ properties (e.g. scalar, storage, symmetry…)</p>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Calling MAPDL to solve the eigenproblem...
-Elapsed time to solve this problem: 0.030779361724853516
+Elapsed time to solve this problem: 0.04401564598083496
 </pre></div>
 </div>
 <p>This is the vector of eigenfrequencies.</p>
@@ -339,13 +346,13 @@ Elapsed time to solve this problem: 0.030779361724853516
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>NMIPJV :
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>PXTVUM :
  Size : 10
   3.381e+02   3.381e+02   6.266e+02   6.266e+02   9.283e+02      &lt;       5
   9.283e+02   1.250e+03   1.250e+03   1.424e+03   1.424e+03      &lt;       10
 </pre></div>
 </div>
-<div class="section" id="verify-the-accuracy-of-eigenresults">
+<section id="verify-the-accuracy-of-eigenresults">
 <h2>Verify the accuracy of eigenresults<a class="headerlink" href="#verify-the-accuracy-of-eigenresults" title="Permalink to this headline">¶</a></h2>
 <p>Check the residual error for the first eigenresult
 <span class="math notranslate nohighlight">\(R_1=||(K-\lambda_1.M).\phi_1||_2\)</span></p>
@@ -392,7 +399,7 @@ factor and finally compute the normalized residual value
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>2.664292914818973e-11
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>2.3070247813015805e-11
 </pre></div>
 </div>
 <p>This residual can be computed for all eigenmodes</p>
@@ -436,16 +443,16 @@ factor and finally compute the normalized residual value
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[0] : Freq = 338.0666635506365   - Residual = 2.664292914818973e-11
-[1] : Freq = 338.0666635506368   - Residual = 2.7462757125590865e-11
-[2] : Freq = 626.6450980927028   - Residual = 1.474982598733713e-11
-[3] : Freq = 626.6450980927032   - Residual = 1.9631456475735e-11
-[4] : Freq = 928.2598500574518   - Residual = 8.170952414183596e-12
-[5] : Freq = 928.2598500574521   - Residual = 8.562489750811616e-12
-[6] : Freq = 1249.842107436351   - Residual = 2.6528783035467743e-11
-[7] : Freq = 1249.8421074363519  - Residual = 6.61883239874773e-12
-[8] : Freq = 1423.9938909416674  - Residual = 1.2923862105727293e-09
-[9] : Freq = 1423.9938909416699  - Residual = 1.0226575042206343e-10
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[0] : Freq = 338.0666635506365   - Residual = 2.3070247813015805e-11
+[1] : Freq = 338.0666635506367   - Residual = 7.911817709574835e-11
+[2] : Freq = 626.645098092703    - Residual = 1.4338816801861427e-11
+[3] : Freq = 626.6450980927036   - Residual = 3.0909179798841926e-11
+[4] : Freq = 928.2598500574526   - Residual = 1.5073029240215198e-11
+[5] : Freq = 928.2598500574527   - Residual = 1.3866957267529915e-11
+[6] : Freq = 1249.8421074363505  - Residual = 2.3330795208513303e-11
+[7] : Freq = 1249.842107436351   - Residual = 1.3173155997875071e-11
+[8] : Freq = 1423.9938909416678  - Residual = 3.8657651202757016e-10
+[9] : Freq = 1423.9938909416703  - Residual = 1.2400348326967832e-09
 </pre></div>
 </div>
 <p>Plot Accuracy of Eigenresults</p>
@@ -465,7 +472,7 @@ factor and finally compute the normalized residual value
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;BarContainer object of 10 artists&gt;
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  1.114 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  1.311 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-01-apdlmath-examples-eigen-solve-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/ef9fd55df8801750a912151e4ce1ff42/eigen_solve.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">eigen_solve.py</span></code></a></p>
@@ -475,8 +482,8 @@ factor and finally compute the normalized residual value
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
@@ -503,7 +510,7 @@ factor and finally compute the normalized residual value
   <div class="container">
     <p>
           &copy; Copyright 2021, ANSYS.<br/>
-        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
     </p>
   </div>
 </footer>

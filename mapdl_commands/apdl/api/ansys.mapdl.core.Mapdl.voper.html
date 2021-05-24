@@ -1,0 +1,953 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>ansys.mapdl.core.Mapdl.voper &#8212; ansys.mapdl.core 0.59.0 documentation</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/ansys.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.d8bbf5861d671d414e1a.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="ansys.mapdl.core.Mapdl.starvput" href="ansys.mapdl.core.Mapdl.starvput.html" />
+    <link rel="prev" title="ansys.mapdl.core.Mapdl.vmask" href="ansys.mapdl.core.Mapdl.vmask.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+
+    
+      
+      <a class="navbar-brand" href="../../../index.html">
+        <img src="../../../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+      </a>
+      
+    
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../getting_started/index.html">
+  Getting Started
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../user_guide/index.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../pymapdl_api/index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../../index.html">
+  MAPDL Commands
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../examples/index.html">
+  Examples
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../../contributing.html">
+  Contributing
+ </a>
+</li>
+
+        
+      </ul>
+
+      <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyansys/pymapdl" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../session/run_controls.html">
+   Run Controls
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../session/processor_entry.html">
+   Processor Entry
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../session/files.html">
+   Files
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../session/list_controls.html">
+   List Controls
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../database/setup.html">
+   Setup
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../database/selecting.html">
+   Selecting
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../database/components.html">
+   Components
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../database/working_plane.html">
+   Working Plane
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../database/coord_sys.html">
+   Coordinate System
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../database/picking.html">
+   Picking
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../graphics/setup.html">
+   Setup
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../graphics/views.html">
+   Views
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../graphics/scaling.html">
+   Scaling
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../graphics/style.html">
+   Style
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../graphics/labeling.html">
+   Labeling
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../graphics/graphs.html">
+   Graphs
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../graphics/annotation.html">
+   Annotation
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../parameter_definition.html">
+   Parameter Definition
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../macro_files.html">
+   Macro Files
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../abbreviations.html">
+   Abbreviations
+  </a>
+ </li>
+ <li class="toctree-l2 current active">
+  <a class="reference internal" href="../array_parm.html">
+   Array Parameters
+  </a>
+  <ul class="current">
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.mfouri.html">
+     ansys.mapdl.core.Mapdl.mfouri
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.mfun.html">
+     ansys.mapdl.core.Mapdl.mfun
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.moper.html">
+     ansys.mapdl.core.Mapdl.moper
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.mwrite.html">
+     ansys.mapdl.core.Mapdl.mwrite
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.sread.html">
+     ansys.mapdl.core.Mapdl.sread
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.toper.html">
+     ansys.mapdl.core.Mapdl.toper
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.vabs.html">
+     ansys.mapdl.core.Mapdl.vabs
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.vcol.html">
+     ansys.mapdl.core.Mapdl.vcol
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.vcum.html">
+     ansys.mapdl.core.Mapdl.vcum
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.vfact.html">
+     ansys.mapdl.core.Mapdl.vfact
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.vfun.html">
+     ansys.mapdl.core.Mapdl.vfun
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.vitrp.html">
+     ansys.mapdl.core.Mapdl.vitrp
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.vlen.html">
+     ansys.mapdl.core.Mapdl.vlen
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.vmask.html">
+     ansys.mapdl.core.Mapdl.vmask
+    </a>
+   </li>
+   <li class="toctree-l3 current active">
+    <a class="current reference internal" href="#">
+     ansys.mapdl.core.Mapdl.voper
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.starvput.html">
+     ansys.mapdl.core.Mapdl.starvput
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.vscfun.html">
+     ansys.mapdl.core.Mapdl.vscfun
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.vstat.html">
+     ansys.mapdl.core.Mapdl.vstat
+    </a>
+   </li>
+   <li class="toctree-l3">
+    <a class="reference internal" href="ansys.mapdl.core.Mapdl.vwrite.html">
+     ansys.mapdl.core.Mapdl.vwrite
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../matrix_op.html">
+   Matrix Operations
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../process_controls.html">
+   Process Controls
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/database.html">
+   Database
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/element_type.html">
+   Element Type
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/real_constants.html">
+   Real Constants
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/materials.html">
+   Materials
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/material_data_tables.html">
+   Material Data Tables
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/primitives.html">
+   Primitives
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/keypoints.html">
+   Keypoints
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/hard_points.html">
+   Hard Points
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/lines.html">
+   Lines
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/areas.html">
+   Areas
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/volumes.html">
+   Volumes
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/booleans.html">
+   Booleans
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/meshing.html">
+   Meshing
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/nodes.html">
+   Nodes
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/elements.html">
+   Elements
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/superelements.html">
+   Superelements
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/digitizing.html">
+   Digitizing
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/coupled_dof.html">
+   Coupled Degrees of Freedom
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/constraint_equations.html">
+   Constraint Equations
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/status.html">
+   Status
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/explicit_dynamics.html">
+   Explicit Dynamics
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/sections.html">
+   Sections
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/morphing.html">
+   Morphing
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/artificially_matched_layers.html">
+   Artificially Matched Layers
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../prep7/special_purpose.html">
+   Special Purpose
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/analysis_options.html">
+   Analysis Options
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/nonlinear_options.html">
+   Nonlinear Options
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/dynamic_options.html">
+   Dynamic Options
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/spectrum_options.html">
+   Spectrum Options
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/load_step_options.html">
+   Load Step Options
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/solid_constraints.html">
+   Solid Constraints
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/solid_forces.html">
+   Solid Forces
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/solid_surface_loads.html">
+   Solid Surface Loads
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/solid_body_loads.html">
+   Solid Body Loads
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/inertia.html">
+   Inertia
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/miscellaneous_loads.html">
+   Miscellaneous Loads
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/load_step_operations.html">
+   Load Step Operations
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/master_dof.html">
+   Master Degrees of Freedom
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/gap_conditions.html">
+   Gap Conditions
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/rezoning.html">
+   Rezoning
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/2d_to_3d_analysis.html">
+   2D to 3D Analysis
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/birth_and_death.html">
+   Birth and Death
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/fe_constraints.html">
+   FE Constraints
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/fe_forces.html">
+   FE Forces
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/fe_surface_loads.html">
+   FE Surface Loads
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/fe_body_loads.html">
+   FE Body Loads
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/ocean.html">
+   Ocean
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/solution_status.html">
+   Solution Status
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/radiosity.html">
+   Radiosity
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/multi_field_solver_definition_commands.html">
+   Multi-Field Solver Definition Commands
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/multi_field_solver_global_controls.html">
+   Multi-Field Solver Global Controls
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/multi_field_solver_time_controls.html">
+   Multi-Field Solver Time Controls
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/multi_field_solver_load_transfer.html">
+   Multi-Field Solver Load Transfer
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/multi_field_solver_convergence_controls.html">
+   Multi-Field Solver Convergence Controls
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../solution/multi_field_solver_interface_mapping.html">
+   Multi-Field Solver Interface Mapping
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/setup.html">
+   Setup
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/controls.html">
+   Controls
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/results.html">
+   Results
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/element_table.html">
+   Element Table
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/listing.html">
+   Listing
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/animation.html">
+   Animation
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/path_operations.html">
+   Path Operations
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/surface_operations.html">
+   Surface Operations
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/load_case.html">
+   Load Case Calculations
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/magnetics_calc.html">
+   Magnetics Calculations
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/trace_points.html">
+   Trace Points
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/special.html">
+   Special Purpose
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/status.html">
+   Status
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post1/failure_criteria.html">
+   Failure Criteria
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post26/setup.html">
+   Setup
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post26/controls.html">
+   Controls
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post26/operations.html">
+   Operations
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post26/display.html">
+   Display
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post26/listing.html">
+   Listing
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post26/special.html">
+   Special Purpose
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../post26/status.html">
+   Status
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../aux2/bin_dump.html">
+   Binary File Dump
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../aux2/bin_manip.html">
+   Binary File Manipulation
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../aux3.html">
+   Results Files
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../aux12/general_radiation.html">
+   General Radiation
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../aux12/radiation_mat.html">
+   Radiation Matrix Method
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../aux12/radiosity_solver.html">
+   Radiosity Solver
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../aux15.html">
+   IGES
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../map.html">
+   Pressure Mapping
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../display/setup.html">
+   Setup
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../reduced/setup.html">
+   Setup
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../reduced/preparation.html">
+   Preparation
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../reduced/generation.html">
+   Generation Pass
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../reduced/use_pass.html">
+   Use Pass
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../../conn.html">
+   Connection Commands
+  </a>
+ </li>
+</ul>
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+
+<nav id="bd-toc-nav">
+    
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <section id="ansys-mapdl-core-mapdl-voper">
+<h1>ansys.mapdl.core.Mapdl.voper<a class="headerlink" href="#ansys-mapdl-core-mapdl-voper" title="Permalink to this headline">¶</a></h1>
+<dl class="py method">
+<dt class="sig sig-object py" id="ansys.mapdl.core.Mapdl.voper">
+<span class="sig-prename descclassname"><span class="pre">Mapdl.</span></span><span class="sig-name descname"><span class="pre">voper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">par1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">oper</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">par2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">con1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">con2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.core.Mapdl.voper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Operates on two array parameters.</p>
+<p>APDL Command: <a href="#id1"><span class="problematic" id="id2">*</span></a>VOPER</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parr</strong> – The name of the resulting array parameter vector.  See <a href="#id3"><span class="problematic" id="id4">*</span></a>SET  for
+name restrictions.</p></li>
+<li><p><strong>par1</strong> – First array parameter vector in the operation.  May also be a
+scalar parameter or a literal constant.</p></li>
+<li><p><strong>oper</strong> – <p>Operations:</p>
+<p>Addition: Par1+Par2. - Subtraction: Par1-Par2.</p>
+<p>Multiplication: Par1*Par2. - Division: Par1/Par2  (a divide by zero results in a value of zero).</p>
+<p>Minimum: minimum of Par1 and Par2. - Maximum: maximum of Par1 and Par2.</p>
+<p>Less than comparison: Par1&lt;Par2 gives 1.0 if true, 0.0 if false. - Less than or equal comparison: Par1 Par2 gives 1.0 if true, 0.0 if false.</p>
+<p>Equal comparison: Par1 = Par2 gives 1.0 if true, 0.0 if false. - Not equal comparison: Par1 ≠ Par2 gives 1.0 if true, 0.0 if false.</p>
+<p>Greater than or equal comparison: Par1 Par2 gives 1.0 if true, 0.0 if false. - Greater than comparison: Par1&gt;Par2 gives 1.0 if true, 0.0 if false.</p>
+<p>First derivative: d(Par1)/d(Par2).  The derivative at a point is determined  over points half way between the previous and next points (by linear  interpolation). Par1 must be a function (a unique Par1 value for each Par2 value) and Par2 must be in ascending order. - Second derivative: d2(Par1)/d(Par2)2.  See also DER1.</p>
+<dl class="simple">
+<dt>Single integral:    Par1 d(Par2), where CON1 is the integration constant.  The integral at a point is determined by using the single integration procedure described in the Mechanical APDL Theory Reference. - Double integral:       Par1 d(Par2), where CON1 is the integration constant of</dt><dd><p>the first integral and CON2 is the integration
+constant of the second integral.  If Par1
+contains acceleration data, CON1 is the initial
+velocity and CON2 is the initial displacement.
+See also INT1.</p>
+</dd>
+<dt>Dot product: Par1  . Par2.  Par1 and Par2 must each have three consecutive columns of data, with the columns containing the i, j, and k vector components, respectively.  Only the starting row index and the column index for the i components are specified for Par1 and Par2, such as A(1,1).  The j and k components of the vector are assumed to begin in the corresponding next columns, such as A(1,2) and A(1,3). - Cross product: Par1 x Par2.  Par1, Par2, and ParR must each have 3 components,</dt><dd><p>respectively.  Only the starting row index and
+the column index for the i components are
+specified for Par1, Par2, and ParR, such as
+A(1,1).  The j and k components of the vector are
+assumed to begin in the corresponding next
+columns, such as A(1,2) and A(1,3).</p>
+</dd>
+<dt>Gather:  For a vector of position numbers, Par2, copy the value of Par1 at each position number to ParR.  Example:  for Par1 = 10,20,30,40 and Par2 = 2,4,1;  ParR = 20,40,10. - Scatter:  Opposite of GATH operation.  For a vector of position numbers, Par2,</dt><dd><p>copy the value of Par1 to that position number in
+ParR.  Example: for Par1 = 10,20,30,40,50 and
+Par2 = 2,1,0,5,3; ParR = 20,10,50,0,40.</p>
+</dd>
+<dt>Arctangent: arctangent of Par1/Par2 with the sign of each component considered. - Transform the data in Par1 from the global Cartesian coordinate system to the</dt><dd><p>local coordinate system given in CON1. Par1 must
+be an N x 3 (i.e., vector) or an N x 6 (i.e.,
+stress or strain tensor) array. If the local
+coordinate system is a cylindrical, spherical, or
+toroidal system, then you must provide the global
+Cartesian coordinates in Par2 as an N x 3 array.
+Set CON2 = 1 if the data is strain data.</p>
+</dd>
+</dl>
+</p></li>
+<li><p><strong>par2</strong> – Second array parameter vector in the operation.  May also be a
+scalar parameter or a literal constant.</p></li>
+<li><p><strong>con1</strong> – First constant (used only with the INT1 and INT2 operations).</p></li>
+<li><p><strong>con2</strong> – Second constant (used only with the INT2 operation).</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Operates on two input array parameter vectors and produces one output
+array parameter vector according to:</p>
+<p>ParR = Par1 o Par2</p>
+<p>where the operations (o) are described below.  ParR may be the same as
+Par1 or Par2.  Absolute values and scale factors may be applied to all
+parameters [<a href="#id5"><span class="problematic" id="id6">*</span></a>VABS, <a href="#id7"><span class="problematic" id="id8">*</span></a>VFACT].  Results may be cumulative [<a href="#id9"><span class="problematic" id="id10">*</span></a>VCUM].
+Starting array element numbers must be defined for each array parameter
+vector if it does not start at the first location, such as
+<a href="#id11"><span class="problematic" id="id12">*</span></a>VOPER,A,B(5),ADD,C(3) which adds the third element of C to the fifth
+element of B and stores the result in the first element of A.
+Operations continue on successive array elements [<a href="#id13"><span class="problematic" id="id14">*</span></a>VLEN, <a href="#id15"><span class="problematic" id="id16">*</span></a>VMASK] with
+the default being all successive elements.  Skipping array elements via
+<a href="#id17"><span class="problematic" id="id18">*</span></a>VMASK or <a href="#id19"><span class="problematic" id="id20">*</span></a>VLEN for the <a href="#id31"><span class="problematic" id="id32">DER_</span></a> and <a href="#id33"><span class="problematic" id="id34">INT_</span></a> functions skips only the writing
+of the results (skipped array element data are used in all
+calculations).</p>
+<p>Parameter functions and operations are available to operate on a scalar
+parameter or a single element of an array parameter, such as SQRT(B) or
+SQRT(A(4)).  See the <a href="#id21"><span class="problematic" id="id22">*</span></a>SET command for details.  Operations on a
+sequence of array elements can be done by repeating the desired
+function or operation in a do-loop [<a href="#id23"><span class="problematic" id="id24">*</span></a>DO].  The vector operations within
+the ANSYS program (<a href="#id25"><span class="problematic" id="id26">*</span></a>VXX commands) are internally programmed do-loops
+that conveniently perform the indicated operation over a sequence of
+array elements.  If the array is multidimensional, only the first
+subscript is incremented in the do-loop, that is, the operation repeats
+in column vector fashion “down” the array.  For example, for A(1,5),
+A(2,5), A(3,5), etc.  The starting location of the row index must be
+defined for each parameter read and for the result written.</p>
+<p>The default number of loops is from the starting result location to the
+last result location and can be altered with the <a href="#id27"><span class="problematic" id="id28">*</span></a>VLEN command.  A
+logical mask vector may be defined to control at which locations the
+operations are to be skipped [<a href="#id29"><span class="problematic" id="id30">*</span></a>VMASK].  The default is to skip no
+locations.  Repeat operations automatically terminate at the last array
+element of the result array column if the number of loops is undefined
+or if it exceeds the last result array element.  Zeroes are used in
+operations for values read beyond the last array element of an input
+array column.  Existing values in the rows and columns of the results
+matrix</p>
+</dd></dl>
+
+</section>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="ansys.mapdl.core.Mapdl.vmask.html" title="previous page">ansys.mapdl.core.Mapdl.vmask</a>
+    <a class='right-next' id="next-link" href="ansys.mapdl.core.Mapdl.starvput.html" title="next page">ansys.mapdl.core.Mapdl.starvput</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../../../_static/js/index.d8bbf5861d671d414e1a.js"></script>
+
+
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2021, ANSYS.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

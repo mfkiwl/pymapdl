@@ -1,0 +1,6 @@
+﻿ansys.mapdl.core.Mapdl.kplot
+============================
+
+.. currentmodule:: ansys.mapdl.core
+
+.. automethod:: Mapdl.kplot

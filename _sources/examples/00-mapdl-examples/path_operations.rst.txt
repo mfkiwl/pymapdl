@@ -258,7 +258,7 @@ Note that this slice occurs between the edge nodes of this beam,
 necessitating interpolation as stress/strain is (in general)
 extrapolated to the edge nodes of ANSYS FEMs.
 
-.. GENERATED FROM PYTHON SOURCE LINES 164-182
+.. GENERATED FROM PYTHON SOURCE LINES 164-183
 
 .. code-block:: default
 
@@ -266,7 +266,8 @@ extrapolated to the edge nodes of ANSYS FEMs.
     stress_slice = rst.grid.slice('z', pl_start)
 
     # can plot this individually
-    # stress_slice.plot(scalars=stress_slice['Stress YZ'], stitle='Stress YZ')
+    # stress_slice.plot(scalars=stress_slice['Stress YZ'],
+    #                   scalar_bar_args={'title': 'Stress YZ'})
 
     # good camera position (determined manually using pl.camera_position)
     cpos = [(3.2, 4, 8),
@@ -304,7 +305,7 @@ extrapolated to the edge nodes of ANSYS FEMs.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.821 seconds)
+   **Total running time of the script:** ( 0 minutes  5.910 seconds)
 
 
 .. _sphx_glr_download_examples_00-mapdl-examples_path_operations.py:

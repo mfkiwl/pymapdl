@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Keypoints &#8212; ansys.mapdl.core 0.58.9 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Keypoints &#8212; ansys.mapdl.core 0.59.0 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/gallery.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/gallery-binder.css" />
@@ -33,7 +34,7 @@
     
   <link rel="preload" as="script" href="../../_static/js/index.d8bbf5861d671d414e1a.js">
 
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
@@ -79,8 +80,14 @@
 </li>
 
 <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../api/index.html">
+ <a class="reference internal nav-link" href="../../pymapdl_api/index.html">
   API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../mapdl_commands/index.html">
+  MAPDL Commands
  </a>
 </li>
 
@@ -307,7 +314,7 @@
 <p>Click <a class="reference internal" href="#sphx-glr-download-examples-02-geometry-00-keypoints-py"><span class="std std-ref">here</span></a>
 to download the full example code</p>
 </div>
-<div class="sphx-glr-example-title section" id="keypoints">
+<section class="sphx-glr-example-title" id="keypoints">
 <span id="ref-basic-geometry-keypoints"></span><span id="sphx-glr-examples-02-geometry-00-keypoints-py"></span><h1>Keypoints<a class="headerlink" href="#keypoints" title="Permalink to this headline">¶</a></h1>
 <p>This example shows how you can use PyMAPDL to create basic geometry
 using Pythonic PREP7 commands.</p>
@@ -325,10 +332,10 @@ using Pythonic PREP7 commands.</p>
 <p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Product:             ANSYS Mechanical Enterprise
 MAPDL Version:       RELEASE                    BUILD  0.0      UPDATE        0
-ansys.mapdl Version: 0.58.9
+ansys.mapdl Version: 0.59.0
 </pre></div>
 </div>
-<div class="section" id="apdl-command-k">
+<section id="apdl-command-k">
 <h2>APDL Command: K<a class="headerlink" href="#apdl-command-k" title="Permalink to this headline">¶</a></h2>
 <p>Create a single keypoint at <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">0,</span> <span class="pre">0]</span></code>.  Note that the first
 value is an empty string to allow MAPDL to pick the keypoint number.</p>
@@ -349,8 +356,8 @@ value is an empty string to allow MAPDL to pick the keypoint number.</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>2
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-kbetw">
+</section>
+<section id="apdl-command-kbetw">
 <h2>APDL Command: KBETW<a class="headerlink" href="#apdl-command-kbetw" title="Permalink to this headline">¶</a></h2>
 <p>Create keypoint between two keypoints</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">k2</span> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">kbetw</span><span class="p">(</span><span class="n">kp1</span><span class="o">=</span><span class="n">k0</span><span class="p">,</span> <span class="n">kp2</span><span class="o">=</span><span class="n">k1</span><span class="p">)</span>
@@ -361,8 +368,8 @@ value is an empty string to allow MAPDL to pick the keypoint number.</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>3
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-kcenter">
+</section>
+<section id="apdl-command-kcenter">
 <h2>APDL Command: KCENTER<a class="headerlink" href="#apdl-command-kcenter" title="Permalink to this headline">¶</a></h2>
 <p>Create keypoint at the center of a circular arc defined by three locations.
 Note that we first clear mapdl before generating this geometry</p>
@@ -379,8 +386,8 @@ Note that we first clear mapdl before generating this geometry</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 4]
 </pre></div>
 </div>
-</div>
-<div class="section" id="keypoint-ids">
+</section>
+<section id="keypoint-ids">
 <h2>Keypoint IDs<a class="headerlink" href="#keypoint-ids" title="Permalink to this headline">¶</a></h2>
 <p>Return an array of the keypoint IDs
 Note that this matches the array <code class="docutils literal notranslate"><span class="pre">[k0,</span> <span class="pre">k1,</span> <span class="pre">k2,</span> <span class="pre">k3]</span></code> (due to sorting)</p>
@@ -392,8 +399,8 @@ Note that this matches the array <code class="docutils literal notranslate"><spa
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>array([1, 2, 3, 4], dtype=int32)
 </pre></div>
 </div>
-</div>
-<div class="section" id="keypoint-coordinates">
+</section>
+<section id="keypoint-coordinates">
 <h2>Keypoint Coordinates<a class="headerlink" href="#keypoint-coordinates" title="Permalink to this headline">¶</a></h2>
 <p>Return an array of the keypoint locations</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">kloc</span> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">keypoints</span>
@@ -407,8 +414,8 @@ Note that this matches the array <code class="docutils literal notranslate"><spa
        [ 2.23711432e-17,  2.22044605e-16,  0.00000000e+00]])
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-kdist">
+</section>
+<section id="apdl-command-kdist">
 <h2>APDL Command: KDIST<a class="headerlink" href="#apdl-command-kdist" title="Permalink to this headline">¶</a></h2>
 <p>Calculate the distance between two keypoints.  Note that you could
 compute this yourself from <code class="docutils literal notranslate"><span class="pre">kloc</span></code></p>
@@ -420,8 +427,8 @@ compute this yourself from <code class="docutils literal notranslate"><span clas
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[1.0, -1.0, 0.0]
 </pre></div>
 </div>
-</div>
-<div class="section" id="keypoint-selection">
+</section>
+<section id="keypoint-selection">
 <h2>Keypoint Selection<a class="headerlink" href="#keypoint-selection" title="Permalink to this headline">¶</a></h2>
 <p>There are two approaches for selecting keypoints, the old “legacy”
 style and the new style.  The old style is valuable for those who
@@ -475,8 +482,8 @@ areas.</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[ 1  5 10 20]
 </pre></div>
 </div>
-</div>
-<div class="section" id="apdl-command-kplot">
+</section>
+<section id="apdl-command-kplot">
 <h2>APDL Command: KPLOT<a class="headerlink" href="#apdl-command-kplot" title="Permalink to this headline">¶</a></h2>
 <p>Plot the keypoints while displaying the keypoint numbers</p>
 <p>There are a variety of plotting options available for all the common
@@ -489,12 +496,12 @@ plotting methods.</p>
 </div>
 <img alt="00 keypoints" class="sphx-glr-single-img" src="../../_images/sphx_glr_00-keypoints_001.png" />
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(1.5177243191944807, 1.8901166437740806, 1.6379812802995808),
- (0.35232615804240003, 0.724718482622, 0.4725831191475),
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[(1.901055318308206, 2.092553986026056, 1.941399663660056),
+ (0.49597587230115, 0.687474540019, 0.536320217653),
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.596 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.711 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-02-geometry-00-keypoints-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/55ea7f9b1e33f7fc9f941f685c25db0f/00-keypoints.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">00-keypoints.py</span></code></a></p>
@@ -504,8 +511,8 @@ plotting methods.</p>
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
@@ -532,7 +539,7 @@ plotting methods.</p>
   <div class="container">
     <p>
           &copy; Copyright 2021, ANSYS.<br/>
-        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
     </p>
   </div>
 </footer>

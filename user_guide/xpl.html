@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>File Explorer Overview &#8212; ansys.mapdl.core 0.58.9 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>File Explorer Overview &#8212; ansys.mapdl.core 0.59.0 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
@@ -22,8 +23,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery-binder.css" />
@@ -33,7 +34,7 @@
     
   <link rel="preload" as="script" href="../_static/js/index.d8bbf5861d671d414e1a.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
@@ -41,7 +42,7 @@
     <script src="../_static/copybutton.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="API Reference" href="../api/index.html" />
+    <link rel="next" title="API Reference" href="../pymapdl_api/index.html" />
     <link rel="prev" title="Create a Pool of MAPDL Instances" href="pool.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -79,8 +80,14 @@
 </li>
 
 <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../api/index.html">
+ <a class="reference internal nav-link" href="../pymapdl_api/index.html">
   API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../mapdl_commands/index.html">
+  MAPDL Commands
  </a>
 </li>
 
@@ -207,7 +214,7 @@
               
               <div>
                 
-  <div class="section" id="file-explorer-overview">
+  <section id="file-explorer-overview">
 <span id="mapdl-xpl-class-ref"></span><h1>File Explorer Overview<a class="headerlink" href="#file-explorer-overview" title="Permalink to this headline">¶</a></h1>
 <p>A specific property under the mapdl class is dedicated for XPL. It’s
 based on the APDLMath <code class="docutils literal notranslate"><span class="pre">*XPL</span></code> command and can be used to explore binary
@@ -215,14 +222,16 @@ files generated from APDL.</p>
 <p>All APDL Files are organized the same way, as a tree or records.  For
 example, a binary result file has the structure outlined in the
 <a class="reference internal" href="#ref-rst-structure"><span class="std std-ref">Structure of an APDL Result</span></a> Figure.</p>
-<div class="figure align-default" id="id1">
+<figure class="align-default" id="id1">
 <span id="ref-rst-structure"></span><a class="reference internal image-reference" href="../_images/rst_structure.png"><img alt="../_images/rst_structure.png" src="../_images/rst_structure.png" style="width: 450pt;" /></a>
-<p class="caption"><span class="caption-text">Structure of an APDL Result</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">Structure of an APDL Result</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>You can find a detailed example of the APDL file explorer at the
 <a class="reference internal" href="../examples/01-apdlmath-examples/explore_mapdl_files.html#ref-xpl-example"><span class="std std-ref">Binary MAPDL File Explorer</span></a> example.</p>
-<p>For a a full API description please see <a class="reference internal" href="../api/ansXpl.html#ref-xpl-api"><span class="std std-ref">ansXpl Class</span></a>.</p>
-</div>
+<p>For a a full API description please see <a class="reference internal" href="../pymapdl_api/ansXpl.html#ref-xpl-api"><span class="std std-ref">ansXpl Class</span></a>.</p>
+</section>
 
 
               </div>
@@ -231,7 +240,7 @@ example, a binary result file has the structure outlined in the
               <div class='prev-next-bottom'>
                 
     <a class='left-prev' id="prev-link" href="pool.html" title="previous page">Create a Pool of MAPDL Instances</a>
-    <a class='right-next' id="next-link" href="../api/index.html" title="next page">API Reference</a>
+    <a class='right-next' id="next-link" href="../pymapdl_api/index.html" title="next page">API Reference</a>
 
               </div>
               
@@ -249,7 +258,7 @@ example, a binary result file has the structure outlined in the
   <div class="container">
     <p>
           &copy; Copyright 2021, ANSYS.<br/>
-        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
     </p>
   </div>
 </footer>
