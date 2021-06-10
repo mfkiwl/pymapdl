@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>ansXpl Class &#8212; ansys.mapdl.core 0.59.0 documentation</title>
+    <title>ansXpl Class &#8212; ansys.mapdl.core 0.59.1 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
@@ -509,6 +509,37 @@ levels, for example <code class="docutils literal notranslate"><span class="pre"
 <span class="go"> =====      ANSYS File Xplorer : Display Current Location</span>
 <span class="go"> Current Location : FULL</span>
 <span class="go">    File Location : 412</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ansys.mapdl.core.xpl.ansXpl.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">recordname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vecname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.core.xpl.ansXpl.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a given record back to an MAPDL File
+Use the write function at your own risk, you may corrupt
+an existing file by changing the size of a record in the
+file.
+This function must be used only on a non-compressed file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>recordname</strong> (<em>str</em>) – Name of the record you want to overwrite. Your position
+in the file must be set accordingly to this record location
+( same as if you want to read it)</p></li>
+<li><p><strong>vecname</strong> (<em>str</em>) – Name of the APDLMath vector you want to write in the MAPDL
+file. Its size must be consistent with the existing record</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>mapdl_response</strong> – Response from MAPDL.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">xpl</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;MASS&#39;</span><span class="p">,</span> <span class="n">vecname</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>

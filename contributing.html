@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Contributing &#8212; ansys.mapdl.core 0.59.0 documentation</title>
+    <title>Contributing &#8212; ansys.mapdl.core 0.59.1 documentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
@@ -42,7 +42,7 @@
     <script src="_static/copybutton.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Primitives" href="examples/02-geometry/04-primitives.html" />
+    <link rel="prev" title="MAPDL Element Size Transition Example" href="examples/03-tips-n-tricks/01-smoothing-element-size-transitions.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
   </head>
@@ -219,6 +219,11 @@
    Documentation
   </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adding-a-new-example">
+     Adding a New Example
+    </a>
+   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#documentation-style-and-organization">
      Documentation Style and Organization
@@ -473,6 +478,13 @@ ignored to <code class="docutils literal notranslate"><span class="pre">ignore_w
 </ul>
 <p>General usage and API descriptions should be placed within <cite>docs/source</cite> and
 the docstrings.  Full examples should be placed in <cite>examples</cite>.</p>
+<section id="adding-a-new-example">
+<h3>Adding a New Example<a class="headerlink" href="#adding-a-new-example" title="Permalink to this headline">¶</a></h3>
+<p>PyMAPDL examples come in two formats.  Basic code snippets demonstrating some functionality, or a full gallery examples.  Small code samples and snippets are contained in the <cite>docs/source</cite> directory, while the full gallery examples, meant to be run as individual downloadable scripts, are contained in the <cite>examples</cite> directory at the root of this repository.</p>
+<p>To add a fully fledged, standalone example, add your example to the <cite>examples</cite> directory within one of the applicable subfolders.  Should none of the existing directories match the category of your example, create a new directory with a <cite>README.txt</cite> describing the new category.  Additionally, as these examples are built using the sphinx gallery extension, follow coding guidelines as established by [Sphinx-Gallery](<a class="reference external" href="https://sphinx-gallery.github.io/stable/index.html">https://sphinx-gallery.github.io/stable/index.html</a>)</p>
+<p>A self-demonstrating example is can be found at <a class="reference internal" href="examples/03-tips-n-tricks/00-example-template.html#ref-how-to-add-an-example-reference-key"><span class="std std-ref">Adding a New Gallery Example</span></a>.</p>
+<p><a class="reference internal" href="examples/03-tips-n-tricks/00-example-template.html#ref-how-to-add-an-example-reference-key"><span class="std std-ref">Adding a New Gallery Example</span></a></p>
+</section>
 <section id="documentation-style-and-organization">
 <h3>Documentation Style and Organization<a class="headerlink" href="#documentation-style-and-organization" title="Permalink to this headline">¶</a></h3>
 <p>Docstrings should follow the <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">numpydocs docstring</a> guidelines.
@@ -639,7 +651,7 @@ version number (see above for the correct steps).</p></li>
               
               <div class='prev-next-bottom'>
                 
-    <a class='left-prev' id="prev-link" href="examples/02-geometry/04-primitives.html" title="previous page">Primitives</a>
+    <a class='left-prev' id="prev-link" href="examples/03-tips-n-tricks/01-smoothing-element-size-transitions.html" title="previous page">MAPDL Element Size Transition Example</a>
 
               </div>
               

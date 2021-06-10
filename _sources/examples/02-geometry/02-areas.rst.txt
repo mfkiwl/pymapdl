@@ -50,9 +50,9 @@ using Pythonic PREP7 area commands.
 
  .. code-block:: none
 
-    Product:             ANSYS Mechanical Enterprise
-    MAPDL Version:       RELEASE                    BUILD  0.0      UPDATE        0
-    ansys.mapdl Version: 0.59.0
+    Product:             Ansys Mechanical Enterprise
+    MAPDL Version:       21.2
+    ansys.mapdl Version: 0.59.1
 
 
 
@@ -283,7 +283,7 @@ individual meshes.
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7f041533c210)
+    [UnstructuredGrid (0x7fdc836bc750)
       N Cells:	12
       N Points:	24
       X Bounds:	0.000e+00, 1.000e+00
@@ -519,8 +519,8 @@ camera direction from the following:
  .. code-block:: none
 
 
-    [(11.821434447458024, 14.834030676984245, 8.556225193910427),
-     (3.2652092535475985, 6.277805483073817, 0.0),
+    [(16.025682955764292, 18.32181516134698, 11.766068527806791),
+     (4.259614427957501, 6.5557466335401875, 0.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -528,7 +528,7 @@ camera direction from the following:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.098 seconds)
+   **Total running time of the script:** ( 0 minutes  2.808 seconds)
 
 
 .. _sphx_glr_download_examples_02-geometry_02-areas.py:

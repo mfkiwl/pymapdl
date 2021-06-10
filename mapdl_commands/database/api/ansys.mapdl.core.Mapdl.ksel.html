@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>ansys.mapdl.core.Mapdl.ksel &#8212; ansys.mapdl.core 0.59.0 documentation</title>
+    <title>ansys.mapdl.core.Mapdl.ksel &#8212; ansys.mapdl.core 0.59.1 documentation</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
@@ -874,8 +874,11 @@
 </dl>
 <p class="rubric">Notes</p>
 <p>Selects a subset of keypoints or hard points.  For example, to select a
-new set of keypoints based on keypoint numbers 1 through 7, use
-KSEL,S,KP,,1,7.  The selected subset is used when the ALL label is
+new set of keypoints based on keypoint numbers 1 through 7, use</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">ksel</span><span class="p">(</span><span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="s1">&#39;KP&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The selected subset is used when the ALL label is
 entered (or implied) on other commands, such as KLIST,ALL.  Only data
 identified by keypoint number are selected.  Data are flagged as
 selected and unselected; no data are actually deleted from the
@@ -893,6 +896,11 @@ of VMIN and VMAX as follows:</p>
 <p>Use the SELTOL command to override this default and specify Toler
 explicitly.</p>
 <p>Table: 203:: : KSEL - Valid Item and Component Labels</p>
+<p class="rubric">Examples</p>
+<p>To select a single keypoint (keypoint 1)</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">ksel</span><span class="p">(</span><span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="s1">&#39;KP&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>

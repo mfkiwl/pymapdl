@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>ansys.mapdl.core.Mapdl.vmesh &#8212; ansys.mapdl.core 0.59.0 documentation</title>
+    <title>ansys.mapdl.core.Mapdl.vmesh &#8212; ansys.mapdl.core 0.59.1 documentation</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
@@ -1039,6 +1039,14 @@ if elements already exist, a mesh abort will write an alternative
 database file (File.DBE) for possible recovery.</p>
 <p>Tetrahedral mesh expansion [MOPT,TETEXPND,Value] is supported for both
 the VMESH and FVMESH commands.</p>
+<p class="rubric">Examples</p>
+<p>Set the material ID and type pointers to 2, then mesh volume 1
+using mat 2 and type 2.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">type</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">vmesh</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>

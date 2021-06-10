@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>ansys.mapdl.core.Mapdl.asel &#8212; ansys.mapdl.core 0.59.0 documentation</title>
+    <title>ansys.mapdl.core.Mapdl.asel &#8212; ansys.mapdl.core 0.59.1 documentation</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
@@ -874,9 +874,16 @@
 </dl>
 <p class="rubric">Notes</p>
 <p>Selects a subset of areas. For example, to select those areas with area
-numbers 1 through 7, use ASEL,S,AREA,,1,7.  The selected subset is then
-used when the ALL label is entered (or implied) on other commands, such
-as ALIST,ALL.  Only data identified by area number are selected.  Data
+numbers 1 through 7, use</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">asel</span><span class="p">(</span><span class="s1">&#39;S&#39;</span><span class="p">,</span><span class="s1">&#39;AREA&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The selected subset is then used when the ALL label is entered
+(or implied) on other commands, such as</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">alist</span><span class="p">(</span><span class="s1">&#39;ALL&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Only data identified by area number are selected.  Data
 are flagged as selected and unselected; no data are actually deleted
 from the database.</p>
 <p>In a cyclic symmetry analysis, area hot spots can be modified.
@@ -892,12 +899,20 @@ The default tolerance Toler is based on the relative values of VMIN and
 VMAX as follows:</p>
 <p>If VMIN = VMAX, Toler = 0.005 x VMIN.</p>
 <p>If VMIN = VMAX = 0.0, Toler = 1.0E-6.</p>
-<blockquote>
-<div><p>If VMAX ≠ VMIN, Toler = 1.0E-8 x (VMAX-VMIN).</p>
-</div></blockquote>
+<p>If VMAX ≠ VMIN, Toler = 1.0E-8 x (VMAX-VMIN).</p>
 <p>Use the SELTOL command to override this default and specify Toler
 explicitly.</p>
 <p>Table: 127:: : ASEL - Valid Item and Component Labels</p>
+<p class="rubric">Examples</p>
+<p>Select area(s) at location x == 0.  Note that value of seltol is
+used since <code class="docutils literal notranslate"><span class="pre">vmin</span> <span class="pre">==</span> <span class="pre">vmax</span></code>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">asel</span><span class="p">(</span><span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="s1">&#39;LOC&#39;</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Select areas between <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">==</span> <span class="pre">2</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">==</span> <span class="pre">4</span></code></p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">asel</span><span class="p">(</span><span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="s1">&#39;LOC&#39;</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>

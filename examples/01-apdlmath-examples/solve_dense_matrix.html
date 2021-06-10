@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Use APDLMath to Solve a Dense Matrix Linear System &#8212; ansys.mapdl.core 0.59.0 documentation</title>
+    <title>Use APDLMath to Solve a Dense Matrix Linear System &#8212; ansys.mapdl.core 0.59.1 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
@@ -236,6 +236,16 @@
    Primitives
   </a>
  </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../03-tips-n-tricks/00-example-template.html">
+   Adding a New Gallery Example
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../03-tips-n-tricks/01-smoothing-element-size-transitions.html">
+   MAPDL Element Size Transition Example
+  </a>
+ </li>
 </ul>
   </div>
 </nav>
@@ -271,13 +281,12 @@ to download the full example code</p>
 </div>
 <section class="sphx-glr-example-title" id="use-apdlmath-to-solve-a-dense-matrix-linear-system">
 <span id="sphx-glr-examples-01-apdlmath-examples-solve-dense-matrix-py"></span><h1>Use APDLMath to Solve a Dense Matrix Linear System<a class="headerlink" href="#use-apdlmath-to-solve-a-dense-matrix-linear-system" title="Permalink to this headline">¶</a></h1>
-<p>Use the APDLMath module to solve a Dense Matrix Linear System</p>
+<p>Use the APDLMath module to solve a Dense Matrix Linear System.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">numpy.linalg</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">ansys.mapdl.core</span> <span class="kn">import</span> <span class="n">launch_mapdl</span>
 
-<span class="c1"># Start MAPDL as a service and disable all but error messages.</span>
-<span class="c1"># Create an APDLMath object.</span>
+<span class="c1"># Start MAPDL as a service and create an APDLMath object.</span>
 <span class="n">mapdl</span> <span class="o">=</span> <span class="n">launch_mapdl</span><span class="p">()</span>
 <span class="n">mm</span> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">math</span>
 </pre></div>
@@ -290,7 +299,8 @@ to download the full example code</p>
 <span class="n">x</span> <span class="o">=</span> <span class="n">mm</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">dim</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>We copy matrices into numpy arrays before they are modified by factorization call</p>
+<p>Copy the matrices as numpy arrays before they are modified by
+factorization call</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a_py</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">asarray</span><span class="p">()</span>
 <span class="n">b_py</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">asarray</span><span class="p">()</span>
 </pre></div>
@@ -307,11 +317,15 @@ to download the full example code</p>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Solving a (10000 x 10000) dense linear system using MAPDL...
-Elapsed time to solve the linear system using Mapdl: 10.109878540039062 seconds
+Elapsed time to solve the linear system using Mapdl: 9.841073989868164 seconds
 </pre></div>
 </div>
 <p>Norm of the MAPDL Solution</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mm</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>1.0000000000000029
 </pre></div>
 </div>
 <p>Solve the solution using numpy</p>
@@ -325,7 +339,7 @@ Elapsed time to solve the linear system using Mapdl: 10.109878540039062 seconds
 </div>
 <p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Solving a (10000 x 10000) dense linear system using numpy...
-Elapsed time to solve the linear system using numpy: 10.839667797088623 seconds
+Elapsed time to solve the linear system using numpy: 10.548887252807617 seconds
 </pre></div>
 </div>
 <p>Norm of the numpy Solution</p>
@@ -336,7 +350,7 @@ Elapsed time to solve the linear system using numpy: 10.839667797088623 seconds
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>1.0000000000000042
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  24.835 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  24.074 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-01-apdlmath-examples-solve-dense-matrix-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/a40b01a34905c256377338bd413938c0/solve_dense_matrix.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">solve_dense_matrix.py</span></code></a></p>

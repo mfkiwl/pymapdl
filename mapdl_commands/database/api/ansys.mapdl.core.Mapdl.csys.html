@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>ansys.mapdl.core.Mapdl.csys &#8212; ansys.mapdl.core 0.59.0 documentation</title>
+    <title>ansys.mapdl.core.Mapdl.csys &#8212; ansys.mapdl.core 0.59.1 documentation</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
@@ -797,19 +797,41 @@ commands also activate coordinate systems as they are defined. To set
 the active element coordinate system attribute pointer, issue the ESYS
 command.</p>
 <p>The active coordinate system for files created via the CDWRITE command
-is Cartesian (CSYS,0).</p>
+is Cartesian</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">csys</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>This command is valid in any processor.</p>
-<p>CSYS,4 (or CSYS,WP) activates working plane tracking, which updates the
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">csys</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># or</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">csys</span><span class="p">(</span><span class="s1">&#39;WP&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>activates working plane tracking, which updates the
 coordinate system to follow working plane changes. To deactivate
-working plane tracking, activate any other coordinate system (for
-example, CSYS,0 or CSYS,11).</p>
-<p>CSYS,5 is a cylindrical coordinate system with global Cartesian Y as
+working plane tracking, activate any other coordinate system.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">csys</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>is a cylindrical coordinate system with global Cartesian Y as
 the axis. The local x, y and z axes are radial, θ, and axial
 (respectively). The R-Theta plane is the global X-Z plane, as it is for
-an axisymmetric model. Thus, at θ = 0.0, CSYS,5 has a specific
+an axisymmetric model. Thus, at <cite>θ = 0.0</cite>, <cite>mapdl.csys(5)</cite> has a specific
 orientation: the local x is in the global +X direction, local y is in
 the global -Z direction, and local z (the cylindrical axis) is in the
 global +Y direction.</p>
+<p class="rubric">Examples</p>
+<p>Create a cylindrical surface in cylindrical y (CSYS=5) with
+a radius of 6 and spanning <cite>30 &lt; θ &lt; -90</cite> and <cite>0 &lt; z &lt; 4</cite>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">csys</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">90</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">90</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">a</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">aplot</span><span class="p">()</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>

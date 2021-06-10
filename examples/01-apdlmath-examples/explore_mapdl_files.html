@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Binary MAPDL File Explorer &#8212; ansys.mapdl.core 0.59.0 documentation</title>
+    <title>Binary MAPDL File Explorer &#8212; ansys.mapdl.core 0.59.1 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
@@ -234,6 +234,16 @@
  <li class="toctree-l2">
   <a class="reference internal" href="../02-geometry/04-primitives.html">
    Primitives
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../03-tips-n-tricks/00-example-template.html">
+   Adding a New Gallery Example
+  </a>
+ </li>
+ <li class="toctree-l2">
+  <a class="reference internal" href="../03-tips-n-tricks/01-smoothing-element-size-transitions.html">
+   MAPDL Element Size Transition Example
   </a>
  </li>
 </ul>
@@ -549,6 +559,33 @@ class ansXpl(builtins.object)
  |       Current Location : FULL
  |          File Location : 412
  |
+ |  write(self, recordname, vecname)
+ |      Write a given record back to an MAPDL File
+ |      Use the write function at your own risk, you may corrupt
+ |      an existing file by changing the size of a record in the
+ |      file.
+ |      This function must be used only on a non-compressed file
+ |
+ |      Parameters
+ |      ----------
+ |      recordname : str
+ |          Name of the record you want to overwrite. Your position
+ |          in the file must be set accordingly to this record location
+ |          ( same as if you want to read it)
+ |
+ |      vecname : str
+ |          Name of the APDLMath vector you want to write in the MAPDL
+ |          file. Its size must be consistent with the existing record
+ |
+ |      Returns
+ |      -------
+ |      mapdl_response : str
+ |          Response from MAPDL.
+ |
+ |      Examples
+ |      --------
+ |      &gt;&gt;&gt; xpl.write(&#39;MASS&#39;, vecname)
+ |
  |  ----------------------------------------------------------------------
  |  Data descriptors defined here:
  |
@@ -591,11 +628,11 @@ the current level.</p>
  ::RST::NOD                  Size =         28  B
  ::RST::ELM                  Size =         24  B
 
- ::RST::DSI::HEADER          Size =     78.137 KB        Total  Size =    121.910 KB
+ ::RST::DSI::HEADER          Size =     78.137 KB        Total  Size =    121.832 KB
  ::RST::TIM                  Size =     78.137 KB
  ::RST::LSP                  Size =    117.199 KB
 
- ::RST::GEO::HEADER          Size =        332  B        Total  Size =      1.953 KB
+ ::RST::GEO::HEADER          Size =        332  B        Total  Size =      2.031 KB
 </pre></div>
 </div>
 <p>Using the <cite>step</cite> and <cite>up</cite> functions, you can go down into a specific
@@ -607,7 +644,7 @@ branch of the tree, or go up to the top level</p>
 <p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>=====      ANSYS File Xplorer : List Blocks in File file.rst
 
- ::GEO::HEADER          Size =        332  B     Total  Size =      1.953 KB
+ ::GEO::HEADER          Size =        332  B     Total  Size =      2.031 KB
 
  ::GEO::ETY::HEADER          Size =         16  B        Total  Size =        368  B
  ::GEO::LOC                  Size =        136  B
@@ -617,7 +654,7 @@ branch of the tree, or go up to the top level</p>
 
  ::GEO::SEC::HEADER          Size =         16  B        Total  Size =         92  B
 
- ::GEO::MAT::HEADER          Size =        736  B        Total  Size =        768  B
+ ::GEO::MAT::HEADER          Size =        816  B        Total  Size =        848  B
  ::GEO::NOD                  Size =         28  B
  ::GEO::ELM                  Size =         24  B
 </pre></div>
@@ -647,11 +684,11 @@ the current point.</p>
  ::RST::NOD                  Size =         28  B
  ::RST::ELM                  Size =         24  B
 
- ::RST::DSI::HEADER          Size =     78.137 KB        Total  Size =    121.910 KB
+ ::RST::DSI::HEADER          Size =     78.137 KB        Total  Size =    121.832 KB
  ::RST::TIM                  Size =     78.137 KB
  ::RST::LSP                  Size =    117.199 KB
 
- ::RST::GEO::HEADER          Size =        332  B        Total  Size =      1.953 KB
+ ::RST::GEO::HEADER          Size =        332  B        Total  Size =      2.031 KB
 </pre></div>
 </div>
 </section>
@@ -698,7 +735,7 @@ First we go into the first solution set</p>
  =====      ANSYS File Xplorer : Step into Block DSI::SET1
 =====      ANSYS File Xplorer : List Blocks in File file.rst
 
- ::SET1::HEADER         Size =        812  B     Total  Size =     43.773 KB
+ ::SET1::HEADER         Size =        812  B     Total  Size =     43.695 KB
  ::SET1::DPHEAD               Size =        812  B
  ::SET1::EXT                  Size =        812  B
  ::SET1::NSL                  Size =         68  B
@@ -707,7 +744,7 @@ First we go into the first solution set</p>
 
  ::SET1::BC::HEADER           Size =        172  B       Total  Size =        348  B
 
- ::SET1::ESL::HEADER          Size =     40.871 KB
+ ::SET1::ESL::HEADER          Size =     40.793 KB
 </pre></div>
 </div>
 <p>Then we read the Nodal solution vector <cite>“NSL”</cite> into a numpy array</p>
@@ -730,7 +767,7 @@ First we go into the first solution set</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>=====      ANSYS File Xplorer : Close the file.rst ANSYS File
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.244 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.245 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-01-apdlmath-examples-explore-mapdl-files-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/514b9e3905873a74a586f951fc10beb3/explore_mapdl_files.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">explore_mapdl_files.py</span></code></a></p>

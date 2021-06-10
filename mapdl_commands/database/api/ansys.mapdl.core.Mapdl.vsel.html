@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>ansys.mapdl.core.Mapdl.vsel &#8212; ansys.mapdl.core 0.59.0 documentation</title>
+    <title>ansys.mapdl.core.Mapdl.vsel &#8212; ansys.mapdl.core 0.59.1 documentation</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
@@ -887,9 +887,7 @@ The default tolerance Toler is based on the relative values of VMIN and
 VMAX as follows:</p>
 <p>If VMIN = VMAX, Toler = 0.005 x VMIN.</p>
 <p>If VMIN = VMAX = 0.0, Toler = 1.0E-6.</p>
-<blockquote>
-<div><p>If VMAX ≠ VMIN, Toler = 1.0E-8 x (VMAX-VMIN).</p>
-</div></blockquote>
+<p>If VMAX ≠ VMIN, Toler = 1.0E-8 x (VMAX-VMIN).</p>
 <p>Use the SELTOL command to override this default and specify Toler
 explicitly.</p>
 <p>Table: 251:: : VSEL - Valid Item and Component Labels</p>
