@@ -1,0 +1,6 @@
+ansys.mapdl.core.math.ApdlMathObj.axpy
+======================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. automethod:: ApdlMathObj.axpy

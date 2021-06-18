@@ -1,0 +1,30 @@
+﻿ansys.mapdl.core.math.ApdlMathObj
+=================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. autoclass:: ApdlMathObj
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      ApdlMathObj.__init__
+      ApdlMathObj.axpy
+      ApdlMathObj.const
+      ApdlMathObj.copy
+      ApdlMathObj.norm
+      ApdlMathObj.ones
+      ApdlMathObj.rand
+      ApdlMathObj.zeros
+   
+   
+
+   
+   
+   

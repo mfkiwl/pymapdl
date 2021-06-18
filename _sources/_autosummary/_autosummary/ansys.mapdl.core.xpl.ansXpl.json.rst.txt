@@ -1,0 +1,6 @@
+ansys.mapdl.core.xpl.ansXpl.json
+================================
+
+.. currentmodule:: ansys.mapdl.core.xpl
+
+.. automethod:: ansXpl.json

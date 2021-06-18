@@ -1,0 +1,6 @@
+ansys.mapdl.core.math.MapdlMath.stiff
+=====================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. automethod:: MapdlMath.stiff

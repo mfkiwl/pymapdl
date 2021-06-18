@@ -1,0 +1,6 @@
+ansys.mapdl.core.solution.Solution.converged
+============================================
+
+.. currentmodule:: ansys.mapdl.core.solution
+
+.. autoproperty:: Solution.converged

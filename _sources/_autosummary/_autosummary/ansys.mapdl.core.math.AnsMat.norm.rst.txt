@@ -1,0 +1,6 @@
+ansys.mapdl.core.math.AnsMat.norm
+=================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. automethod:: AnsMat.norm

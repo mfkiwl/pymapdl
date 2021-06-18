@@ -1,0 +1,6 @@
+ansys.mapdl.core.math.AnsVec.norm
+=================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. automethod:: AnsVec.norm

@@ -1,0 +1,6 @@
+ansys.mapdl.core.post.PostProcessing.nodal\_total\_eqv\_strain
+==============================================================
+
+.. currentmodule:: ansys.mapdl.core.post
+
+.. autoproperty:: PostProcessing.nodal_total_eqv_strain

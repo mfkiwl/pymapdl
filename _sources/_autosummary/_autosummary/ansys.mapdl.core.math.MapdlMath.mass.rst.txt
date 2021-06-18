@@ -1,0 +1,6 @@
+ansys.mapdl.core.math.MapdlMath.mass
+====================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. automethod:: MapdlMath.mass

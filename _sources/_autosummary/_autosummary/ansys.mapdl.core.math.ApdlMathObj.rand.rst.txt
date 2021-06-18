@@ -1,0 +1,6 @@
+ansys.mapdl.core.math.ApdlMathObj.rand
+======================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. automethod:: ApdlMathObj.rand

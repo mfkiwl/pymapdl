@@ -1,0 +1,6 @@
+ansys.mapdl.core.post.PostProcessing.nsets
+==========================================
+
+.. currentmodule:: ansys.mapdl.core.post
+
+.. autoproperty:: PostProcessing.nsets

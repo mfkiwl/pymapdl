@@ -1,0 +1,6 @@
+ansys.mapdl.core.math.ApdlMathObj.\_\_init\_\_
+==============================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. automethod:: ApdlMathObj.__init__

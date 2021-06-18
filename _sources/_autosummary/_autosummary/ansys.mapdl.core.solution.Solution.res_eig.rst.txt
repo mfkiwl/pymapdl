@@ -1,0 +1,6 @@
+ansys.mapdl.core.solution.Solution.res\_eig
+===========================================
+
+.. currentmodule:: ansys.mapdl.core.solution
+
+.. autoproperty:: Solution.res_eig

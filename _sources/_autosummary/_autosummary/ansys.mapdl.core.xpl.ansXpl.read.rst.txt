@@ -1,0 +1,6 @@
+ansys.mapdl.core.xpl.ansXpl.read
+================================
+
+.. currentmodule:: ansys.mapdl.core.xpl
+
+.. automethod:: ansXpl.read

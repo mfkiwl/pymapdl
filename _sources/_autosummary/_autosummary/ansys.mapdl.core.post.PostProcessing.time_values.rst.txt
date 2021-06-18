@@ -1,0 +1,6 @@
+ansys.mapdl.core.post.PostProcessing.time\_values
+=================================================
+
+.. currentmodule:: ansys.mapdl.core.post
+
+.. autoproperty:: PostProcessing.time_values

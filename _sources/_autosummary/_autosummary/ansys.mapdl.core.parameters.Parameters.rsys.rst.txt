@@ -1,0 +1,6 @@
+ansys.mapdl.core.parameters.Parameters.rsys
+===========================================
+
+.. currentmodule:: ansys.mapdl.core.parameters
+
+.. autoproperty:: Parameters.rsys

@@ -140,7 +140,7 @@ approximate this.
     plate_with_hole_anum = mapdl.asba(rect_anum, circ_anum)
 
     # finally, plot the lines of the plate
-    _ = mapdl.lplot(vtk=True, cpos='xy', line_width=10, font_size=26,
+    _ = mapdl.lplot(cpos='xy', line_width=3, font_size=26,
                     color_lines=True, background='w')
 
 
@@ -277,7 +277,7 @@ Solve the static analysis
 
     *****  ANSYS SOLVE    COMMAND  *****
 
-     *** NOTE ***                            CP =       2.069   TIME= 06:18:20
+     *** NOTE ***                            CP =       1.893   TIME= 00:58:44
      There is no title defined for this analysis.                            
 
      *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
@@ -290,7 +290,7 @@ Solve the static analysis
 
      *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2BETA ***
      Ansys Mechanical Enterprise                       
-     00000000  VERSION=LINUX x64     06:18:20  JUN 10, 2021 CP=      2.073
+     00000000  VERSION=LINUX x64     00:58:44  JUN 18, 2021 CP=      1.899
 
                                                                                
 
@@ -306,11 +306,11 @@ Solve the static analysis
        ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
        GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
 
-     *** NOTE ***                            CP =       2.074   TIME= 06:18:20
+     *** NOTE ***                            CP =       1.902   TIME= 00:58:44
      Present time 0 is less than or equal to the previous time.  Time will   
      default to 1.                                                           
 
-     *** NOTE ***                            CP =       2.075   TIME= 06:18:20
+     *** NOTE ***                            CP =       1.903   TIME= 00:58:44
      The conditions for direct assembly have been met.  No .emat or .erot    
      files will be produced.                                                 
 
@@ -359,8 +359,8 @@ Solve the static analysis
        *** ELEMENT MATRIX FORMULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-            1       977  PLANE183      0.125   0.000128
-     Time at end of element matrix formulation CP = 2.17304516.              
+            1       977  PLANE183      0.078   0.000080
+     Time at end of element matrix formulation CP = 1.98212111.              
 
      SPARSE MATRIX DIRECT SOLVER.
       Number of equations =        6124,    Maximum wavefront =     48
@@ -368,7 +368,7 @@ Solve the static analysis
       Memory required for in-core solution     =     8.134 MB
       Memory required for out-of-core solution =     4.318 MB
 
-     *** NOTE ***                            CP =       2.387   TIME= 06:18:21
+     *** NOTE ***                            CP =       2.186   TIME= 00:58:44
      The Sparse Matrix Solver is currently running in the in-core memory     
      mode.  This memory mode uses the most amount of memory in order to      
      avoid using the hard drive as much as possible, which most often        
@@ -383,12 +383,12 @@ Solve the static analysis
        *** ELEMENT RESULT CALCULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-            1       977  PLANE183      0.177   0.000181
+            1       977  PLANE183      0.237   0.000243
 
        *** NODAL LOAD CALCULATION TIMES
          TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-            1       977  PLANE183      0.038   0.000038
+            1       977  PLANE183      0.067   0.000068
      *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
      *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
 
@@ -749,7 +749,7 @@ height and width of the plate.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  55.187 seconds)
+   **Total running time of the script:** ( 0 minutes  46.702 seconds)
 
 
 .. _sphx_glr_download_examples_00-mapdl-examples_2d_plate_with_a_hole.py:

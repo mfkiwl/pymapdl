@@ -52,7 +52,7 @@ using Pythonic PREP7 volume commands.
 
     Product:             Ansys Mechanical Enterprise
     MAPDL Version:       21.2
-    ansys.mapdl Version: 0.59.1
+    ansys.mapdl Version: 0.59.2
 
 
 
@@ -91,6 +91,16 @@ Define a volume through keypoints.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(2.431851652578137, 2.431851652578137, 2.431851652578137),
+     (0.5, 0.5, 0.5),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -124,6 +134,16 @@ Create a triangular prism
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(2.431851652578137, 2.431851652578137, 2.431851652578137),
+     (0.5, 0.5, 0.5),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -153,6 +173,16 @@ Create a triangular prism
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(2.431851652578137, 2.431851652578137, 2.431851652578137),
+     (0.5, 0.5, 0.5),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -242,6 +272,16 @@ Create a square with a hole in it and drag it along an arc.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(3.3845489112134257, 3.0095489112134253, 3.009548911213425),
+     (0.8750000000000004, 0.5, 0.5000000000000001),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -279,6 +319,16 @@ Create a basic cylinder by extruding a circle.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(5.464101615137755, 5.464101615137755, 7.464101615137755),
+     (0.0, 0.0, 2.0),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -303,6 +353,16 @@ Create a tapered cylinder by using the ``rx`` and ``ry`` parameters.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(5.464101615137755, 5.464101615137755, 7.464101615137755),
+     (0.0, 0.0, 2.0),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -347,6 +407,16 @@ Rotate a circle about the Z axis to create a hoop
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(34.77332974640647, 34.77332974640647, 34.77332974640647),
+     (0.0, 0.0, 0.0),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -380,6 +450,16 @@ then XZ planes.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(6.407227082229696, 6.407227082229696, 6.907227082229696),
+     (0.0, 0.0, 0.5),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -623,13 +703,23 @@ plotting methods.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(6.407227082229696, 6.407227082229696, 6.907227082229696),
+     (0.0, 0.0, 0.5),
+     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 2 minutes  35.083 seconds)
+   **Total running time of the script:** ( 2 minutes  12.983 seconds)
 
 
 .. _sphx_glr_download_examples_02-geometry_03-volumes.py:

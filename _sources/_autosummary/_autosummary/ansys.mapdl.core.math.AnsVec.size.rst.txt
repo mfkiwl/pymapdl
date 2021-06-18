@@ -1,0 +1,6 @@
+ansys.mapdl.core.math.AnsVec.size
+=================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. autoproperty:: AnsVec.size

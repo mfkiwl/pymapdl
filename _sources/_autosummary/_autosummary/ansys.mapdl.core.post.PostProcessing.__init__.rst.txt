@@ -1,0 +1,6 @@
+ansys.mapdl.core.post.PostProcessing.\_\_init\_\_
+=================================================
+
+.. currentmodule:: ansys.mapdl.core.post
+
+.. automethod:: PostProcessing.__init__

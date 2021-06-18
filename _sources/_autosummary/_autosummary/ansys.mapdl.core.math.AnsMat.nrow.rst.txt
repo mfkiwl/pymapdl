@@ -1,0 +1,6 @@
+ansys.mapdl.core.math.AnsMat.nrow
+=================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. autoproperty:: AnsMat.nrow

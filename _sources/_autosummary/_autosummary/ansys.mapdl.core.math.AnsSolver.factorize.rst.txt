@@ -1,0 +1,6 @@
+ansys.mapdl.core.math.AnsSolver.factorize
+=========================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. automethod:: AnsSolver.factorize

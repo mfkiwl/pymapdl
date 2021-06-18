@@ -1,0 +1,6 @@
+ansys.mapdl.core.post.PostProcessing.load\_step
+===============================================
+
+.. currentmodule:: ansys.mapdl.core.post
+
+.. autoproperty:: PostProcessing.load_step

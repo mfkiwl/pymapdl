@@ -1,0 +1,6 @@
+ansys.mapdl.core.math.AnsMat.copy
+=================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. automethod:: AnsMat.copy

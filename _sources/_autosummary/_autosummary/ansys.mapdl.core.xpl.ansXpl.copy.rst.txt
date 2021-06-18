@@ -1,0 +1,6 @@
+ansys.mapdl.core.xpl.ansXpl.copy
+================================
+
+.. currentmodule:: ansys.mapdl.core.xpl
+
+.. automethod:: ansXpl.copy

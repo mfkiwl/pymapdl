@@ -1,0 +1,6 @@
+ansys.mapdl.core.parameters.Parameters.real
+===========================================
+
+.. currentmodule:: ansys.mapdl.core.parameters
+
+.. autoproperty:: Parameters.real

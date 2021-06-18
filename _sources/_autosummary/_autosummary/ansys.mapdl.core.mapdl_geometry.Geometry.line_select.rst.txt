@@ -1,0 +1,6 @@
+ansys.mapdl.core.mapdl\_geometry.Geometry.line\_select
+======================================================
+
+.. currentmodule:: ansys.mapdl.core.mapdl_geometry
+
+.. automethod:: Geometry.line_select

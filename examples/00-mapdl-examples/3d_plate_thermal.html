@@ -4,12 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>Basic Thermal Analysis with pyMAPDL &#8212; ansys.mapdl.core 0.59.1 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Thermal Analysis with pyMAPDL &#8212; ansys.mapdl.core 0.59.2 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.101715efdecc9b59cb6e1ddfa685c31f.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -30,9 +29,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/gallery-dataframe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/gallery-rendered-html.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/ansys.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.d8bbf5861d671d414e1a.js">
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -42,77 +40,80 @@
     <script src="../../_static/copybutton.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="MAPDL 3D Beam Example" href="mapdl_3d_beam.html" />
+    <link rel="next" title="Plotting and Mesh Access" href="geometry.html" />
     <link rel="prev" title="3D Stress Concentration Analysis for a Notched Plate" href="3d_notch.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
-
+    <div class="container-fluid" id="banner"></div>
 
     
-      
-      <a class="navbar-brand" href="../../index.html">
-        <img src="../../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
-      </a>
-      
-    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><style>
+    .navbar-light {
+        background-color: black !important;
+    }
+</style>
 
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../../index.html">
+    
+      <img src="../../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo" />
+    
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" >
+        <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+      </span>
     </button>
-
     
     <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
       <ul id="navbar-main-elements" class="navbar-nav mr-auto">
-        <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../getting_started/index.html">
-  Getting Started
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../user_guide/index.html">
-  User Guide
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../pymapdl_api/index.html">
-  API Reference
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../mapdl_commands/index.html">
-  MAPDL Commands
- </a>
-</li>
-
-<li class="toctree-l1 current active nav-item">
- <a class="reference internal nav-link" href="../index.html">
-  Examples
- </a>
-</li>
-
-<li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../../contributing.html">
-  Contributing
- </a>
-</li>
-
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../getting_started/index.html">Getting Started</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../user_guide/index.html">User Guide</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../api.html">API Reference</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../mapdl_commands/index.html">MAPDL Commands</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Examples</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../../contributing.html">Contributing</a>
+        </li>
+        
         
       </ul>
 
-      <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/pyansys/pymapdl" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label>
-          </a>
-        </li>
+
+      
+
+      <ul class="navbar-nav">
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/pyansys/PyMAPDL" target="_blank" rel="noopener">
+              <span><i class="fab fa-github-square" style="font-size:24px"></i></span>
+            </a>
+          </li>
+        
+        
+        
       </ul>
     </div>
 </div>
@@ -127,126 +128,177 @@
             <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <div class="bd-toc-item active">
-    <ul class="current nav bd-sidenav">
- <li class="toctree-l2">
+    <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="2d_plate_with_a_hole.html">
    MAPDL 2D Plane Stress Concentration Analysis
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="3d_notch.html">
    3D Stress Concentration Analysis for a Notched Plate
   </a>
  </li>
- <li class="toctree-l2 current active">
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Basic Thermal Analysis with pyMAPDL
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="geometry.html">
+   Plotting and Mesh Access
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="mapdl_3d_beam.html">
    MAPDL 3D Beam Example
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="mapdl_beam.html">
    MAPDL 2D Beam Example
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="path_operations.html">
    Path Operations within pyMAPDL and MAPDL
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="pyvista_mesh.html">
    PyVista Mesh Integration
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="transient_thermal.html">
    Example Thermal Transient Analysis
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../01-apdlmath-examples/basic_operations.html">
    PyMAPDL APDLMath Basic Operations
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../01-apdlmath-examples/eigen_solve.html">
    Using APDLMath to solve Eigenproblems
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../01-apdlmath-examples/explore_mapdl_files.html">
    Binary MAPDL File Explorer
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../01-apdlmath-examples/mapdl_vs_scipy.html">
    Compute Eigenvalues using MAPDL or SciPy
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../01-apdlmath-examples/scipy_sparse_matrix.html">
    Transfer APDLMath Sparse Matrices to and from SciPy Sparse Matrices
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../01-apdlmath-examples/solve_dense_matrix.html">
    Use APDLMath to Solve a Dense Matrix Linear System
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../01-apdlmath-examples/solve_sparse_matrix.html">
    Use APDLMath To Perform Sparse Factorization and Solve Operations
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../01-apdlmath-examples/use_numpy_arrays.html">
    Manipulate APDLMath vectors or dense matrices as NumPy Arrays
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../02-geometry/00-keypoints.html">
    Keypoints
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../02-geometry/01-lines.html">
    Lines
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../02-geometry/02-areas.html">
    Areas
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../02-geometry/03-volumes.html">
    Volumes
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../02-geometry/04-primitives.html">
    Primitives
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../03-tips-n-tricks/00-example-template.html">
    Adding a New Gallery Example
   </a>
  </li>
- <li class="toctree-l2">
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../03-tips-n-tricks/01-smoothing-element-size-transitions.html">
    MAPDL Element Size Transition Example
   </a>
  </li>
 </ul>
+
   </div>
 </nav>
             </div>
@@ -255,7 +307,10 @@
 
           
           <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
               
+              <div class="toc-item">
+                
 <div class="tocsection onthispage pt-5 pb-3">
     <i class="fas fa-list"></i> On this page
 </div>
@@ -285,9 +340,13 @@
 </ul>
 
 </nav>
-
-
+              </div>
               
+              <div class="toc-item">
+                
+              </div>
+              
+            
           </div>
           
 
@@ -304,7 +363,7 @@
 <p>Click <a class="reference internal" href="#sphx-glr-download-examples-00-mapdl-examples-3d-plate-thermal-py"><span class="std std-ref">here</span></a>
 to download the full example code</p>
 </div>
-<section class="sphx-glr-example-title" id="basic-thermal-analysis-with-pymapdl">
+<div class="sphx-glr-example-title section" id="basic-thermal-analysis-with-pymapdl">
 <span id="ref-3d-plate-thermal"></span><span id="sphx-glr-examples-00-mapdl-examples-3d-plate-thermal-py"></span><h1>Basic Thermal Analysis with pyMAPDL<a class="headerlink" href="#basic-thermal-analysis-with-pymapdl" title="Permalink to this headline">¶</a></h1>
 <p>This example demonstrates how you can use MAPDL to create a plate,
 impose thermal boundary conditions, solve, and plot it all within
@@ -316,7 +375,7 @@ pyMAPDL.</p>
 <span class="n">mapdl</span> <span class="o">=</span> <span class="n">launch_mapdl</span><span class="p">()</span>
 </pre></div>
 </div>
-<section id="geometry-and-material-properties">
+<div class="section" id="geometry-and-material-properties">
 <h2>Geometry and Material Properties<a class="headerlink" href="#geometry-and-material-properties" title="Permalink to this headline">¶</a></h2>
 <p>Create a simple beam, specify the material properties, and mesh it.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mapdl</span><span class="o">.</span><span class="n">prep7</span><span class="p">()</span>
@@ -334,8 +393,8 @@ pyMAPDL.</p>
  (0.0, 0.0, 1.0)]
 </pre></div>
 </div>
-</section>
-<section id="boundary-conditions">
+</div>
+<div class="section" id="boundary-conditions">
 <h2>Boundary Conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this headline">¶</a></h2>
 <p>Set the thermal boundary conditions</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mapdl</span><span class="o">.</span><span class="n">asel</span><span class="p">(</span><span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
@@ -347,8 +406,8 @@ pyMAPDL.</p>
 <span class="n">out</span> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">allsel</span><span class="p">()</span>
 </pre></div>
 </div>
-</section>
-<section id="solve">
+</div>
+<div class="section" id="solve">
 <h2>Solve<a class="headerlink" href="#solve" title="Permalink to this headline">¶</a></h2>
 <p>Solve the thermal static analysis and print the results</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mapdl</span><span class="o">.</span><span class="n">vsweep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -360,12 +419,12 @@ pyMAPDL.</p>
 <p class="sphx-glr-script-out">Out:</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>*****  ANSYS SOLVE    COMMAND  *****
 
- *** NOTE ***                            CP =      65.061   TIME= 06:19:22
+ *** NOTE ***                            CP =      54.574   TIME= 00:59:36
  There is no title defined for this analysis.
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2BETA ***
  Ansys Mechanical Enterprise
- 00000000  VERSION=LINUX x64     06:19:22  JUN 10, 2021 CP=     65.064
+ 00000000  VERSION=LINUX x64     00:59:36  JUN 18, 2021 CP=     54.576
 
 
 
@@ -381,11 +440,11 @@ pyMAPDL.</p>
    ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
    GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC
 
- *** NOTE ***                            CP =      65.064   TIME= 06:19:22
+ *** NOTE ***                            CP =      54.577   TIME= 00:59:36
  Present time 0 is less than or equal to the previous time.  Time will
  default to 1.
 
- *** NOTE ***                            CP =      65.065   TIME= 06:19:22
+ *** NOTE ***                            CP =      54.577   TIME= 00:59:36
  The conditions for direct assembly have been met.  No .emat or .erot
  files will be produced.
 
@@ -410,8 +469,8 @@ pyMAPDL.</p>
    *** ELEMENT MATRIX FORMULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-        1       450  SOLID90       0.039   0.000086
- Time at end of element matrix formulation CP = 65.1133194.
+        1       450  SOLID90       0.056   0.000124
+ Time at end of element matrix formulation CP = 54.6399765.
 
  SPARSE MATRIX DIRECT SOLVER.
   Number of equations =        2606,    Maximum wavefront =     72
@@ -419,7 +478,7 @@ pyMAPDL.</p>
   Memory required for in-core solution     =     4.639 MB
   Memory required for out-of-core solution =     2.499 MB
 
- *** NOTE ***                            CP =      65.200   TIME= 06:19:22
+ *** NOTE ***                            CP =      54.800   TIME= 00:59:37
  The Sparse Matrix Solver is currently running in the in-core memory
  mode.  This memory mode uses the most amount of memory in order to
  avoid using the hard drive as much as possible, which most often
@@ -434,12 +493,12 @@ pyMAPDL.</p>
    *** ELEMENT RESULT CALCULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-        1       450  SOLID90       0.033   0.000073
+        1       450  SOLID90       0.057   0.000126
 
    *** NODAL LOAD CALCULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-        1       450  SOLID90       0.020   0.000044
+        1       450  SOLID90       0.027   0.000060
  *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
  *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
 
@@ -450,8 +509,8 @@ pyMAPDL.</p>
         0.750 MB WRITTEN ON RESULTS FILE: file.rth
 </pre></div>
 </div>
-</section>
-<section id="post-processing-using-mapdl">
+</div>
+<div class="section" id="post-processing-using-mapdl">
 <h2>Post-Processing using MAPDL<a class="headerlink" href="#post-processing-using-mapdl" title="Permalink to this headline">¶</a></h2>
 <p>View the thermal solution of the beam by getting the results
 directly through MAPDL.</p>
@@ -479,7 +538,7 @@ result file using pyansys</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[    1     2     3 ... 12715 12716 12717] [ 0.  0.  0. ... nan nan nan]
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  1.251 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  1.200 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-00-mapdl-examples-3d-plate-thermal-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/91c538c5ed71a5605ff4467121a37338/3d_plate_thermal.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">3d_plate_thermal.py</span></code></a></p>
@@ -489,8 +548,8 @@ result file using pyansys</p>
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</section>
-</section>
+</div>
+</div>
 
 
               </div>
@@ -499,7 +558,7 @@ result file using pyansys</p>
               <div class='prev-next-bottom'>
                 
     <a class='left-prev' id="prev-link" href="3d_notch.html" title="previous page">3D Stress Concentration Analysis for a Notched Plate</a>
-    <a class='right-next' id="next-link" href="mapdl_3d_beam.html" title="next page">MAPDL 3D Beam Example</a>
+    <a class='right-next' id="next-link" href="geometry.html" title="next page">Plotting and Mesh Access</a>
 
               </div>
               
@@ -508,17 +567,24 @@ result file using pyansys</p>
 
       </div>
     </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../../_static/js/index.d8bbf5861d671d414e1a.js"></script>
-
-
-    <footer class="footer mt-5 mt-md-0">
+  <footer class="footer mt-5 mt-md-0">
   <div class="container">
-    <p>
-          &copy; Copyright 2021, ANSYS.<br/>
-        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
-    </p>
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
+</p>
+    </div>
+    
   </div>
 </footer>
   </body>

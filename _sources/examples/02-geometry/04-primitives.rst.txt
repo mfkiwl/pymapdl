@@ -54,7 +54,7 @@ using Pythonic PREP7 volume commands.
 
     Product:             Ansys Mechanical Enterprise
     MAPDL Version:       21.2
-    ansys.mapdl Version: 0.59.1
+    ansys.mapdl Version: 0.59.2
 
 
 
@@ -123,6 +123,16 @@ This method returns the volume number.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(11.541451884327385, 13.041451884327385, 15.541451884327387),
+     (0.5, 2.0, 4.500000000000001),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -195,6 +205,16 @@ This method returns the volume number.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(11.041451884327385, 11.041451884327385, 15.541451884327387),
+     (0.0, 0.0, 4.500000000000001),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -225,6 +245,16 @@ size ``(1 x 2 x 3)``
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(4.673276542716538, 5.173276542716538, 6.673276542716538),
+     (0.5, 1.0, 2.5),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -254,6 +284,16 @@ Create a cone with a bottom radius of 3 and a height of 10.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(14.627744630232042, 14.627744630232042, 19.627744630232044),
+     (0.0, 2.220446049250313e-16, 5.0),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -283,6 +323,16 @@ a height of 10 centered at ``(0, 0)``.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(11.160254037844393, 16.160254037844393, 18.660254037844393),
+     (-2.5, 2.5, 5.000000000000001),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -354,6 +404,16 @@ radius of 2 and an inner radius of 1, and a thickness of 0.55.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(5.02546124453197, 6.025321252723083, 5.30046124453197),
+     (0.0, 0.9998600081911138, 0.2750000000000001),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -420,6 +480,16 @@ and the other point at ``(X, Y) == (2, 2)`` with a height of 3.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(7.506370879310776, 7.506370879310776, 8.506370879310776),
+     (1.5, 1.5, 2.5000000000000004),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -450,6 +520,16 @@ outer radius of 1.0 with a height of 5
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(6.407227082229697, 6.407227082229697, 8.907227082229698),
+     (0.0, 0.0, 2.5000000000000004),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -560,6 +640,16 @@ an outer radius of 1.0 centered at ``(0, 0)``
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(3.856674145489138, 3.8577638544590824, 3.856674145489138),
+     (0.0, 0.0010897089699446472, 0.0),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -590,6 +680,16 @@ an outer radius of 1.0.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(2.846065214951232, 3.346065214951232, 3.346065214951232),
+     (-0.5, 0.0, 0.0),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -620,6 +720,16 @@ point at ``(2, 2)``
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(4.227405710402886, 4.225472042976391, 2.727405710402886),
+     (1.5, 1.4980663325735053, 0.0),
+     (0.0, 0.0, 1.0)]
 
 
 
@@ -649,13 +759,23 @@ and 180 define the starting and ending angles of the torus.
     :class: sphx-glr-single-img
 
 
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+
+    [(18.01409334294718, 21.5088971675611, 18.01409334294718),
+     (0.0, 3.494803824613917, 0.0),
+     (0.0, 0.0, 1.0)]
 
 
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  18.342 seconds)
+   **Total running time of the script:** ( 0 minutes  16.359 seconds)
 
 
 .. _sphx_glr_download_examples_02-geometry_04-primitives.py:

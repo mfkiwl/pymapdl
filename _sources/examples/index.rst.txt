@@ -90,6 +90,27 @@ These examples demonstrate full examples using the PyMAPDL module.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="PyMAPDL can load basic IGES geometry for analysis.">
+
+.. only:: html
+
+ .. figure:: /examples/00-mapdl-examples/images/thumb/sphx_glr_geometry_thumb.png
+     :alt: Plotting and Mesh Access
+
+     :ref:`sphx_glr_examples_00-mapdl-examples_geometry.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-mapdl-examples/geometry
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="This is a simple example that loads an archive file containing a beam and then runs a modal ana...">
 
 .. only:: html

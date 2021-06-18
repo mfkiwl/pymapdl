@@ -1,0 +1,6 @@
+ansys.mapdl.core.math.AnsVec.zeros
+==================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. automethod:: AnsVec.zeros

@@ -1,0 +1,6 @@
+ansys.mapdl.core.math.AnsMat.const
+==================================
+
+.. currentmodule:: ansys.mapdl.core.math
+
+.. automethod:: AnsMat.const
