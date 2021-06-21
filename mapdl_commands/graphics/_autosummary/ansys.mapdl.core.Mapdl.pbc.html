@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ansys.mapdl.core.Mapdl.pbc &#8212; ansys.mapdl.core 0.59.2 documentation</title>
+    <title>ansys.mapdl.core.Mapdl.pbc &#8212; ansys.mapdl.core 0.59.3 documentation</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -8491,6 +8491,25 @@
   </ul>
  </li>
 </ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../misc.html">
+   Miscellaneous
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-113" name="toctree-checkbox-113" type="checkbox"/>
+  <label for="toctree-checkbox-113">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../_autosummary/ansys.mapdl.core.Mapdl.verify.html">
+     ansys.mapdl.core.Mapdl.verify
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
 
   </div>
 </nav>
@@ -8592,7 +8611,7 @@ such as .83646 and -5.59737 are not displayed.</p></li>
 </dd>
 </dl>
 <p class="rubric">Notes</p>
-<p>The /PBC command adds degree of freedom constraint, force load, and
+<p>The <code class="docutils literal notranslate"><span class="pre">mapdl.pbc</span></code> command adds degree of freedom constraint, force load, and
 other symbols to displays.</p>
 <p>Symbols are applied to the selected nodes only.  All arrow and
 arrowhead symbols are oriented in the nodal coordinate system and lie
@@ -8602,19 +8621,30 @@ For scalar quantities, the specific component direction (i.e., x, y, or
 z) of the symbol has no meaning, but the positive or negative sense
 (e.g., positive or negative x) represents a positive or negative scalar
 value, respectively.</p>
-<p>The effects of the /PBC command are not cumulative (that is, the
+<p>The effects of the <code class="docutils literal notranslate"><span class="pre">mapdl.pbc</span></code> command are not cumulative (that is, the
 command does not modify an existing setting from a previously issued
-/PBC command).  If you issue multiple /PBC commands during an analysis,
-only the setting specified by the most recent /PBC command applies.</p>
-<p>Use /PSTATUS or /PBC,STAT to display settings.  Use /PBC,DEFA to reset
-all specifications back to default.  See the /PSF and /PBF commands for
-other display symbols.</p>
-<p>In a cyclic symmetry analysis, the /PBC command is deactivated when
+<code class="docutils literal notranslate"><span class="pre">mapdl.pbc</span></code> command).  If you issue multiple <code class="docutils literal notranslate"><span class="pre">mapdl.pbc</span></code> commands
+during an analysis, only the setting specified by the most recent
+<code class="docutils literal notranslate"><span class="pre">mapdl.pbc</span></code> command applies.</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">mapdl.pstatus()</span></code> or <code class="docutils literal notranslate"><span class="pre">mapdl.pbc('STAT')</span></code> to display settings.
+Use <code class="docutils literal notranslate"><span class="pre">mapdl.pbc('DEFA')</span></code> to reset all specifications back to default.
+See the <code class="docutils literal notranslate"><span class="pre">mapdl.psf</span></code> and <code class="docutils literal notranslate"><span class="pre">mapdl.pbf</span></code> commands for other display symbols.</p>
+<p>In a cyclic symmetry analysis, the <code class="docutils literal notranslate"><span class="pre">mapdl.pbc</span></code> command is deactivated when
 cyclic expansion is active (/CYCEXPAND,,ON). To view boundary
 conditions on the basic sector, deactivate cyclic expansion
-(/CYCEXPAND,,OFF) and issue this command:: : /PBC,ALL,,1</p>
-<p>Issuing the command /PBC,PATH, ,1 displays all defined paths.</p>
-<p>The /PBC command is valid in any processor.</p>
+(/CYCEXPAND,,OFF) and issue this command: <code class="docutils literal notranslate"><span class="pre">mapdl.pbc('ALL',</span> <span class="pre">1)</span></code></p>
+<p>Issuing the command <code class="docutils literal notranslate"><span class="pre">mapdl.pbc('PATH',</span> <span class="pre">1)</span></code> displays all defined paths.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">mapdl.pbc</span></code> command is valid in any processor.</p>
+<p class="rubric">Examples</p>
+<p>On all subsequent plots (after this command). Activate display of
+translational boundary condition symbols.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">pbc</span><span class="p">(</span><span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Display enforced nodal temperatures</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">pbc</span><span class="p">(</span><span class="s1">&#39;TEMP&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </div>

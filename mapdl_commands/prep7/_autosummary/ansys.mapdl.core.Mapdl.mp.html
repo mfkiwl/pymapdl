@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ansys.mapdl.core.Mapdl.mp &#8212; ansys.mapdl.core 0.59.2 documentation</title>
+    <title>ansys.mapdl.core.Mapdl.mp &#8212; ansys.mapdl.core 0.59.3 documentation</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -8491,6 +8491,25 @@
   </ul>
  </li>
 </ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../misc.html">
+   Miscellaneous
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-113" name="toctree-checkbox-113" type="checkbox"/>
+  <label for="toctree-checkbox-113">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../_autosummary/ansys.mapdl.core.Mapdl.verify.html">
+     ansys.mapdl.core.Mapdl.verify
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
 
   </div>
 </nav>
@@ -8544,35 +8563,41 @@ Material Reference for more complete property label definitions:</p>
 <p>ALPD - Mass matrix multiplier for damping.</p>
 <p>ALPX - Secant coefficients of thermal expansion (also ALPY, ALPZ).</p>
 <p>BETD - Stiffness matrix multiplier for damping.</p>
-<p>Note:If used in an explicit dynamic analysis, the value corresponds to the percentage of damping in the high frequency domain. For example, 0.1 roughly corresponds to 10% damping in the high frequency domain. - BETX</p>
-<p>Coefficient of diffusion expansion (also BETY, BETZ) - BVIS</p>
-<p>Bulk viscosity - C</p>
-<p>Specific heat - CREF</p>
-<p>Reference concentration (may not be temperature dependent) - CSAT</p>
-<p>Saturated concentration - CTEX</p>
-<p>Instantaneous coefficients of thermal expansion (also CTEY, CTEZ) - CVH</p>
-<p>Heat coefficient at constant volume per unit of mass - DENS</p>
-<p>Mass density. - DMPR</p>
-<p>Constant structural damping coefficient in full harmonic analysis or damping ratio in mode-superposition analysis. - DXX</p>
-<p>Diffusivity coefficients (also DYY, DZZ) - EMIS</p>
-<p>Emissivity. - ENTH</p>
-<p>Enthalpy. - EX</p>
-<p>Elastic moduli (also EY, EZ) - GXY</p>
-<p>Shear moduli (also GYZ, GXZ) - HF</p>
-<p>Convection or film coefficient - KXX</p>
-<p>Thermal conductivities (also KYY, KZZ) - LSST</p>
-<p>Electric loss tangent - LSSM</p>
-<p>Magnetic loss tangent - MGXX</p>
-<p>Magnetic coercive forces (also MGYY, MGZZ) - MURX</p>
-<p>Magnetic relative permeabilities (also MURY, MURZ) - MU</p>
-<p>Coefficient of friction - NUXY</p>
-<p>Minor Poisson’s ratios (also NUYZ, NUXZ) (NUXY = νyx, as described in Stress-Strain Relationships in the Mechanical APDL Theory Reference) - PERX</p>
+<p>Note: If used in an explicit dynamic analysis, the value corresponds to the percentage of damping in the high
+frequency domain. For example, 0.1 roughly corresponds to 10% damping in the high frequency domain.</p>
+<p>BETX - Coefficient of diffusion expansion (also BETY, BETZ)</p>
+<p>BVIS - Bulk viscosity</p>
+<p>C - Specific heat</p>
+<p>CREF - Reference concentration (may not be temperature dependent)</p>
+<p>CSAT - Saturated concentration</p>
+<p>CTEX - Instantaneous coefficients of thermal expansion (also CTEY, CTEZ)</p>
+<p>CVH - Heat coefficient at constant volume per unit of mass</p>
+<p>DENS - Mass density.</p>
 <dl class="simple">
-<dt>Electric relative permittivities (also PERY, PERZ) - Note:  If you enter permittivity values less than 1 for SOLID5, PLANE13, or</dt><dd><p>SOLID98, the program interprets the values as
-absolute permittivity. Values input for PLANE223,
-SOLID226, or SOLID227 are always interpreted as
-relative permittivity.</p>
+<dt>DMPR - Constant structural damping coefficient in full harmonic analysis or damping ratio in mode-superposition</dt><dd><p>analysis.</p>
 </dd>
+</dl>
+<p>DXX - Diffusivity coefficients (also DYY, DZZ)</p>
+<p>EMIS - Emissivity.</p>
+<p>ENTH - Enthalpy.</p>
+<p>EX - Elastic moduli (also EY, EZ)</p>
+<p>GXY - Shear moduli (also GYZ, GXZ)</p>
+<p>HF - Convection or film coefficient</p>
+<p>KXX - Thermal conductivities (also KYY, KZZ)</p>
+<p>LSST - Electric loss tangent</p>
+<p>LSSM - Magnetic loss tangent</p>
+<p>MGXX - Magnetic coercive forces (also MGYY, MGZZ)</p>
+<p>MURX - Magnetic relative permeabilities (also MURY, MURZ)</p>
+<p>MU - Coefficient of friction</p>
+<dl class="simple">
+<dt>NUXY - Minor Poisson’s ratios (also NUYZ, NUXZ) (NUXY = νyx, as described in Stress-Strain Relationships in the</dt><dd><p>Mechanical APDL Theory Reference)</p>
+</dd>
+</dl>
+<p>PERX - Electric relative permittivities (also PERY, PERZ)</p>
+<p>Note:  If you enter permittivity values less than 1 for SOLID5, PLANE13, or SOLID98, the program interprets
+the values as absolute permittivity. Values input for PLANE223, SOLID226, or SOLID227 are always interpreted as
+relative permittivity.</p>
+<dl class="simple">
 <dt>PRXY - Major Poisson’s ratios (also PRYZ, PRXZ) (PRXY = νxy, as described in Stress-</dt><dd><p>Strain Relationships in the Mechanical APDL Theory
 Reference)</p>
 </dd>

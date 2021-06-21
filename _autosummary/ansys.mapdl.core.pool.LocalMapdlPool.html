@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ansys.mapdl.core.pool.LocalMapdlPool &#8212; ansys.mapdl.core 0.59.2 documentation</title>
+    <title>ansys.mapdl.core.pool.LocalMapdlPool &#8212; ansys.mapdl.core 0.59.3 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -1508,6 +1508,10 @@
 <dt class="sig sig-object py" id="ansys.mapdl.core.pool.LocalMapdlPool">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.core.pool.</span></span><span class="sig-name descname"><span class="pre">LocalMapdlPool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_instances</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wait</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50052</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">progress_bar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">restart_failed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remove_temp_files</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.core.pool.LocalMapdlPool" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a pool of MAPDL instances.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Requires MAPDL 2020 R2 or later.</p>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -1532,6 +1536,7 @@ listing of all additional keyword arguments.</p></li>
 directory.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl</span> <span class="kn">import</span> <span class="n">LocalMapdlPool</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pool</span> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">LocalMapdlPool</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="go">Creating Pool: 100%|████████| 10/10 [00:01&lt;00:00,  1.43it/s]</span>
 </pre></div>
 </div>
 <p>Create several instances with 1 CPU each running at the current
@@ -1539,6 +1544,18 @@ directory within their own isolated directories.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">os</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">my_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcmd</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pool</span> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">LocalMapdlPool</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">nproc</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">run_location</span><span class="o">=</span><span class="n">my_path</span><span class="p">)</span>
+<span class="go">Creating Pool: 100%|████████| 10/10 [00:01&lt;00:00,  1.43it/s]</span>
+</pre></div>
+</div>
+<p>Create a pool while specifying the MAPDL executable in Windows.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">exec_file</span> <span class="o">=</span> <span class="s1">&#39;C:/Program Files/ANSYS Inc/v212/ansys/bin/win64/ANSYS212.exe&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pool</span> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">LocalMapdlPool</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">exec_file</span><span class="o">=</span><span class="n">exec_file</span><span class="p">)</span>
+<span class="go">Creating Pool: 100%|████████| 10/10 [00:01&lt;00:00,  1.43it/s]</span>
+</pre></div>
+</div>
+<p>Create a pool while specifying the MAPDL executable in Linux.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">exec_file</span> <span class="o">=</span> <span class="s1">&#39;/ansys_inc/v211/ansys/bin/ansys211&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pool</span> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">LocalMapdlPool</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">exec_file</span><span class="o">=</span><span class="n">exec_file</span><span class="p">)</span>
 <span class="go">Creating Pool: 100%|████████| 10/10 [00:01&lt;00:00,  1.43it/s]</span>
 </pre></div>
 </div>

@@ -6,6 +6,7 @@
 
 .. _ref_example_gallery:
 
+========
 Examples
 ========
 Here are a series of examples using MAPDL with ``ansys-mapdl-core``.
@@ -20,7 +21,7 @@ Here are a series of examples using MAPDL with ``ansys-mapdl-core``.
 .. _sphx_glr_examples_00-mapdl-examples:
 
 Full Examples Using PyMAPDL
----------------------------
+===========================
 These examples demonstrate full examples using the PyMAPDL module.
 
 
@@ -195,6 +196,27 @@ These examples demonstrate full examples using the PyMAPDL module.
 
 .. raw:: html
 
+    <div class="sphx-glr-thumbcontainer" tooltip="Reference:  - S. Timoshenko, Strength of Materials, Part I, Elementary Theory and    Problems, ...">
+
+.. only:: html
+
+ .. figure:: /examples/00-mapdl-examples/images/thumb/sphx_glr_statically_indeterminate_reaction_force_analysis_thumb.png
+     :alt: Statically Indeterminate Reaction Force Analysis
+
+     :ref:`sphx_glr_examples_00-mapdl-examples_statically_indeterminate_reaction_force_analysis.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/00-mapdl-examples/statically_indeterminate_reaction_force_analysis
+
+.. raw:: html
+
     <div class="sphx-glr-thumbcontainer" tooltip="Example adapted from: https://www.simutechgroup.com/tips-and-tricks/fea-articles/97-fea-tips-tr...">
 
 .. only:: html
@@ -224,7 +246,7 @@ These examples demonstrate full examples using the PyMAPDL module.
 .. _ref_apdl_math_examples:
 
 PyMapdl Math Examples
----------------------
+=====================
 These examples demonstrate using APDL Math and the PyAnsys module
 together within the PyMapdl module.
 
@@ -408,7 +430,7 @@ together within the PyMapdl module.
 .. _ref_pymapdl_geometry_examples:
 
 Geometry Examples
------------------
+=================
 These examples demonstrate using PyMAPDL to create basic geometry.
 
 
@@ -528,8 +550,9 @@ These examples demonstrate using PyMAPDL to create basic geometry.
 .. _ref_miscellaneous_examples:
 
 Miscellaneous Examples
-----------------------
+======================
 These examples demonstrate miscellaneous tips and tricks for using PyMAPDL.
+
 
 
 .. raw:: html
