@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dval
-===========================
+﻿dval
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.hfsym
-============================
+﻿hfsym
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

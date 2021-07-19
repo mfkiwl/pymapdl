@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.czmesh
-=============================
+﻿czmesh
+======
 
 .. currentmodule:: ansys.mapdl.core
 

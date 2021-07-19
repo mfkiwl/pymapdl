@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.undelete
-===============================
+﻿undelete
+========
 
 .. currentmodule:: ansys.mapdl.core
 

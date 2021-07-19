@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.psdgraph
-===============================
+﻿psdgraph
+========
 
 .. currentmodule:: ansys.mapdl.core
 

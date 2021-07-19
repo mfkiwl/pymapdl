@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.asifile
-==============================
+﻿asifile
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

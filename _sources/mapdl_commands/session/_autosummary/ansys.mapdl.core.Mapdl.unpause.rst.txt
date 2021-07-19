@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.unpause
-==============================
+﻿unpause
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

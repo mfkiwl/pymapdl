@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.wrfull
-=============================
+﻿wrfull
+======
 
 .. currentmodule:: ansys.mapdl.core
 

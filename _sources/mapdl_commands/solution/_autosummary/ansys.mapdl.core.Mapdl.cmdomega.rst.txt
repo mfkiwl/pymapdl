@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cmdomega
-===============================
+﻿cmdomega
+========
 
 .. currentmodule:: ansys.mapdl.core
 

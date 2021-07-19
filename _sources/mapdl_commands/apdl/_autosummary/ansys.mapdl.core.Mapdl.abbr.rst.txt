@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.abbr
-===========================
+﻿abbr
+====
 
 .. currentmodule:: ansys.mapdl.core
 

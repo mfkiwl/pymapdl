@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ioptn
-============================
+﻿ioptn
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

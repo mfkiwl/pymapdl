@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.pltrac
-=============================
+﻿pltrac
+======
 
 .. currentmodule:: ansys.mapdl.core
 

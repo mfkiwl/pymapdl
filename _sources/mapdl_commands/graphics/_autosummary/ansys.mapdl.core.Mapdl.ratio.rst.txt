@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ratio
-============================
+﻿ratio
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

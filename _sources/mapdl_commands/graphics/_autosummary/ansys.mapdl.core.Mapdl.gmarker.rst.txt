@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.gmarker
-==============================
+﻿gmarker
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

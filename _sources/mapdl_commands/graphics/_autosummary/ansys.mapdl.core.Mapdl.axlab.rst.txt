@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.axlab
-============================
+﻿axlab
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

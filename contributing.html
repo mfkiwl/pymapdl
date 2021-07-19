@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contributing &#8212; ansys.mapdl.core 0.59.3 documentation</title>
+    <title>Contributing &#8212; ansys.mapdl.core 0.59.4 documentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -40,7 +40,7 @@
     <script src="_static/copybutton.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="MAPDL Element Size Transition Example" href="examples/03-tips-n-tricks/01-smoothing-element-size-transitions.html" />
+    <link rel="prev" title="Generating and Extracting Rotational Displacement" href="examples/03-tips-n-tricks/04-rotational-displacement.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -58,63 +58,87 @@
 
 <div class="container-xl">
 
-    <a class="navbar-brand" href="index.html">
+  <div id="navbar-start">
     
-      <img src="_static/pyansys-logo-black-cropped.png" class="logo" alt="logo" />
     
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" >
-        <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
-      </span>
-    </button>
-    
-    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
-      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
-        
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="getting_started/index.html">Getting Started</a>
-        </li>
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="user_guide/index.html">User Guide</a>
-        </li>
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="api.html">API Reference</a>
-        </li>
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="mapdl_commands/index.html">MAPDL Commands</a>
-        </li>
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="examples/index.html">Examples</a>
-        </li>
-        
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Contributing</a>
-        </li>
-        
-        
-      </ul>
+
+<a class="navbar-brand" href="index.html">
+  <img src="_static/https://docs.pyansys.com/_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+</a>
 
 
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" >
+      <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+    </span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
       
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="getting_started/index.html">
+  Getting Started
+ </a>
+</li>
 
-      <ul class="navbar-nav">
-        
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/pyansys/PyMAPDL" target="_blank" rel="noopener">
-              <span><i class="fab fa-github-square" style="font-size:24px"></i></span>
-            </a>
-          </li>
-        
-        
-        
-      </ul>
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="user_guide/index.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="api/index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="mapdl_commands/index.html">
+  MAPDL Commands
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="examples/index.html">
+  Examples
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="current reference internal nav-link" href="#">
+  Contributing
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
     </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyansys/PyMAPDL" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
 </div>
     </nav>
     
@@ -195,6 +219,16 @@
    Contributing to PyMAPDL through GitHub
   </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#opening-issues">
+     Opening Issues
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Discussions
+    </a>
+   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#creating-a-new-pull-request">
      Creating a New Pull Request
@@ -370,8 +404,8 @@ intuitive, novel, and helpful for PyMAPDL and its users.</p>
 </li>
 <li><p><strong>Document it</strong>. Include a docstring for any function, method, or
 class added.  Follow the <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">numpydocs docstring</a>
-guidelines, and always provide a for simple use cases for the new
-features.</p></li>
+guidelines, and always provide an example of simple use cases for
+the new features.</p></li>
 <li><p><strong>Test it</strong>. Since Python is an interperted language, if it’s not
 tested, it’s probably broken.  At the minimum, include unit tests
 for each new feature within the <code class="docutils literal notranslate"><span class="pre">tests</span></code> directory.  Ensure that
@@ -395,14 +429,56 @@ Section</a> below for automating testing.</p>
 <p>When you are ready to submit your code, create a pull request by
 following the steps in the <a class="reference external" href="#creating-a-new-pull-request">Creating a New Pull Request
 section</a>.</p>
+<div class="section" id="opening-issues">
+<h3>Opening Issues<a class="headerlink" href="#opening-issues" title="Permalink to this headline">¶</a></h3>
+<p>Should you come across a bug in <code class="docutils literal notranslate"><span class="pre">PyMAPDL</span></code> or otherwise encounter some
+unexpected behaviour you should create an “issue” regarding it. Issues are
+created and submitted <a class="reference external" href="https://github.com/pyansys/pymapdl/issues">here</a>.
+Issues are used when developing to keep track of what is being
+worked on at any one time, and by who. We have two issue templates
+that we recommend you use:</p>
+<ul class="simple">
+<li><p>Bug report template</p></li>
+<li><p>Feature request template</p></li>
+</ul>
+<p>If your issue does not fit into these two categories you are free
+to create your own issue as well.</p>
+<p>Issues should contain sufficient context for others to reproduce your
+problem, such as the application versions you are using as well as
+reproduction steps. Use issue labels like “Documentation” to further
+highlight your issue’s category.</p>
+<p>Developers will respond to your issue and hopefully resolve it! Users
+are encouraged to close their own issues once they are completed.
+Otherwise, issues will be closed after a period of inactivity at the
+discretion of the maintainers.</p>
+<p>Should it turn out the fix did not work, or your issue was closed
+erroneously, please re-open your issue with a comment addressing why.</p>
+<p>Open ended questions should be opened in <a class="reference external" href="https://github.com/pyansys/pymapdl/discussions">Discussions</a>,
+and should an issue generate additional discussion, further issues
+should be spun out into their own separate issues. This helps developers
+keep track of what is being done and what needs to be done.</p>
+</div>
+<div class="section" id="id4">
+<h3>Discussions<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>General questions about PyMAPDL should be raised in
+<a class="reference external" href="https://github.com/pyansys/pymapdl/discussions">Discussions</a> in
+this repository rather than as issues themselves. Issues can be spun out of
+discussions depending on what is decided, but general Q&amp;A content
+should start as discussions where possible.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The discussions feature is still in beta on GitHub, so this may
+change in the future.</p>
+</div>
+</div>
 <div class="section" id="creating-a-new-pull-request">
 <h3>Creating a New Pull Request<a class="headerlink" href="#creating-a-new-pull-request" title="Permalink to this headline">¶</a></h3>
 <p>Once you have tested your branch locally, create a pull request on
 <a class="reference external" href="https://github.com/pyansys/pymapdl">PyMAPDL</a> and target your
-merge to <cite>master</cite>.  This will automatically run continuous
+merge to <cite>main</cite>.  This will automatically run continuous
 integration (CI) testing and verify your changes will work across all
 supported platforms.</p>
-<p>For code verification, someone from the pyansys developers team will
+<p>For code verification, someone from the PyMAPDL developers team will
 review your code to verify your code meets our our standards.  Once
 approved, if you have write permission you may merge the branch.  If
 you don’t have write permission, the reviewer or someone else with
@@ -470,7 +546,7 @@ with:</p>
 </div>
 <p>Any misspelled words will be reported.  You can add words to be
 ignored to <code class="docutils literal notranslate"><span class="pre">ignore_words.txt</span></code></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">codespell</span> <span class="o">./</span> <span class="s2">&quot;*.pyc,*.txt,*.gif,*.png,*.jpg,*.js,*.html,*.doctree,*.ttf,*.woff,*.woff2,*.eot,*.mp4,*.inv,*.pickle,*.ipynb,flycheck*,./.git/*,./.hypothesis/*,*.yml,./docs/build/*,./docs/images/*,./dist/*,*~,.hypothesis*,./docs/source/examples/*,*cover,*.dat,*.mac,\#*,build,./docker/mapdl/v211,./factory/*,./ansys/mapdl/core/mapdl_functions.py,PKG-INFO&quot;</span> <span class="o">-</span><span class="n">I</span> <span class="s2">&quot;ignore_words.txt&quot;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">codespell</span> <span class="o">./</span> <span class="s2">&quot;*.pyc,*.txt,*.gif,*.png,*.jpg,*.js,*.html,*.doctree,*.ttf,*.woff,*.woff2,*.eot,*.mp4,*.inv,*.pickle,*.ipynb,flycheck*,./.git/*,./.hypothesis/*,*.yml,./doc/build/*,./doc/images/*,./dist/*,*~,.hypothesis*,./doc/source/examples/*,*cover,*.dat,*.mac,\#*,build,./docker/mapdl/v211,./factory/*,./ansys/mapdl/core/mapdl_functions.py,PKG-INFO&quot;</span> <span class="o">-</span><span class="n">I</span> <span class="s2">&quot;ignore_words.txt&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -480,14 +556,14 @@ ignored to <code class="docutils literal notranslate"><span class="pre">ignore_w
 <p>Documentation for PyMAPDL is generated from three sources:</p>
 <ul class="simple">
 <li><p>Docstrings from the classes, functions, and modules of <code class="docutils literal notranslate"><span class="pre">ansys.mapdl.core</span></code> using <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html">sphinx.ext.autodoc</a>.</p></li>
-<li><p>Restructured test from <cite>docs/</cite></p></li>
+<li><p>Restructured test from <cite>doc/</cite></p></li>
 <li><p>Examples from <cite>examples/</cite></p></li>
 </ul>
-<p>General usage and API descriptions should be placed within <cite>docs/source</cite> and
+<p>General usage and API descriptions should be placed within <cite>doc/source</cite> and
 the docstrings.  Full examples should be placed in <cite>examples</cite>.</p>
 <div class="section" id="adding-a-new-example">
 <h3>Adding a New Example<a class="headerlink" href="#adding-a-new-example" title="Permalink to this headline">¶</a></h3>
-<p>PyMAPDL examples come in two formats.  Basic code snippets demonstrating some functionality, or a full gallery examples.  Small code samples and snippets are contained in the <cite>docs/source</cite> directory, while the full gallery examples, meant to be run as individual downloadable scripts, are contained in the <cite>examples</cite> directory at the root of this repository.</p>
+<p>PyMAPDL examples come in two formats.  Basic code snippets demonstrating some functionality, or a full gallery examples.  Small code samples and snippets are contained in the <cite>doc/source</cite> directory, while the full gallery examples, meant to be run as individual downloadable scripts, are contained in the <cite>examples</cite> directory at the root of this repository.</p>
 <p>To add a fully fledged, standalone example, add your example to the <cite>examples</cite> directory within one of the applicable subfolders.  Should none of the existing directories match the category of your example, create a new directory with a <cite>README.txt</cite> describing the new category.  Additionally, as these examples are built using the sphinx gallery extension, follow coding guidelines as established by [Sphinx-Gallery](<a class="reference external" href="https://sphinx-gallery.github.io/stable/index.html">https://sphinx-gallery.github.io/stable/index.html</a>)</p>
 <p>A self-demonstrating example is can be found at <a class="reference internal" href="examples/03-tips-n-tricks/00-example-template.html#ref-how-to-add-an-example-reference-key"><span class="std std-ref">Adding a New Gallery Example</span></a>.</p>
 <p><a class="reference internal" href="examples/03-tips-n-tricks/00-example-template.html#ref-how-to-add-an-example-reference-key"><span class="std std-ref">Adding a New Gallery Example</span></a></p>
@@ -495,7 +571,7 @@ the docstrings.  Full examples should be placed in <cite>examples</cite>.</p>
 <div class="section" id="documentation-style-and-organization">
 <h3>Documentation Style and Organization<a class="headerlink" href="#documentation-style-and-organization" title="Permalink to this headline">¶</a></h3>
 <p>Docstrings should follow the <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">numpydocs docstring</a> guidelines.
-Documentation from <cite>docs</cite> use reStructuredText format.  Examples
+Documentation from <cite>doc</cite> use reStructuredText format.  Examples
 within the <cite>examples/</cite> directory should be PEP8 compliant and will be
 compiled dynamically during the build process; ensure they run
 properly locally as they will be verified through the continuous
@@ -503,7 +579,7 @@ integration performed on GitHub Actions.</p>
 </div>
 <div class="section" id="building-the-documentation-locally">
 <h3>Building the Documentation Locally<a class="headerlink" href="#building-the-documentation-locally" title="Permalink to this headline">¶</a></h3>
-<p>Documentation for PyMAPDL is hosted at docs.pyansys.com and is
+<p>Documentation for PyMAPDL is hosted at mapdldocs.pyansys.com and is
 automatically built and deployed using the GitHub Actions.  You can
 build and verify the html documentation locally by install <code class="docutils literal notranslate"><span class="pre">sphinx</span></code>
 and the other documentation build dependencies by running the
@@ -517,16 +593,16 @@ following from the PyMAPDL source directory:</p>
 </pre></div>
 </div>
 <p>Next, if running Linux/Mac OS, build the documentation with:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="o">-</span><span class="n">C</span> <span class="n">docs</span> <span class="n">html</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="o">-</span><span class="n">C</span> <span class="n">doc</span> <span class="n">html</span>
 </pre></div>
 </div>
 <p>Otherwise, if running Windows, build the documentation by running:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">docs</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">doc</span>
 <span class="n">make</span><span class="o">.</span><span class="n">bat</span> <span class="n">html</span>
 </pre></div>
 </div>
 <p>Upon the successful build of the documentation, you can open the local
-build by opening <code class="docutils literal notranslate"><span class="pre">index.html</span></code> at <code class="docutils literal notranslate"><span class="pre">docs/build/html/</span></code> with
+build by opening <code class="docutils literal notranslate"><span class="pre">index.html</span></code> at <code class="docutils literal notranslate"><span class="pre">doc/build/html/</span></code> with
 your browser.</p>
 </div>
 </div>
@@ -549,7 +625,7 @@ features without sacrificing stability, and closely follows the
 <a class="reference external" href="https://trunkbaseddevelopment.com/">Trunk Based Development</a> approach.</p>
 <p>The main features of our branching model are:</p>
 <ul class="simple">
-<li><p>The <cite>master</cite> branch is the main development branch.  All features,
+<li><p>The <cite>main</cite> branch is the main development branch.  All features,
 patches, and other branches should be merged here.  While all PRs
 should pass all applicable CI checks, this branch may be
 functionally unstable as changes might have introduced unintended
@@ -557,7 +633,7 @@ side-effects or bugs that were not caught through unit testing.</p></li>
 <li><p>There will be one or many <cite>release/</cite> branches based on minor
 releases (for example <cite>release/0.2</cite>) which contain a stable version
 of the code base that is also reflected on PyPi/.  Hotfixes from
-<cite>fix/</cite> branches should be merged both to master and to these
+<cite>fix/</cite> branches should be merged both to main and to these
 branches.  When necessary to create a new patch release these
 release branches will have their <cite>__version__.py</cite> updated and be
 tagged with a patched semantic version (e.g. <cite>0.2.1</cite>).  This
@@ -565,11 +641,11 @@ triggers CI to push to PyPi, and allow us to rapidly push hotfixes
 for past versions of <code class="docutils literal notranslate"><span class="pre">ansys.mapdl.core</span></code> without having to worry about
 untested features.</p></li>
 <li><p>When a minor release candidate is ready, a new <cite>release</cite> branch will
-be created from <cite>master</cite> with the next incremented minor version
+be created from <cite>main</cite> with the next incremented minor version
 (e.g. <cite>release/0.2</cite>), which will be thoroughly tested.  When deemed
 stable, the release branch will be tagged with the version (<cite>0.2.0</cite>
-in this case), and if necessary merged with master if any changes
-were pushed to it.  Feature development then continues on <cite>master</cite>
+in this case), and if necessary merged with main if any changes
+were pushed to it.  Feature development then continues on <cite>main</cite>
 and any hotfixes will now be merged with this release.  Older
 release branches should not be deleted so they can be patched as
 needed.</p></li>
@@ -581,7 +657,7 @@ needed.</p></li>
 functionality and stability of <code class="docutils literal notranslate"><span class="pre">PyMAPDL</span></code>.  Before a minor release is
 created the following will occur:</p>
 <ol class="arabic simple">
-<li><p>Create a new branch from the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch with name
+<li><p>Create a new branch from the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch with name
 <code class="docutils literal notranslate"><span class="pre">release/MAJOR.MINOR</span></code> (e.g. <cite>release/0.2</cite>).</p></li>
 </ol>
 <p>2. Locally run all tests as outlined in the <a class="reference external" href="#testing">Testing Section</a>
@@ -590,7 +666,7 @@ and ensure all are passing.</p>
 no links are outdated. Be sure to run <cite>make clean</cite> to ensure no results are
 cached.</p>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">docs</span>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">doc</span>
 <span class="n">make</span> <span class="n">clean</span>  <span class="c1"># deletes the sphinx-gallery cache</span>
 <span class="n">make</span> <span class="n">html</span> <span class="o">-</span><span class="n">b</span> <span class="n">linkcheck</span>
 </pre></div>
@@ -601,7 +677,7 @@ cached.</p>
 the examples gallery for any obvious issues.</p></li>
 <li><p>Update the version numbers in <code class="docutils literal notranslate"><span class="pre">ansys/mapdl/reader/_version.py</span></code> and commit it.
 Push the branch to GitHub and create a new PR for this release that
-merges it to master.  Development to master should be limited at
+merges it to main.  Development to main should be limited at
 this point while effort is focused on the release.</p></li>
 <li><p>It is now the responsibility of the PyMAPDL community and
 developers to functionally test the new release.  It is best to
@@ -609,7 +685,7 @@ locally install this branch and use it in production.  Any bugs
 identified should have their hotfixes pushed to this release
 branch.</p></li>
 <li><p>When the branch is deemed as stable for public release, the PR will
-be merged to master and the <cite>master</cite> branch will be tagged with a
+be merged to main and the <cite>main</cite> branch will be tagged with a
 <cite>MAJOR.MINOR.0</cite> release.  The release branch will not be deleted.
 Tag the release with:</p>
 <blockquote>
@@ -621,7 +697,7 @@ Tag the release with:</p>
 </li>
 <li><p>Create a list of all changes for the release. It is often helpful
 to leverage <a class="reference external" href="https://github.com/pyansys/pymapdl/compare">GitHub’s compare feature</a> to see the
-differences from the last tag and the <cite>master</cite> branch.  Be sure to
+differences from the last tag and the <cite>main</cite> branch.  Be sure to
 acknowledge new contributors by their GitHub username and place
 mentions where appropriate if a specific contributor is to thank
 for a new feature.</p></li>
@@ -642,8 +718,8 @@ This will generally be the latest release branch
 release branch.  This gives the PyMAPDL developers and community
 a chance to validate and approve the bugfix release.  Any
 additional hotfixes should be outside of this PR.</p></li>
-<li><p>When approved, merge with the release branch, but not <cite>master</cite> as
-there is no reason to increment the version of the <cite>master</cite> branch.
+<li><p>When approved, merge with the release branch, but not <cite>main</cite> as
+there is no reason to increment the version of the <cite>main</cite> branch.
 Then create a tag from the release branch with the applicable
 version number (see above for the correct steps).</p></li>
 <li><p>If deemed necessary a release notes page.</p></li>
@@ -655,12 +731,6 @@ version number (see above for the correct steps).</p></li>
 
               </div>
               
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="examples/03-tips-n-tricks/01-smoothing-element-size-transitions.html" title="previous page">MAPDL Element Size Transition Example</a>
-
-              </div>
               
           </main>
           
@@ -681,7 +751,7 @@ version number (see above for the correct steps).</p></li>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.1.<br/>
 </p>
     </div>
     

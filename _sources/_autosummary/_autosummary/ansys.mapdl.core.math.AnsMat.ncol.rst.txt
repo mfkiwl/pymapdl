@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.AnsMat.ncol
-=================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. autoproperty:: AnsMat.ncol

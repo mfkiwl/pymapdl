@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vput
-===========================
+﻿vput
+====
 
 .. currentmodule:: ansys.mapdl.core
 

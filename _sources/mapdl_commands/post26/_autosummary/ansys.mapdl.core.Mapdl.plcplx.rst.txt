@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.plcplx
-=============================
+﻿plcplx
+======
 
 .. currentmodule:: ansys.mapdl.core
 

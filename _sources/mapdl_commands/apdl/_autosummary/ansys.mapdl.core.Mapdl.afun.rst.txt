@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.afun
-===========================
+﻿afun
+====
 
 .. currentmodule:: ansys.mapdl.core
 

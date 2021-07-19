@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.fitem
-============================
+﻿fitem
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

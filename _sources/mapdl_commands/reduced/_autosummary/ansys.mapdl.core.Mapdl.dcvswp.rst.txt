@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dcvswp
-=============================
+﻿dcvswp
+======
 
 .. currentmodule:: ansys.mapdl.core
 

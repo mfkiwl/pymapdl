@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.enorm
-============================
+﻿enorm
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

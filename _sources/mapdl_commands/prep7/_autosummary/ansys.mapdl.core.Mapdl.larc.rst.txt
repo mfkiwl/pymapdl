@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.larc
-===========================
+﻿larc
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.grtyp
-============================
+﻿grtyp
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

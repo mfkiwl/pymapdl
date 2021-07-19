@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.prpath
-=============================
+﻿prpath
+======
 
 .. currentmodule:: ansys.mapdl.core
 

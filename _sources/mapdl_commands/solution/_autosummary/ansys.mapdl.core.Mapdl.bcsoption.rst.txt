@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.bcsoption
-================================
+﻿bcsoption
+=========
 
 .. currentmodule:: ansys.mapdl.core
 

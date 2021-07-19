@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ceintf
-=============================
+﻿ceintf
+======
 
 .. currentmodule:: ansys.mapdl.core
 

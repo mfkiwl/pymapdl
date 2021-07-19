@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.aptn
-===========================
+﻿aptn
+====
 
 .. currentmodule:: ansys.mapdl.core
 

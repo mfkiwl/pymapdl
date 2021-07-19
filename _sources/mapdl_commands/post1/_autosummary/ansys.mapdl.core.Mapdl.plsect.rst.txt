@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.plsect
-=============================
+﻿plsect
+======
 
 .. currentmodule:: ansys.mapdl.core
 

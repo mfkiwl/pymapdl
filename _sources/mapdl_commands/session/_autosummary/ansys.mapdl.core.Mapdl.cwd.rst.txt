@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cwd
-==========================
+﻿cwd
+===
 
 .. currentmodule:: ansys.mapdl.core
 

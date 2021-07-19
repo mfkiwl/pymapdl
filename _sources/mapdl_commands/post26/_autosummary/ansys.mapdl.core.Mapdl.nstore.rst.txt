@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.nstore
-=============================
+﻿nstore
+======
 
 .. currentmodule:: ansys.mapdl.core
 

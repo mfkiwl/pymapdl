@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.l2tan
-============================
+﻿l2tan
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ngen
-===========================
+﻿ngen
+====
 
 .. currentmodule:: ansys.mapdl.core
 

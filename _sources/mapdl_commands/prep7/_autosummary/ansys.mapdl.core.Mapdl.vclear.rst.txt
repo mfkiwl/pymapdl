@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vclear
-=============================
+﻿vclear
+======
 
 .. currentmodule:: ansys.mapdl.core
 

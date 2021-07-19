@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vinv
-===========================
+﻿vinv
+====
 
 .. currentmodule:: ansys.mapdl.core
 

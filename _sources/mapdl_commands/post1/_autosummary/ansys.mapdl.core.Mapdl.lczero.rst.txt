@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.lczero
-=============================
+﻿lczero
+======
 
 .. currentmodule:: ansys.mapdl.core
 

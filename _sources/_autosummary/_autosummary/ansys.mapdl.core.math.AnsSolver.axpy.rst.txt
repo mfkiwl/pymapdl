@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.AnsSolver.axpy
-====================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. automethod:: AnsSolver.axpy

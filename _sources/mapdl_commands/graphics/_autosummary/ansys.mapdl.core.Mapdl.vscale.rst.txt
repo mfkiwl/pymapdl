@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vscale
-=============================
+﻿vscale
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vsweep
-=============================
+﻿vsweep
+======
 
 .. currentmodule:: ansys.mapdl.core
 

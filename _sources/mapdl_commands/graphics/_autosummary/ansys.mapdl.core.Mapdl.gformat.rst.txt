@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.gformat
-==============================
+﻿gformat
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,6 +1,0 @@
-ansys.mapdl.core.parameters.Parameters.\_\_init\_\_
-===================================================
-
-.. currentmodule:: ansys.mapdl.core.parameters
-
-.. automethod:: Parameters.__init__

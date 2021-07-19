@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.AnsVec.copy
-=================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. automethod:: AnsVec.copy

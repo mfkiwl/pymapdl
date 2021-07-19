@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.MapdlMath.status
-======================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. automethod:: MapdlMath.status

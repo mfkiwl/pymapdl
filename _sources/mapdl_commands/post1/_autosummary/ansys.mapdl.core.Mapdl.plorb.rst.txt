@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.plorb
-============================
+﻿plorb
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

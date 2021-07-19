@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.edadapt
-==============================
+﻿edadapt
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

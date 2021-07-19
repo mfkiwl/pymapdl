@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sfscale
-==============================
+﻿sfscale
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

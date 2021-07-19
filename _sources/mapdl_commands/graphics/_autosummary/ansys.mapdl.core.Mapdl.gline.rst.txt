@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.gline
-============================
+﻿gline
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

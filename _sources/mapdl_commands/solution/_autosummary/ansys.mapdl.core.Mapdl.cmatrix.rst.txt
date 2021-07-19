@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cmatrix
-==============================
+﻿cmatrix
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

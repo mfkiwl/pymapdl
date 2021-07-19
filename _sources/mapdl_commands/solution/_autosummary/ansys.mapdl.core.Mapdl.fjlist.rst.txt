@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.fjlist
-=============================
+﻿fjlist
+======
 
 .. currentmodule:: ansys.mapdl.core
 

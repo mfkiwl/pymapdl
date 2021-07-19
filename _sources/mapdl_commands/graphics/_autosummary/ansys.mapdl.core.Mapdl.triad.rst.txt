@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.triad
-============================
+﻿triad
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

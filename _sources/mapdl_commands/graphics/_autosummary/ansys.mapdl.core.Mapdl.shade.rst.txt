@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.shade
-============================
+﻿shade
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

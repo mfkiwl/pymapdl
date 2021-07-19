@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.fssect
-=============================
+﻿fssect
+======
 
 .. currentmodule:: ansys.mapdl.core
 

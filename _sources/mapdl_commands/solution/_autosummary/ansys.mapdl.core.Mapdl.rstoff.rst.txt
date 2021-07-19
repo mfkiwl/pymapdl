@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rstoff
-=============================
+﻿rstoff
+======
 
 .. currentmodule:: ansys.mapdl.core
 

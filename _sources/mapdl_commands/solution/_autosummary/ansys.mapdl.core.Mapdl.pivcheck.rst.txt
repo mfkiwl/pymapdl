@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.pivcheck
-===============================
+﻿pivcheck
+========
 
 .. currentmodule:: ansys.mapdl.core
 

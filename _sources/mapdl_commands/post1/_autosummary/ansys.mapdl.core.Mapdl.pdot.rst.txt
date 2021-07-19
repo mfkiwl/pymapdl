@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.pdot
-===========================
+﻿pdot
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mfdtime
-==============================
+﻿mfdtime
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

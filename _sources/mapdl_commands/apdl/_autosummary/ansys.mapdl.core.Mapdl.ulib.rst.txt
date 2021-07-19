@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ulib
-===========================
+﻿ulib
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,6 +1,0 @@
-﻿ansys.mapdl.core.launch\_mapdl
-==============================
-
-.. currentmodule:: ansys.mapdl.core
-
-.. autofunction:: launch_mapdl

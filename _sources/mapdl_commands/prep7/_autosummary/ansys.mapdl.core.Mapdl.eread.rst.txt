@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.eread
-============================
+﻿eread
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

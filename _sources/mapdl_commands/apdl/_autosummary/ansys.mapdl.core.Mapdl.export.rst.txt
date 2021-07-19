@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.export
-=============================
+﻿export
+======
 
 .. currentmodule:: ansys.mapdl.core
 

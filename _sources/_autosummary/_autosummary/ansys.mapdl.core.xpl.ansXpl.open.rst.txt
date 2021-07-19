@@ -1,6 +1,0 @@
-ansys.mapdl.core.xpl.ansXpl.open
-================================
-
-.. currentmodule:: ansys.mapdl.core.xpl
-
-.. automethod:: ansXpl.open

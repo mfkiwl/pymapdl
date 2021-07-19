@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mopt
-===========================
+﻿mopt
+====
 
 .. currentmodule:: ansys.mapdl.core
 

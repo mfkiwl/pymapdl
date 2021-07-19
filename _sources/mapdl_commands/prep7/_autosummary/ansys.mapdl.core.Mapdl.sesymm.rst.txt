@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sesymm
-=============================
+﻿sesymm
+======
 
 .. currentmodule:: ansys.mapdl.core
 

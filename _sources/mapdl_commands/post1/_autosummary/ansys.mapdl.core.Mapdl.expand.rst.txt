@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.expand
-=============================
+﻿expand
+======
 
 .. currentmodule:: ansys.mapdl.core
 

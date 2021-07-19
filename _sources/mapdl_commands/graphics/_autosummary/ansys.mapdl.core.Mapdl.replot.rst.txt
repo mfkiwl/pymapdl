@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.replot
-=============================
+﻿replot
+======
 
 .. currentmodule:: ansys.mapdl.core
 

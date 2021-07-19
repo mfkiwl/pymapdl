@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.polygon
-==============================
+﻿polygon
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

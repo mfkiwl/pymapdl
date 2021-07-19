@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cat5in
-=============================
+﻿cat5in
+======
 
 .. currentmodule:: ansys.mapdl.core
 

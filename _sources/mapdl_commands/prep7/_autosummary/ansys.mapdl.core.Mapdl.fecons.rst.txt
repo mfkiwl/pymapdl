@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.fecons
-=============================
+﻿fecons
+======
 
 .. currentmodule:: ansys.mapdl.core
 

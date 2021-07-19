@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.spline
-=============================
+﻿spline
+======
 
 .. currentmodule:: ansys.mapdl.core
 

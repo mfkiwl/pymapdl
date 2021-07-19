@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.edint
-============================
+﻿edint
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

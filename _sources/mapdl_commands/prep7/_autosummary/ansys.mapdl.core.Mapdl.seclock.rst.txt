@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.seclock
-==============================
+﻿seclock
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

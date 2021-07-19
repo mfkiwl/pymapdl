@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.free
-===========================
+﻿free
+====
 
 .. currentmodule:: ansys.mapdl.core
 

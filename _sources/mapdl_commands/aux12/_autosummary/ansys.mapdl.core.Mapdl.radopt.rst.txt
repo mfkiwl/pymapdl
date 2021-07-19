@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.radopt
-=============================
+﻿radopt
+======
 
 .. currentmodule:: ansys.mapdl.core
 

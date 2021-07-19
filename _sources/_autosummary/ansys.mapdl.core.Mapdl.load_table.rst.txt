@@ -1,6 +1,0 @@
-﻿ansys.mapdl.core.Mapdl.load\_table
-==================================
-
-.. currentmodule:: ansys.mapdl.core
-
-.. automethod:: Mapdl.load_table

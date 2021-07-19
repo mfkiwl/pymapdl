@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dump
-===========================
+﻿dump
+====
 
 .. currentmodule:: ansys.mapdl.core
 

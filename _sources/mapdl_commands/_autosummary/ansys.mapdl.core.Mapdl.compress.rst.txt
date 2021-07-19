@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.compress
-===============================
+﻿compress
+========
 
 .. currentmodule:: ansys.mapdl.core
 

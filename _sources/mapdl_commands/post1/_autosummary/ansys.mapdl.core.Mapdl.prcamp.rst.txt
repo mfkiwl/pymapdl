@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.prcamp
-=============================
+﻿prcamp
+======
 
 .. currentmodule:: ansys.mapdl.core
 

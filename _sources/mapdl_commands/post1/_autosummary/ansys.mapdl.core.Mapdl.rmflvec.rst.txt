@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rmflvec
-==============================
+﻿rmflvec
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -54,7 +54,7 @@ Loading:
 
 Analytical Equations:
  - :math:`P = R_1 + R_2` where :math:`P` is load.
- - :math:`rac{R_2}{R_1} = rac{a}{b}`
+ - :math:`\frac{R_2}{R_1} = \frac{a}{b}`
    Where :math:`a` and :math:`b` are the ratios of distances between
    the load and the wall.
 
@@ -306,7 +306,7 @@ Hint: Solve for each reaction force independently.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.172 seconds)
+   **Total running time of the script:** ( 0 minutes  0.140 seconds)
 
 
 .. _sphx_glr_download_examples_00-mapdl-examples_statically_indeterminate_reaction_force_analysis.py:

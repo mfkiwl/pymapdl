@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cyl4
-===========================
+﻿cyl4
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.smrtsize
-===============================
+﻿smrtsize
+========
 
 .. currentmodule:: ansys.mapdl.core
 

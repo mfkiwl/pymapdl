@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.deact
-============================
+﻿deact
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

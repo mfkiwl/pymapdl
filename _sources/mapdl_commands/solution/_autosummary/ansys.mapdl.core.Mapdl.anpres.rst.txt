@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.anpres
-=============================
+﻿anpres
+======
 
 .. currentmodule:: ansys.mapdl.core
 

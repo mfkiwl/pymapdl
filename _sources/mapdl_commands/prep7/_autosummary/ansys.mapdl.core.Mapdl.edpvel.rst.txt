@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.edpvel
-=============================
+﻿edpvel
+======
 
 .. currentmodule:: ansys.mapdl.core
 

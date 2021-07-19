@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.partsel
-==============================
+﻿partsel
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

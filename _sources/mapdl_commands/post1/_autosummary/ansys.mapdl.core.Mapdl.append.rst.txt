@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.append
-=============================
+﻿append
+======
 
 .. currentmodule:: ansys.mapdl.core
 

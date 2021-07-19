@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cycfreq
-==============================
+﻿cycfreq
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

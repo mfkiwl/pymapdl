@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.layerp26
-===============================
+﻿layerp26
+========
 
 .. currentmodule:: ansys.mapdl.core
 

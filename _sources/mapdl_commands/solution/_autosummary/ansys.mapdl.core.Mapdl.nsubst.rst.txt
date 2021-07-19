@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.nsubst
-=============================
+﻿nsubst
+======
 
 .. currentmodule:: ansys.mapdl.core
 

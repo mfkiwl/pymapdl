@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mpdele
-=============================
+﻿mpdele
+======
 
 .. currentmodule:: ansys.mapdl.core
 

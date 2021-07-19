@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dkdele
-=============================
+﻿dkdele
+======
 
 .. currentmodule:: ansys.mapdl.core
 

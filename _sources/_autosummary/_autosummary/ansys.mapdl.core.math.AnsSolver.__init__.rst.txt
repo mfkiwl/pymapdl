@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.AnsSolver.\_\_init\_\_
-============================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. automethod:: AnsSolver.__init__

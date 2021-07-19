@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.bool
-===========================
+﻿bool
+====
 
 .. currentmodule:: ansys.mapdl.core
 

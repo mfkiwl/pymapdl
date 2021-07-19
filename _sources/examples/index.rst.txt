@@ -596,6 +596,48 @@ These examples demonstrate miscellaneous tips and tricks for using PyMAPDL.
    :hidden:
 
    /examples/03-tips-n-tricks/01-smoothing-element-size-transitions
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Inline functions like UX have been implemented in PyMAPDL as methods on the mapdl.inline_functi...">
+
+.. only:: html
+
+ .. figure:: /examples/03-tips-n-tricks/images/thumb/sphx_glr_03-using_inline_functions_and_Query_thumb.png
+     :alt: Using Inline Functions (Query)
+
+     :ref:`sphx_glr_examples_03-tips-n-tricks_03-using_inline_functions_and_Query.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/03-tips-n-tricks/03-using_inline_functions_and_Query
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="Not all element types have rotational degrees of freedom, but generally, &quot;shell&quot; ones do. In th...">
+
+.. only:: html
+
+ .. figure:: /examples/03-tips-n-tricks/images/thumb/sphx_glr_04-rotational-displacement_thumb.png
+     :alt: Generating and Extracting Rotational Displacement
+
+     :ref:`sphx_glr_examples_03-tips-n-tricks_04-rotational-displacement.py`
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/03-tips-n-tricks/04-rotational-displacement
 .. raw:: html
 
     <div class="sphx-glr-clear"></div>

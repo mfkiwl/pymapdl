@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.lcsel
-============================
+﻿lcsel
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

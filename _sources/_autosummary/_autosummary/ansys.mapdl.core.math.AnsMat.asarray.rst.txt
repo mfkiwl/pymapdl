@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.AnsMat.asarray
-====================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. automethod:: AnsMat.asarray

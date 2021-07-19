@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.starvget
-===============================
+﻿starvget
+========
 
 .. currentmodule:: ansys.mapdl.core
 

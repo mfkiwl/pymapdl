@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.bfalist
-==============================
+﻿bfalist
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

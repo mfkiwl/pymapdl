@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.stitle
-=============================
+﻿stitle
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.prvect
-=============================
+﻿prvect
+======
 
 .. currentmodule:: ansys.mapdl.core
 

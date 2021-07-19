@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dset
-===========================
+﻿dset
+====
 
 .. currentmodule:: ansys.mapdl.core
 

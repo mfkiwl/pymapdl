@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cskp
-===========================
+﻿cskp
+====
 
 .. currentmodule:: ansys.mapdl.core
 

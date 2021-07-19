@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.tbpt
-===========================
+﻿tbpt
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.prim
-===========================
+﻿prim
+====
 
 .. currentmodule:: ansys.mapdl.core
 

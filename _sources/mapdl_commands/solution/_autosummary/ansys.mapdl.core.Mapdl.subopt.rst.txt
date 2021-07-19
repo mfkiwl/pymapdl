@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.subopt
-=============================
+﻿subopt
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.neqit
-============================
+﻿neqit
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

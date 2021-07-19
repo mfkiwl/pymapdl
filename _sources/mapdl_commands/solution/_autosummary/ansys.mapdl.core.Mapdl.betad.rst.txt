@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.betad
-============================
+﻿betad
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

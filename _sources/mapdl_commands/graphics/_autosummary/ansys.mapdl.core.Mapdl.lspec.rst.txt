@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.lspec
-============================
+﻿lspec
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

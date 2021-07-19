@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.header
-=============================
+﻿header
+======
 
 .. currentmodule:: ansys.mapdl.core
 

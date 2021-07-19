@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mfci
-===========================
+﻿mfci
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.spunit
-=============================
+﻿spunit
+======
 
 .. currentmodule:: ansys.mapdl.core
 

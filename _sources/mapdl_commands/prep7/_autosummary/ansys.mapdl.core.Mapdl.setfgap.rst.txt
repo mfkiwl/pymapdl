@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.setfgap
-==============================
+﻿setfgap
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

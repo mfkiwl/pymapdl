@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.check
-============================
+﻿check
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

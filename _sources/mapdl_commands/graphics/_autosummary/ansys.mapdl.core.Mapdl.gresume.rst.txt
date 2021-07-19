@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.gresume
-==============================
+﻿gresume
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

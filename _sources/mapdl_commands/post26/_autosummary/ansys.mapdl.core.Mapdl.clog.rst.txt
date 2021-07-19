@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.clog
-===========================
+﻿clog
+====
 
 .. currentmodule:: ansys.mapdl.core
 

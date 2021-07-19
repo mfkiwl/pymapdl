@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ealive
-=============================
+﻿ealive
+======
 
 .. currentmodule:: ansys.mapdl.core
 

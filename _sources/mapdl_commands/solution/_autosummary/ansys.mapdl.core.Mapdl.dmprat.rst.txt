@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dmprat
-=============================
+﻿dmprat
+======
 
 .. currentmodule:: ansys.mapdl.core
 

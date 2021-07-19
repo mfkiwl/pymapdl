@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cint
-===========================
+﻿cint
+====
 
 .. currentmodule:: ansys.mapdl.core
 

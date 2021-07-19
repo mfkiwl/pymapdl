@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.igesout
-==============================
+﻿igesout
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

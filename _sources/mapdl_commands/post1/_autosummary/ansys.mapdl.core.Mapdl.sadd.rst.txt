@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sadd
-===========================
+﻿sadd
+====
 
 .. currentmodule:: ansys.mapdl.core
 

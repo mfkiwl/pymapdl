@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vimp
-===========================
+﻿vimp
+====
 
 .. currentmodule:: ansys.mapdl.core
 

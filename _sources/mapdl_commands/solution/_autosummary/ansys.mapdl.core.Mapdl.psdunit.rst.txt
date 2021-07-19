@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.psdunit
-==============================
+﻿psdunit
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

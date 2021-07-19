@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.crplim
-=============================
+﻿crplim
+======
 
 .. currentmodule:: ansys.mapdl.core
 

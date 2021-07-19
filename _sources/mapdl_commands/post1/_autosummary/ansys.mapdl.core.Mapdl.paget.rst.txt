@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.paget
-============================
+﻿paget
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

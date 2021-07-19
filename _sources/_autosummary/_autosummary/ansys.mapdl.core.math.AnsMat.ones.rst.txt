@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.AnsMat.ones
-=================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. automethod:: AnsMat.ones

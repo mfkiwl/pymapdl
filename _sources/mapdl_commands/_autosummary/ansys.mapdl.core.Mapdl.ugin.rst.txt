@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ugin
-===========================
+﻿ugin
+====
 
 .. currentmodule:: ansys.mapdl.core
 

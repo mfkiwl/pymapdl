@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rstmac
-=============================
+﻿rstmac
+======
 
 .. currentmodule:: ansys.mapdl.core
 

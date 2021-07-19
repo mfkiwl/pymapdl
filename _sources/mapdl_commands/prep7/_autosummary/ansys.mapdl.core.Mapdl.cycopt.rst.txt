@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cycopt
-=============================
+﻿cycopt
+======
 
 .. currentmodule:: ansys.mapdl.core
 

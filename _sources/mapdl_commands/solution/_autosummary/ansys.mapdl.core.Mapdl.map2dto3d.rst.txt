@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.map2dto3d
-================================
+﻿map2dto3d
+=========
 
 .. currentmodule:: ansys.mapdl.core
 

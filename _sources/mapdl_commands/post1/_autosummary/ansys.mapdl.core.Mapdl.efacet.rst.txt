@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.efacet
-=============================
+﻿efacet
+======
 
 .. currentmodule:: ansys.mapdl.core
 

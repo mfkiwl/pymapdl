@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.prnear
-=============================
+﻿prnear
+======
 
 .. currentmodule:: ansys.mapdl.core
 

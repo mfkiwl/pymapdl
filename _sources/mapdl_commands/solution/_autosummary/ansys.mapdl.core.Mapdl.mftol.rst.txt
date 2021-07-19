@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mftol
-============================
+﻿mftol
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

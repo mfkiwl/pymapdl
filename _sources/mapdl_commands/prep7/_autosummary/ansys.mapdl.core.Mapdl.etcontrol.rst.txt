@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.etcontrol
-================================
+﻿etcontrol
+=========
 
 .. currentmodule:: ansys.mapdl.core
 

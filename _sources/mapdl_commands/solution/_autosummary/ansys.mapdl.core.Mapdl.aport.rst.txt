@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.aport
-============================
+﻿aport
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sed
-==========================
+﻿sed
+===
 
 .. currentmodule:: ansys.mapdl.core
 

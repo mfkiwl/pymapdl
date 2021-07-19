@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rigresp
-==============================
+﻿rigresp
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

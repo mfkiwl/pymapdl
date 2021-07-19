@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ceqn
-===========================
+﻿ceqn
+====
 
 .. currentmodule:: ansys.mapdl.core
 

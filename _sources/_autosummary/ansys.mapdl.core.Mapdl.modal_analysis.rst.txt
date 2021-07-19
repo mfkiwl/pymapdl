@@ -1,6 +1,0 @@
-﻿ansys.mapdl.core.Mapdl.modal\_analysis
-======================================
-
-.. currentmodule:: ansys.mapdl.core
-
-.. automethod:: Mapdl.modal_analysis

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rmcap
-============================
+﻿rmcap
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

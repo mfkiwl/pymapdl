@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.lssolve
-==============================
+﻿lssolve
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

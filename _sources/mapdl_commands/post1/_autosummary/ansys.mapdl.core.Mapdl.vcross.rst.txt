@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vcross
-=============================
+﻿vcross
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.eddc
-===========================
+﻿eddc
+====
 
 .. currentmodule:: ansys.mapdl.core
 

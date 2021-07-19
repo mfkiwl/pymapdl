@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.secmodif
-===============================
+﻿secmodif
+========
 
 .. currentmodule:: ansys.mapdl.core
 

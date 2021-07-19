@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.exunit
-=============================
+﻿exunit
+======
 
 .. currentmodule:: ansys.mapdl.core
 

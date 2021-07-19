@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.endrelease
-=================================
+﻿endrelease
+==========
 
 .. currentmodule:: ansys.mapdl.core
 

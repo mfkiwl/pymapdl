@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.conjug
-=============================
+﻿conjug
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dmpstr
-=============================
+﻿dmpstr
+======
 
 .. currentmodule:: ansys.mapdl.core
 

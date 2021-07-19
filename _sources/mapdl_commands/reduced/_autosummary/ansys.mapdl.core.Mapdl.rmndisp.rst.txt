@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rmndisp
-==============================
+﻿rmndisp
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

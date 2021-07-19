@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mpdata
-=============================
+﻿mpdata
+======
 
 .. currentmodule:: ansys.mapdl.core
 

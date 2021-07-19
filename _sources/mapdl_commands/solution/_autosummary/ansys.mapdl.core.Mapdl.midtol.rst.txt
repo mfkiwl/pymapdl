@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.midtol
-=============================
+﻿midtol
+======
 
 .. currentmodule:: ansys.mapdl.core
 

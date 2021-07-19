@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.seopt
-============================
+﻿seopt
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

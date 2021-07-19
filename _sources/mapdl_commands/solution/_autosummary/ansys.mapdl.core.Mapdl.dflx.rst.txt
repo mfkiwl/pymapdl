@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dflx
-===========================
+﻿dflx
+====
 
 .. currentmodule:: ansys.mapdl.core
 

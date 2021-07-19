@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.pwedge
-=============================
+﻿pwedge
+======
 
 .. currentmodule:: ansys.mapdl.core
 

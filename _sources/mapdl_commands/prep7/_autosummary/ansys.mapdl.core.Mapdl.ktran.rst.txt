@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ktran
-============================
+﻿ktran
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

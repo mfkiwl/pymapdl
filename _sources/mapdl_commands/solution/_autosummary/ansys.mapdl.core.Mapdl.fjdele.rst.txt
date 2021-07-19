@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.fjdele
-=============================
+﻿fjdele
+======
 
 .. currentmodule:: ansys.mapdl.core
 

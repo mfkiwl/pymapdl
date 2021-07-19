@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.layplot
-==============================
+﻿layplot
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

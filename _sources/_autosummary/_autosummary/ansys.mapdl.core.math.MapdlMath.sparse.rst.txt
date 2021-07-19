@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.MapdlMath.sparse
-======================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. automethod:: MapdlMath.sparse

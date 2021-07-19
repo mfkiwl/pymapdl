@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ddoption
-===============================
+﻿ddoption
+========
 
 .. currentmodule:: ansys.mapdl.core
 

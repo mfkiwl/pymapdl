@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.con4
-===========================
+﻿con4
+====
 
 .. currentmodule:: ansys.mapdl.core
 

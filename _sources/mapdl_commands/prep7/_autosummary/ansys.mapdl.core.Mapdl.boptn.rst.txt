@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.boptn
-============================
+﻿boptn
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

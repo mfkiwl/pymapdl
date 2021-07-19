@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.secfunction
-==================================
+﻿secfunction
+===========
 
 .. currentmodule:: ansys.mapdl.core
 

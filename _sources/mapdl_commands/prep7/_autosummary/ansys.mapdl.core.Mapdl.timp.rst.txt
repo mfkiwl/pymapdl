@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.timp
-===========================
+﻿timp
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.tbeo
-===========================
+﻿tbeo
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.gcolumn
-==============================
+﻿gcolumn
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

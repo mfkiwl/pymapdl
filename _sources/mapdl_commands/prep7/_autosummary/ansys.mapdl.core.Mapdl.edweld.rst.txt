@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.edweld
-=============================
+﻿edweld
+======
 
 .. currentmodule:: ansys.mapdl.core
 

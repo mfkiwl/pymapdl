@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.curr2d
-=============================
+﻿curr2d
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.spval
-============================
+﻿spval
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

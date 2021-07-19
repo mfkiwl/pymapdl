@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rbe3
-===========================
+﻿rbe3
+====
 
 .. currentmodule:: ansys.mapdl.core
 

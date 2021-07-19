@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.oczone
-=============================
+﻿oczone
+======
 
 .. currentmodule:: ansys.mapdl.core
 

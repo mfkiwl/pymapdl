@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cmgrp
-============================
+﻿cmgrp
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

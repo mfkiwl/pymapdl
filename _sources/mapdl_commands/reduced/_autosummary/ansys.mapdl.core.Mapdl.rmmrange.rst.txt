@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rmmrange
-===============================
+﻿rmmrange
+========
 
 .. currentmodule:: ansys.mapdl.core
 

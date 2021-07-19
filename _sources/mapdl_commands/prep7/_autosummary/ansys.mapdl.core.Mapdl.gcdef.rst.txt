@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.gcdef
-============================
+﻿gcdef
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

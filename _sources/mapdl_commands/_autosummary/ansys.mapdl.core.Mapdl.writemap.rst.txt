@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.writemap
-===============================
+﻿writemap
+========
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.nlgeom
-=============================
+﻿nlgeom
+======
 
 .. currentmodule:: ansys.mapdl.core
 

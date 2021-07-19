@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rmsave
-=============================
+﻿rmsave
+======
 
 .. currentmodule:: ansys.mapdl.core
 

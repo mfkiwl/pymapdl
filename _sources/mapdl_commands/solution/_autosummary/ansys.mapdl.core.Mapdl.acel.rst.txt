@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.acel
-===========================
+﻿acel
+====
 
 .. currentmodule:: ansys.mapdl.core
 

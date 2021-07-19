@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.proein
-=============================
+﻿proein
+======
 
 .. currentmodule:: ansys.mapdl.core
 

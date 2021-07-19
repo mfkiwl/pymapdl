@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.arctrm
-=============================
+﻿arctrm
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.gcmd
-===========================
+﻿gcmd
+====
 
 .. currentmodule:: ansys.mapdl.core
 

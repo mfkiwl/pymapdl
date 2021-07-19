@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vfopt
-============================
+﻿vfopt
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

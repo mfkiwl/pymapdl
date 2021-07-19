@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.prenergy
-===============================
+﻿prenergy
+========
 
 .. currentmodule:: ansys.mapdl.core
 

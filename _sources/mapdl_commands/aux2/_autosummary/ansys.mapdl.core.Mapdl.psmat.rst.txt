@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.psmat
-============================
+﻿psmat
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

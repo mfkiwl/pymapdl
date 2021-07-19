@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.resvec
-=============================
+﻿resvec
+======
 
 .. currentmodule:: ansys.mapdl.core
 

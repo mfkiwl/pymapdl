@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.meshing
-==============================
+﻿meshing
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.fluxv
-============================
+﻿fluxv
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

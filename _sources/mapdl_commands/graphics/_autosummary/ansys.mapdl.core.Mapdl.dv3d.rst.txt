@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dv3d
-===========================
+﻿dv3d
+====
 
 .. currentmodule:: ansys.mapdl.core
 

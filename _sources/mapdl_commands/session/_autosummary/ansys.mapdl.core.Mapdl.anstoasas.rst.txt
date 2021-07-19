@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.anstoasas
-================================
+﻿anstoasas
+=========
 
 .. currentmodule:: ansys.mapdl.core
 

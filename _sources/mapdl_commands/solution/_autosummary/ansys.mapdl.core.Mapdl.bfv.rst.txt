@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.bfv
-==========================
+﻿bfv
+===
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cisol
-============================
+﻿cisol
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

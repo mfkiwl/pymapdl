@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.filedisp
-===============================
+﻿filedisp
+========
 
 .. currentmodule:: ansys.mapdl.core
 

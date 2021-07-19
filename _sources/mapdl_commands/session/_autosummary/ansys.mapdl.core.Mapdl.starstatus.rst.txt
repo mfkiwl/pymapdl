@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.starstatus
-=================================
+﻿starstatus
+==========
 
 .. currentmodule:: ansys.mapdl.core
 

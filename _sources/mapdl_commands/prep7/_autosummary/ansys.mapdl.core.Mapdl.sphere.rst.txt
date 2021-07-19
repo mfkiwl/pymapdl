@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sphere
-=============================
+﻿sphere
+======
 
 .. currentmodule:: ansys.mapdl.core
 

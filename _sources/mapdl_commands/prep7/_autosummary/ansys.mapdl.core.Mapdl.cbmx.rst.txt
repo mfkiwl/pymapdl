@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cbmx
-===========================
+﻿cbmx
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.toper
-============================
+﻿toper
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

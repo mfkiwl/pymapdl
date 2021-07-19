@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.wsprings
-===============================
+﻿wsprings
+========
 
 .. currentmodule:: ansys.mapdl.core
 

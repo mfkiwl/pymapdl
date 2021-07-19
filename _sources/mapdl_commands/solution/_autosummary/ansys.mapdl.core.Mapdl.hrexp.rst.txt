@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.hrexp
-============================
+﻿hrexp
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

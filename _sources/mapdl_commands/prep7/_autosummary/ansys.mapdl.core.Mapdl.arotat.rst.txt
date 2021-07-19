@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.arotat
-=============================
+﻿arotat
+======
 
 .. currentmodule:: ansys.mapdl.core
 

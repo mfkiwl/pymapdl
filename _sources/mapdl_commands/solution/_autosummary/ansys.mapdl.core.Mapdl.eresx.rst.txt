@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.eresx
-============================
+﻿eresx
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.facet
-============================
+﻿facet
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

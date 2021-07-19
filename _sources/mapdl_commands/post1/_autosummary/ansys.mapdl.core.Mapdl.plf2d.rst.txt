@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.plf2d
-============================
+﻿plf2d
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

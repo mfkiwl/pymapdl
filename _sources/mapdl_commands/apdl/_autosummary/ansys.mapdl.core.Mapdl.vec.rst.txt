@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vec
-==========================
+﻿vec
+===
 
 .. currentmodule:: ansys.mapdl.core
 

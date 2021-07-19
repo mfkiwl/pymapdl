@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dmpoption
-================================
+﻿dmpoption
+=========
 
 .. currentmodule:: ansys.mapdl.core
 

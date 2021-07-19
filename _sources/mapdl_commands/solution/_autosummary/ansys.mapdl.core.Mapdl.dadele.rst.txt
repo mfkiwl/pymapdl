@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dadele
-=============================
+﻿dadele
+======
 
 .. currentmodule:: ansys.mapdl.core
 

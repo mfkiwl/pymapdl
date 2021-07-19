@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ksymm
-============================
+﻿ksymm
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

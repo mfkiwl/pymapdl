@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.hropt
-============================
+﻿hropt
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

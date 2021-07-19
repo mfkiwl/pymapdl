@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.plpath
-=============================
+﻿plpath
+======
 
 .. currentmodule:: ansys.mapdl.core
 

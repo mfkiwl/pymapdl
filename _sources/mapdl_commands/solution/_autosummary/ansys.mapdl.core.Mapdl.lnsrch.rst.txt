@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.lnsrch
-=============================
+﻿lnsrch
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.upgeom
-=============================
+﻿upgeom
+======
 
 .. currentmodule:: ansys.mapdl.core
 

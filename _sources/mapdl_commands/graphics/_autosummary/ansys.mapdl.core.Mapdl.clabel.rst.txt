@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.clabel
-=============================
+﻿clabel
+======
 
 .. currentmodule:: ansys.mapdl.core
 

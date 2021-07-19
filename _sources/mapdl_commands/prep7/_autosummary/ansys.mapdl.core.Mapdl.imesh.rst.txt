@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.imesh
-============================
+﻿imesh
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

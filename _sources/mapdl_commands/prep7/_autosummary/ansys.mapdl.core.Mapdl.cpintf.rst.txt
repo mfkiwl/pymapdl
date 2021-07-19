@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cpintf
-=============================
+﻿cpintf
+======
 
 .. currentmodule:: ansys.mapdl.core
 

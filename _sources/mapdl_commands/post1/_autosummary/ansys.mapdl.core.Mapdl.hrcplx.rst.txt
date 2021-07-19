@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.hrcplx
-=============================
+﻿hrcplx
+======
 
 .. currentmodule:: ansys.mapdl.core
 

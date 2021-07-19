@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cfact
-============================
+﻿cfact
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

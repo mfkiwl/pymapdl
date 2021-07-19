@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.edgcale
-==============================
+﻿edgcale
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

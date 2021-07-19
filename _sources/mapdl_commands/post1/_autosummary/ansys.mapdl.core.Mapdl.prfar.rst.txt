@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.prfar
-============================
+﻿prfar
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

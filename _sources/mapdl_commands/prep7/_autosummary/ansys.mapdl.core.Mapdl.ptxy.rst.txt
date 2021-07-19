@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ptxy
-===========================
+﻿ptxy
+====
 
 .. currentmodule:: ansys.mapdl.core
 

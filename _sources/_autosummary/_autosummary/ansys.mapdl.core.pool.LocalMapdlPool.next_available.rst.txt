@@ -1,6 +1,0 @@
-ansys.mapdl.core.pool.LocalMapdlPool.next\_available
-====================================================
-
-.. currentmodule:: ansys.mapdl.core.pool
-
-.. automethod:: LocalMapdlPool.next_available

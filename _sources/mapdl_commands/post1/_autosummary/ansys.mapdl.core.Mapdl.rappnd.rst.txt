@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rappnd
-=============================
+﻿rappnd
+======
 
 .. currentmodule:: ansys.mapdl.core
 

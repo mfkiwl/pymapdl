@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mfbucket
-===============================
+﻿mfbucket
+========
 
 .. currentmodule:: ansys.mapdl.core
 

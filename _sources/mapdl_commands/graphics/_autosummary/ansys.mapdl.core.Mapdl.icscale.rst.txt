@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.icscale
-==============================
+﻿icscale
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

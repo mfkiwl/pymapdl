@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rigid
-============================
+﻿rigid
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

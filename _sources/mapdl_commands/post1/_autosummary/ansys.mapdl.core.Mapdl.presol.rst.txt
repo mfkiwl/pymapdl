@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.presol
-=============================
+﻿presol
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rate
-===========================
+﻿rate
+====
 
 .. currentmodule:: ansys.mapdl.core
 

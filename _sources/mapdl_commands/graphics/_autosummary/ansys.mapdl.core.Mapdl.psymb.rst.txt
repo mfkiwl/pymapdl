@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.psymb
-============================
+﻿psymb
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

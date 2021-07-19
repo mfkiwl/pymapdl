@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vlscale
-==============================
+﻿vlscale
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

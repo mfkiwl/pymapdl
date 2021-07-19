@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.stef
-===========================
+﻿stef
+====
 
 .. currentmodule:: ansys.mapdl.core
 

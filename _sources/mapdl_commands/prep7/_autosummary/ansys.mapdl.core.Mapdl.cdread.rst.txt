@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cdread
-=============================
+﻿cdread
+======
 
 .. currentmodule:: ansys.mapdl.core
 

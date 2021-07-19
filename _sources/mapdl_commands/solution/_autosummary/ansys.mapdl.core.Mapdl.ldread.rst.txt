@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ldread
-=============================
+﻿ldread
+======
 
 .. currentmodule:: ansys.mapdl.core
 

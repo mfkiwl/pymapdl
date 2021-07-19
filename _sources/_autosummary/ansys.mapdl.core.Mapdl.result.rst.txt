@@ -1,6 +1,0 @@
-﻿ansys.mapdl.core.Mapdl.result
-=============================
-
-.. currentmodule:: ansys.mapdl.core
-
-.. autoproperty:: Mapdl.result

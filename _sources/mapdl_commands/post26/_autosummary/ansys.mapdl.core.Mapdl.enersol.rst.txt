@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.enersol
-==============================
+﻿enersol
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

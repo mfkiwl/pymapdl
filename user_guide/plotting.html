@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Interactive Plotting &#8212; ansys.mapdl.core 0.59.3 documentation</title>
+    <title>Interactive Plotting &#8212; ansys.mapdl.core 0.59.4 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -59,63 +59,87 @@
 
 <div class="container-xl">
 
-    <a class="navbar-brand" href="../index.html">
+  <div id="navbar-start">
     
-      <img src="../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo" />
     
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" >
-        <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
-      </span>
-    </button>
-    
-    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
-      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
-        
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="../getting_started/index.html">Getting Started</a>
-        </li>
-        
-        <li class="nav-item active">
-            <a class="nav-link" href="index.html">User Guide</a>
-        </li>
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="../api.html">API Reference</a>
-        </li>
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="../mapdl_commands/index.html">MAPDL Commands</a>
-        </li>
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="../examples/index.html">Examples</a>
-        </li>
-        
-        <li class="nav-item ">
-            <a class="nav-link" href="../contributing.html">Contributing</a>
-        </li>
-        
-        
-      </ul>
+
+<a class="navbar-brand" href="../index.html">
+  <img src="_static/https://docs.pyansys.com/_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
+</a>
 
 
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" >
+      <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+    </span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
       
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../getting_started/index.html">
+  Getting Started
+ </a>
+</li>
 
-      <ul class="navbar-nav">
-        
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/pyansys/PyMAPDL" target="_blank" rel="noopener">
-              <span><i class="fab fa-github-square" style="font-size:24px"></i></span>
-            </a>
-          </li>
-        
-        
-        
-      </ul>
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../api/index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../mapdl_commands/index.html">
+  MAPDL Commands
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../examples/index.html">
+  Examples
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../contributing.html">
+  Contributing
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
     </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyansys/PyMAPDL" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
 </div>
     </nav>
     
@@ -258,57 +282,62 @@
 <h1>Interactive Plotting<a class="headerlink" href="#interactive-plotting" title="Permalink to this headline">¶</a></h1>
 <p>When generating geometry from scratch within MAPDL, it is often
 necessary to plot the geometry (e.g. keypoints, lines, areas,
-volumes), and <code class="docutils literal notranslate"><span class="pre">PyMAPDL</span></code> supports plotting basic CAD using VTK.  The
-<code class="docutils literal notranslate"><span class="pre">mapdl</span></code> class leverages the existing MAPDL commands (e.g.
-<code class="docutils literal notranslate"><span class="pre">KPLOT</span></code>, <code class="docutils literal notranslate"><span class="pre">LPLOT</span></code>, <code class="docutils literal notranslate"><span class="pre">APLOT</span></code>) and transfers the geometry to Python
+volumes), and PyMAPDL supports plotting basic CAD using VTK.  The
+<a class="reference internal" href="../api/mapdl.html#ansys.mapdl.core.mapdl._MapdlCore" title="ansys.mapdl.core.mapdl._MapdlCore"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mapdl</span></code></a> class leverages the
+existing MAPDL commands (e.g. <a class="reference internal" href="../mapdl_commands/prep7/_autosummary/ansys.mapdl.core.Mapdl.kplot.html#ansys.mapdl.core.Mapdl.kplot" title="ansys.mapdl.core.Mapdl.kplot"><code class="xref py py-func docutils literal notranslate"><span class="pre">Mapdl.kplot()</span></code></a>, <a class="reference internal" href="../mapdl_commands/prep7/_autosummary/ansys.mapdl.core.Mapdl.vplot.html#ansys.mapdl.core.Mapdl.vplot" title="ansys.mapdl.core.Mapdl.vplot"><code class="xref py py-func docutils literal notranslate"><span class="pre">Mapdl.vplot()</span></code></a>, <a class="reference internal" href="../mapdl_commands/prep7/_autosummary/ansys.mapdl.core.Mapdl.eplot.html#ansys.mapdl.core.Mapdl.eplot" title="ansys.mapdl.core.Mapdl.eplot"><code class="xref py py-func docutils literal notranslate"><span class="pre">Mapdl.eplot()</span></code></a>) and transfers the geometry to Python
 to visualize it.  Combined with the MAPDL geometry commands, you can
 generate and visualize geometry from scratch without opening the GUI
-using <code class="docutils literal notranslate"><span class="pre">open_gui</span></code>.</p>
+using <a class="reference internal" href="../api/_autosummary/ansys.mapdl.core.Mapdl.open_gui.html#ansys.mapdl.core.Mapdl.open_gui" title="ansys.mapdl.core.Mapdl.open_gui"><code class="xref py py-func docutils literal notranslate"><span class="pre">open_gui()</span></code></a>.</p>
 <div class="section" id="line-plotting">
 <h2>Line Plotting<a class="headerlink" href="#line-plotting" title="Permalink to this headline">¶</a></h2>
-<p>Plot lines within Python using <code class="docutils literal notranslate"><span class="pre">lplot</span></code>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ansys.mapdl.core</span> <span class="kn">import</span> <span class="n">launch_mapdl</span>
-<span class="n">mapdl</span> <span class="o">=</span> <span class="n">launch_mapdl</span><span class="p">()</span>
+<p>Plot lines within Python using <a class="reference internal" href="../mapdl_commands/prep7/_autosummary/ansys.mapdl.core.Mapdl.lplot.html#ansys.mapdl.core.Mapdl.lplot" title="ansys.mapdl.core.Mapdl.lplot"><code class="xref py py-func docutils literal notranslate"><span class="pre">Mapdl.lplot()</span></code></a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">ansys.mapdl.core</span> <span class="kn">import</span> <span class="n">launch_mapdl</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span> <span class="o">=</span> <span class="n">launch_mapdl</span><span class="p">()</span>
 
-<span class="c1"># create a rectangle with a few holes</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">prep7</span><span class="p">()</span>
-<span class="n">rect_anum</span> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">blc4</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+<span class="go">Create a rectangle with a few holes</span>
 
-<span class="c1"># create several circles in the middle in the rectangle</span>
-<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>
-    <span class="n">mapdl</span><span class="o">.</span><span class="n">cyl4</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.025</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">prep7</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rect_anum</span> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">blc4</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
 
-<span class="c1"># Generate a line plot</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">lplot</span><span class="p">(</span><span class="n">color_lines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cpos</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">)</span>
+<span class="go">Create several circles in the middle in the rectangle</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mi">8</span><span class="p">):</span>
+<span class="gp">... </span>   <span class="n">mapdl</span><span class="o">.</span><span class="n">cyl4</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.025</span><span class="p">)</span>
+
+<span class="go">Generate a line plot</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">lplot</span><span class="p">(</span><span class="n">color_lines</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cpos</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="figure align-default" id="id1">
 <a class="reference internal image-reference" href="../_images/lplot_vtk.png"><img alt="../_images/lplot_vtk.png" src="../_images/lplot_vtk.png" style="width: 400pt;" /></a>
-<p class="caption"><span class="caption-text">Line Plot from MAPDL using <code class="docutils literal notranslate"><span class="pre">PyMAPDL</span></code> and <code class="docutils literal notranslate"><span class="pre">vtk</span></code></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Line Plot from MAPDL using PyMAPDL and <a class="reference external" href="https://docs.pyvista.org/">pyvista</a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="area-and-volume-plotting">
 <h2>Area and Volume Plotting<a class="headerlink" href="#area-and-volume-plotting" title="Permalink to this headline">¶</a></h2>
 <p>More complex geometry can be obtained using boolean operations and can
-be visualized using <code class="docutils literal notranslate"><span class="pre">mapdl.vplot</span></code>.  In this example, we cut the
-initial area with the 8 circles and then extrude it.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plate_holes</span> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">asba</span><span class="p">(</span><span class="n">rect_anum</span><span class="p">,</span> <span class="s1">&#39;all&#39;</span><span class="p">)</span>
+be visualized using <a class="reference internal" href="../mapdl_commands/prep7/_autosummary/ansys.mapdl.core.Mapdl.vplot.html#ansys.mapdl.core.Mapdl.vplot" title="ansys.mapdl.core.Mapdl.vplot"><code class="xref py py-func docutils literal notranslate"><span class="pre">Mapdl.vplot()</span></code></a>.  In this example, we cut the initial
+area with the 8 circles and then extrude it.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">plate_holes</span> <span class="o">=</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">asba</span><span class="p">(</span><span class="n">rect_anum</span><span class="p">,</span> <span class="s1">&#39;all&#39;</span><span class="p">)</span>
 
-<span class="c1"># extrude this area</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">vext</span><span class="p">(</span><span class="n">plate_holes</span><span class="p">,</span> <span class="n">dz</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">vplot</span><span class="p">()</span>
+<span class="go">Extrude this area</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">vext</span><span class="p">(</span><span class="n">plate_holes</span><span class="p">,</span> <span class="n">dz</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">vplot</span><span class="p">()</span>
 </pre></div>
 </div>
 <div class="figure align-default" id="id2">
 <a class="reference internal image-reference" href="../_images/vplot_vtk.png"><img alt="../_images/vplot_vtk.png" src="../_images/vplot_vtk.png" style="width: 400pt;" /></a>
-<p class="caption"><span class="caption-text">Volume Plot from MAPDL using <code class="docutils literal notranslate"><span class="pre">PyMAPDL</span></code> and <code class="docutils literal notranslate"><span class="pre">vtk</span></code></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Volume Plot from MAPDL using PyMAPDL and <a class="reference external" href="https://docs.pyvista.org/">pyvista</a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="node-and-element-plotting">
 <h2>Node and Element Plotting<a class="headerlink" href="#node-and-element-plotting" title="Permalink to this headline">¶</a></h2>
-<p>Nodes and elements can also be plotted directly from the <code class="docutils literal notranslate"><span class="pre">mapdl</span></code>
-instance.  We continue the example by defining some element types,
-meshing, and displaying the mesh.</p>
+<p>Nodes and elements can also be plotted directly from the instance of
+<a class="reference internal" href="../api/mapdl.html#ansys.mapdl.core.mapdl._MapdlCore" title="ansys.mapdl.core.mapdl._MapdlCore"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mapdl</span></code></a>.  We continue the
+example by defining some element types, meshing, and displaying the
+mesh.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">et</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;SOLID186&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">vsweep</span><span class="p">(</span><span class="s1">&#39;ALL&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">esize</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
@@ -317,57 +346,61 @@ meshing, and displaying the mesh.</p>
 </div>
 <div class="figure align-default" id="id3">
 <a class="reference internal image-reference" href="../_images/eplot_vtk.png"><img alt="../_images/eplot_vtk.png" src="../_images/eplot_vtk.png" style="width: 400pt;" /></a>
-<p class="caption"><span class="caption-text">Volume Plot from MAPDL using <code class="docutils literal notranslate"><span class="pre">PyMAPDL</span></code> and <code class="docutils literal notranslate"><span class="pre">vtk</span></code></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Element Plot from MAPDL using PyMAPDL and <a class="reference external" href="https://docs.pyvista.org/">pyvista</a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 <div class="section" id="plotting-non-interactively-using-mapdl">
 <h3>Plotting Non-Interactively using MAPDL<a class="headerlink" href="#plotting-non-interactively-using-mapdl" title="Permalink to this headline">¶</a></h3>
 <p>You can also plot using MAPDL’s native plotting tools.  To use the
-native tools, set <code class="docutils literal notranslate"><span class="pre">vtk=False</span></code> when running plotting commands such as
-<code class="docutils literal notranslate"><span class="pre">aplot</span></code>, <code class="docutils literal notranslate"><span class="pre">eplot</span></code>, etc..  Plots will be generated within MAPDL and
-then shown using <code class="docutils literal notranslate"><span class="pre">matploblib</span></code>.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ansys.mapdl.core</span> <span class="kn">import</span> <span class="n">launch_mapdl</span>
+native tools, pass <code class="docutils literal notranslate"><span class="pre">vtk=False</span></code> when running plotting commands such
+as <a class="reference internal" href="../mapdl_commands/prep7/_autosummary/ansys.mapdl.core.Mapdl.aplot.html#ansys.mapdl.core.Mapdl.aplot" title="ansys.mapdl.core.Mapdl.aplot"><code class="xref py py-func docutils literal notranslate"><span class="pre">Mapdl.aplot</span></code></a>,
+<a class="reference internal" href="../mapdl_commands/prep7/_autosummary/ansys.mapdl.core.Mapdl.eplot.html#ansys.mapdl.core.Mapdl.eplot" title="ansys.mapdl.core.Mapdl.eplot"><code class="xref py py-func docutils literal notranslate"><span class="pre">Mapdl.eplot</span></code></a>, etc..  Plots will
+be generated within MAPDL and then shown using <a class="reference external" href="https://matplotlib.org/stable/contents.html">matploblib</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Start</span> <span class="n">PyMAPDL</span>
 
-<span class="c1"># run ansys with interactive plotting enabled</span>
-<span class="n">mapdl</span> <span class="o">=</span> <span class="n">launch_mapdl</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ansys.mapdl.core</span> <span class="kn">import</span> <span class="n">launch_mapdl</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span> <span class="o">=</span> <span class="n">launch_mapdl</span><span class="p">()</span>
 
-<span class="c1"># create a square area using keypoints</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">prep7</span><span class="p">()</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">l</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">l</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">l</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">l</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">al</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">Create</span> <span class="n">a</span> <span class="n">square</span> <span class="n">area</span> <span class="n">using</span> <span class="n">keypoints</span>
 
-<span class="c1"># sets the view to &quot;isometric&quot;</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">pnum</span><span class="p">(</span><span class="s1">&#39;kp&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># enable keypoint numbering</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">pnum</span><span class="p">(</span><span class="s1">&#39;line&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># enable line numbering</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">prep7</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">k</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">l</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">l</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">l</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">l</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">al</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 
-<span class="c1"># each of these will create a matplotlib figure and pause execution</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">aplot</span><span class="p">(</span><span class="n">vtk</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">lplot</span><span class="p">(</span><span class="n">vtk</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">mapdl</span><span class="o">.</span><span class="n">kplot</span><span class="p">(</span><span class="n">vtk</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">Set</span> <span class="n">the</span> <span class="n">view</span> <span class="n">to</span> <span class="s2">&quot;isometric&quot;</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">pnum</span><span class="p">(</span><span class="s1">&#39;kp&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># enable keypoint numbering</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">pnum</span><span class="p">(</span><span class="s1">&#39;line&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># enable line numbering</span>
+
+<span class="n">Each</span> <span class="n">of</span> <span class="n">these</span> <span class="n">will</span> <span class="n">create</span> <span class="n">a</span> <span class="n">matplotlib</span> <span class="n">figure</span> <span class="ow">and</span> <span class="n">pause</span> <span class="n">execution</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">aplot</span><span class="p">(</span><span class="n">vtk</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">lplot</span><span class="p">(</span><span class="n">vtk</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mapdl</span><span class="o">.</span><span class="n">kplot</span><span class="p">(</span><span class="n">vtk</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="figure align-default" id="id4">
 <a class="reference internal image-reference" href="../_images/aplot.png"><img alt="../_images/aplot.png" src="../_images/aplot.png" style="width: 400pt;" /></a>
-<p class="caption"><span class="caption-text">Area Plot from MAPDL displayed using <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Area Plot from MAPDL displayed using <a class="reference external" href="https://matplotlib.org/stable/contents.html">matploblib</a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
-<p>For more details on the plotting functions, see <a class="reference internal" href="../pymapdl_api/plotting.html#ref-plotting-api"><span class="std std-ref">Plotting Methods</span></a>.</p>
+<p>For more details on the plotting functions, see <a class="reference internal" href="../api/plotting.html#ref-plotting-api"><span class="std std-ref">Plotting</span></a>.</p>
 </div>
 </div>
 <div class="section" id="plotting-keyword-options">
 <h2>Plotting Keyword Options<a class="headerlink" href="#plotting-keyword-options" title="Permalink to this headline">¶</a></h2>
-<p>When using <code class="docutils literal notranslate"><span class="pre">vtk=True</span></code> (default True), all the MAPDL plotting methods
-allow you to enter in additional keyword arguments to better control
-the plot.  For example, you can automatically generate a screenshot of
-an area plot or element plot with:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">aplot</span><span class="p">(</span><span class="n">screenshot</span><span class="p">(</span><span class="s1">&#39;aplot.png&#39;</span><span class="p">))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">eplot</span><span class="p">(</span><span class="n">screenshot</span><span class="p">(</span><span class="s1">&#39;eplot.png&#39;</span><span class="p">))</span>
+<p>When using <code class="docutils literal notranslate"><span class="pre">vtk=True</span></code> (default <code class="docutils literal notranslate"><span class="pre">True</span></code>), all the MAPDL plotting
+methods allow you to enter in additional keyword arguments to better
+control the plot.  For example, you can automatically generate a
+screenshot of an area plot or element plot with:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">aplot</span><span class="p">(</span><span class="n">savefig</span><span class="o">=</span><span class="s1">&#39;aplot.png&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">eplot</span><span class="p">(</span><span class="n">savefig</span><span class="o">=</span><span class="s1">&#39;eplot.png&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>You can also control the camera position with the <code class="docutils literal notranslate"><span class="pre">cpos</span></code> when you
@@ -376,20 +409,14 @@ XY plane with <code class="docutils literal notranslate"><span class="pre">cpos=
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">eplot</span><span class="p">(</span><span class="n">cpos</span><span class="o">=</span><span class="s1">&#39;xy&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>For all general plotting options, see <a class="reference internal" href="../pymapdl_api/plotting.html#ref-general-plotter"><span class="std std-ref">General Plotter</span></a>.</p>
+<p>For all general plotting options, see
+<a class="reference internal" href="../api/_autosummary/ansys.mapdl.core.plotting.general_plotter.html#ansys.mapdl.core.plotting.general_plotter" title="ansys.mapdl.core.plotting.general_plotter"><code class="xref py py-func docutils literal notranslate"><span class="pre">ansys.mapdl.core.plotting.general_plotter()</span></code></a>.</p>
 </div>
 </div>
 
 
               </div>
               
-              
-              <div class='prev-next-bottom'>
-                
-    <a class='left-prev' id="prev-link" href="mapdl_examples.html" title="previous page">ANSYS APDL Interactive Control Examples</a>
-    <a class='right-next' id="next-link" href="mesh_geometry.html" title="next page">Mesh and Geometry</a>
-
-              </div>
               
           </main>
           
@@ -410,7 +437,7 @@ XY plane with <code class="docutils literal notranslate"><span class="pre">cpos=
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.0.2.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.1.<br/>
 </p>
     </div>
     

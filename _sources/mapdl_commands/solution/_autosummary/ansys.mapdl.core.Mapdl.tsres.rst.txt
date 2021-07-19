@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.tsres
-============================
+﻿tsres
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

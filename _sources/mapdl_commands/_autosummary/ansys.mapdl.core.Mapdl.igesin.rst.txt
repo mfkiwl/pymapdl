@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.igesin
-=============================
+﻿igesin
+======
 
 .. currentmodule:: ansys.mapdl.core
 

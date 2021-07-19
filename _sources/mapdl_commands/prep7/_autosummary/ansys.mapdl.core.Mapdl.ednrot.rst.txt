@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ednrot
-=============================
+﻿ednrot
+======
 
 .. currentmodule:: ansys.mapdl.core
 

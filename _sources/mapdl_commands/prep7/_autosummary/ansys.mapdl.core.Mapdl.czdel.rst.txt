@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.czdel
-============================
+﻿czdel
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

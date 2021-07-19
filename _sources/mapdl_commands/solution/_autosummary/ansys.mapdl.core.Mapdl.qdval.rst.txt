@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.qdval
-============================
+﻿qdval
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

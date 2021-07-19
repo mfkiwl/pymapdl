@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vgen
-===========================
+﻿vgen
+====
 
 .. currentmodule:: ansys.mapdl.core
 

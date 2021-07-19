@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.filname
-==============================
+﻿filname
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

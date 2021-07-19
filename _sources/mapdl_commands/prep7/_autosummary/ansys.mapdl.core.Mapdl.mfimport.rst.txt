@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mfimport
-===============================
+﻿mfimport
+========
 
 .. currentmodule:: ansys.mapdl.core
 

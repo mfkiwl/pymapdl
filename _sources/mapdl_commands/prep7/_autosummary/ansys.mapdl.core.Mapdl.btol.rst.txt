@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.btol
-===========================
+﻿btol
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.xrange
-=============================
+﻿xrange
+======
 
 .. currentmodule:: ansys.mapdl.core
 

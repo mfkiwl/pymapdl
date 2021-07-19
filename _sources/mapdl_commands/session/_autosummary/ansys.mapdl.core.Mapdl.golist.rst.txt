@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.golist
-=============================
+﻿golist
+======
 
 .. currentmodule:: ansys.mapdl.core
 

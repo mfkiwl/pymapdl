@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.nprint
-=============================
+﻿nprint
+======
 
 .. currentmodule:: ansys.mapdl.core
 

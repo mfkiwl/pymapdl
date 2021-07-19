@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.desize
-=============================
+﻿desize
+======
 
 .. currentmodule:: ansys.mapdl.core
 

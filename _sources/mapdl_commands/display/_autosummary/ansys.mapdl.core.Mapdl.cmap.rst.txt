@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cmap
-===========================
+﻿cmap
+====
 
 .. currentmodule:: ansys.mapdl.core
 

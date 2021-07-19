@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.outpr
-============================
+﻿outpr
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

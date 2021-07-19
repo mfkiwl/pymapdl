@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.xfenrich
-===============================
+﻿xfenrich
+========
 
 .. currentmodule:: ansys.mapdl.core
 

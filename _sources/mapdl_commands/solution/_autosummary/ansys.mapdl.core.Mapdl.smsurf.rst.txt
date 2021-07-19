@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.smsurf
-=============================
+﻿smsurf
+======
 
 .. currentmodule:: ansys.mapdl.core
 

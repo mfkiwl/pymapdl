@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dmove
-============================
+﻿dmove
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

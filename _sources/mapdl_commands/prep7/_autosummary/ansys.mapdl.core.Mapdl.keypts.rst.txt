@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.keypts
-=============================
+﻿keypts
+======
 
 .. currentmodule:: ansys.mapdl.core
 

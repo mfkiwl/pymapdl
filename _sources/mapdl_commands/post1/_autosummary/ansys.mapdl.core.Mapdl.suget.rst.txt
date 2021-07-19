@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.suget
-============================
+﻿suget
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

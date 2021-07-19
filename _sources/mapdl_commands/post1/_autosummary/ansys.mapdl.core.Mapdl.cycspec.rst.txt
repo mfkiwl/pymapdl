@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cycspec
-==============================
+﻿cycspec
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

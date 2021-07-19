@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mfexter
-==============================
+﻿mfexter
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

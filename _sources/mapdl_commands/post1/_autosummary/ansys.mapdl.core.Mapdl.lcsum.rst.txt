@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.lcsum
-============================
+﻿lcsum
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

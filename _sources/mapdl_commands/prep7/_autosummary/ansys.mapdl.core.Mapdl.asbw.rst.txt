@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.asbw
-===========================
+﻿asbw
+====
 
 .. currentmodule:: ansys.mapdl.core
 

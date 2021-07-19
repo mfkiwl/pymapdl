@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rimport
-==============================
+﻿rimport
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

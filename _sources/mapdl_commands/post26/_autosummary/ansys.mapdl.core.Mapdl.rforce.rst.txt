@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rforce
-=============================
+﻿rforce
+======
 
 .. currentmodule:: ansys.mapdl.core
 

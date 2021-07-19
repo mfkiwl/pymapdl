@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mfrelax
-==============================
+﻿mfrelax
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

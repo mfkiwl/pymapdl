@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.damorph
-==============================
+﻿damorph
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

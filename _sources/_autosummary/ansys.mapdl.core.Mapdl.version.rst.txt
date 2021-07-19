@@ -1,6 +1,0 @@
-﻿ansys.mapdl.core.Mapdl.version
-==============================
-
-.. currentmodule:: ansys.mapdl.core
-
-.. autoproperty:: Mapdl.version

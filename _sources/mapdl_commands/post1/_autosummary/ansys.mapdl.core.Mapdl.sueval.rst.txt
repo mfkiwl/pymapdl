@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sueval
-=============================
+﻿sueval
+======
 
 .. currentmodule:: ansys.mapdl.core
 

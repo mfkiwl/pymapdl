@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.edri
-===========================
+﻿edri
+====
 
 .. currentmodule:: ansys.mapdl.core
 

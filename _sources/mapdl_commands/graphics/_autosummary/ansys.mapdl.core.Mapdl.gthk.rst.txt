@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.gthk
-===========================
+﻿gthk
+====
 
 .. currentmodule:: ansys.mapdl.core
 

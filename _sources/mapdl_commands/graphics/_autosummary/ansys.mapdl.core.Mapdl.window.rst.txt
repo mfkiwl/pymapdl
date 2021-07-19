@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.window
-=============================
+﻿window
+======
 
 .. currentmodule:: ansys.mapdl.core
 

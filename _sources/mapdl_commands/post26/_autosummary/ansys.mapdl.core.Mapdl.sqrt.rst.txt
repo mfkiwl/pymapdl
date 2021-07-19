@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sqrt
-===========================
+﻿sqrt
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sflex
-============================
+﻿sflex
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

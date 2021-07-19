@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.plvect
-=============================
+﻿plvect
+======
 
 .. currentmodule:: ansys.mapdl.core
 

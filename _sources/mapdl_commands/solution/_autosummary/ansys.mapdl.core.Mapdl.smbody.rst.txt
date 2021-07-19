@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.smbody
-=============================
+﻿smbody
+======
 
 .. currentmodule:: ansys.mapdl.core
 

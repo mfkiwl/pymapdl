@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cdwrite
-==============================
+﻿cdwrite
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

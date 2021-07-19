@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.kmodif
-=============================
+﻿kmodif
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.parsav
-=============================
+﻿parsav
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.setran
-=============================
+﻿setran
+======
 
 .. currentmodule:: ansys.mapdl.core
 

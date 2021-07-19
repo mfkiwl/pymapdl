@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.tiff
-===========================
+﻿tiff
+====
 
 .. currentmodule:: ansys.mapdl.core
 

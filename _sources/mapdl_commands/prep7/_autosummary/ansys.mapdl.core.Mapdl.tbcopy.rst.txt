@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.tbcopy
-=============================
+﻿tbcopy
+======
 
 .. currentmodule:: ansys.mapdl.core
 

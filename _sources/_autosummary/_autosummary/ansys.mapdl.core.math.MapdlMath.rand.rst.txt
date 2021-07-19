@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.MapdlMath.rand
-====================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. automethod:: MapdlMath.rand

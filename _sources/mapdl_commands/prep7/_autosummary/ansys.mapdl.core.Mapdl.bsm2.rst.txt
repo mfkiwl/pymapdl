@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.bsm2
-===========================
+﻿bsm2
+====
 
 .. currentmodule:: ansys.mapdl.core
 

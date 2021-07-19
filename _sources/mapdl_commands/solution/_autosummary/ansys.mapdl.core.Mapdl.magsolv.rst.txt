@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.magsolv
-==============================
+﻿magsolv
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

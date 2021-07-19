@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.atran
-============================
+﻿atran
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

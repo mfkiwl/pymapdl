@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.psmesh
-=============================
+﻿psmesh
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rmclist
-==============================
+﻿rmclist
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

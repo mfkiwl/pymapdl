@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ocread
-=============================
+﻿ocread
+======
 
 .. currentmodule:: ansys.mapdl.core
 

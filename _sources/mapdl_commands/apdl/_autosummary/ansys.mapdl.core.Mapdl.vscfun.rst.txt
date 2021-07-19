@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vscfun
-=============================
+﻿vscfun
+======
 
 .. currentmodule:: ansys.mapdl.core
 

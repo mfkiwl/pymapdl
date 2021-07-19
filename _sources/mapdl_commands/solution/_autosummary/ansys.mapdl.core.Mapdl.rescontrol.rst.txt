@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rescontrol
-=================================
+﻿rescontrol
+==========
 
 .. currentmodule:: ansys.mapdl.core
 

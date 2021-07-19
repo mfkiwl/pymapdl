@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cerig
-============================
+﻿cerig
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

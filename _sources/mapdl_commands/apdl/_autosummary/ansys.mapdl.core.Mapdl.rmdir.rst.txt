@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rmdir
-============================
+﻿rmdir
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

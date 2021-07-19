@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vget
-===========================
+﻿vget
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sfdele
-=============================
+﻿sfdele
+======
 
 .. currentmodule:: ansys.mapdl.core
 

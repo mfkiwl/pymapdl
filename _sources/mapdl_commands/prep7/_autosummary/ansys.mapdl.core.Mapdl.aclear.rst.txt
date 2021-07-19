@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.aclear
-=============================
+﻿aclear
+======
 
 .. currentmodule:: ansys.mapdl.core
 

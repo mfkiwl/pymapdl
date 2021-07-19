@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ainv
-===========================
+﻿ainv
+====
 
 .. currentmodule:: ansys.mapdl.core
 

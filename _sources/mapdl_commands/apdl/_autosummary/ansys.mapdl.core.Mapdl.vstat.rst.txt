@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vstat
-============================
+﻿vstat
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

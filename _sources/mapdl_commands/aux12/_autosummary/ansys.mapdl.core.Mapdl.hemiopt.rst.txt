@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.hemiopt
-==============================
+﻿hemiopt
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

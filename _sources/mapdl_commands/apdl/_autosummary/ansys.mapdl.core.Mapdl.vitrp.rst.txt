@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vitrp
-============================
+﻿vitrp
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

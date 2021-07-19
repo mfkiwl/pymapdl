@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.itengine
-===============================
+﻿itengine
+========
 
 .. currentmodule:: ansys.mapdl.core
 

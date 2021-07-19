@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.tunif
-============================
+﻿tunif
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

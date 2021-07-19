@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.nslk
-===========================
+﻿nslk
+====
 
 .. currentmodule:: ansys.mapdl.core
 

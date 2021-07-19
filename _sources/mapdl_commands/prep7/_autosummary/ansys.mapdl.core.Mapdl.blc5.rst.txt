@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.blc5
-===========================
+﻿blc5
+====
 
 .. currentmodule:: ansys.mapdl.core
 

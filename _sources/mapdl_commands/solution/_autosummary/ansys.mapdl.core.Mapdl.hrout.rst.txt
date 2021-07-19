@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.hrout
-============================
+﻿hrout
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

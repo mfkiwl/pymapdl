@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.psf
-==========================
+﻿psf
+===
 
 .. currentmodule:: ansys.mapdl.core
 

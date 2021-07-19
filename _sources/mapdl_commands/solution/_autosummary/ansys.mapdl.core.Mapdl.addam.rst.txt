@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.addam
-============================
+﻿addam
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

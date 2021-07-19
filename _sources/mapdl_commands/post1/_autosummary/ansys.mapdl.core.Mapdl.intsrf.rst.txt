@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.intsrf
-=============================
+﻿intsrf
+======
 
 .. currentmodule:: ansys.mapdl.core
 

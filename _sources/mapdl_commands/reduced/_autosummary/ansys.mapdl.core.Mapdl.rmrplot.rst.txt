@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rmrplot
-==============================
+﻿rmrplot
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

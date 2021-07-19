@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rezone
-=============================
+﻿rezone
+======
 
 .. currentmodule:: ansys.mapdl.core
 

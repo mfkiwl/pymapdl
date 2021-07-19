@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.modmsh
-=============================
+﻿modmsh
+======
 
 .. currentmodule:: ansys.mapdl.core
 

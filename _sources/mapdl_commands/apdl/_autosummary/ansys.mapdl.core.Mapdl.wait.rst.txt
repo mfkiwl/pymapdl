@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.wait
-===========================
+﻿wait
+====
 
 .. currentmodule:: ansys.mapdl.core
 

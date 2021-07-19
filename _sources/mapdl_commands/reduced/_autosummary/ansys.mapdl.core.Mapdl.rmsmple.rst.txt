@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rmsmple
-==============================
+﻿rmsmple
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

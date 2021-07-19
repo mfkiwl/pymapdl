@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.gropt
-============================
+﻿gropt
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

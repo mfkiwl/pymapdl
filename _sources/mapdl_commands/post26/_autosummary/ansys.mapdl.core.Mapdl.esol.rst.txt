@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.esol
-===========================
+﻿esol
+====
 
 .. currentmodule:: ansys.mapdl.core
 

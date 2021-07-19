@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.prep7
-============================
+﻿prep7
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

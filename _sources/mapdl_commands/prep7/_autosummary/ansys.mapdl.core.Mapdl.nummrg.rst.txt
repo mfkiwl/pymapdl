@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.nummrg
-=============================
+﻿nummrg
+======
 
 .. currentmodule:: ansys.mapdl.core
 

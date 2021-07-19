@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rdec
-===========================
+﻿rdec
+====
 
 .. currentmodule:: ansys.mapdl.core
 

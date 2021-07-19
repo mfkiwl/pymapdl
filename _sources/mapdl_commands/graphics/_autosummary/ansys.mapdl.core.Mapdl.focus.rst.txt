@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.focus
-============================
+﻿focus
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

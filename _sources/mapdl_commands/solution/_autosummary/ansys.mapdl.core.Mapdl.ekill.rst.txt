@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ekill
-============================
+﻿ekill
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

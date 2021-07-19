@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ndist
-============================
+﻿ndist
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

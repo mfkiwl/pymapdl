@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.expass
-=============================
+﻿expass
+======
 
 .. currentmodule:: ansys.mapdl.core
 

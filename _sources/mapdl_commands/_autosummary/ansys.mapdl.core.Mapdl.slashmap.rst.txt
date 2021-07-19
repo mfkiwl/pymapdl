@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.slashmap
-===============================
+﻿slashmap
+========
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.starlist
-===============================
+﻿starlist
+========
 
 .. currentmodule:: ansys.mapdl.core
 

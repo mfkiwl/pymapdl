@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rose
-===========================
+﻿rose
+====
 
 .. currentmodule:: ansys.mapdl.core
 

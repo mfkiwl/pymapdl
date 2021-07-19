@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cesgen
-=============================
+﻿cesgen
+======
 
 .. currentmodule:: ansys.mapdl.core
 

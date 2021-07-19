@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.bfcum
-============================
+﻿bfcum
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

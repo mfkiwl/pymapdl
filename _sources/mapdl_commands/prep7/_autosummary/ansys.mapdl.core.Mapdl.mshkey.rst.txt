@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mshkey
-=============================
+﻿mshkey
+======
 
 .. currentmodule:: ansys.mapdl.core
 

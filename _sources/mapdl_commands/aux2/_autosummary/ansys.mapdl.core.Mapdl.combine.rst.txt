@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.combine
-==============================
+﻿combine
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

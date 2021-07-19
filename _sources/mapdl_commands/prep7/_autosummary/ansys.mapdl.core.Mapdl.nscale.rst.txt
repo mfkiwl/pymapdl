@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.nscale
-=============================
+﻿nscale
+======
 
 .. currentmodule:: ansys.mapdl.core
 

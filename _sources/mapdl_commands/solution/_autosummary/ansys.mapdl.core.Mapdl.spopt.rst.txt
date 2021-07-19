@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.spopt
-============================
+﻿spopt
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

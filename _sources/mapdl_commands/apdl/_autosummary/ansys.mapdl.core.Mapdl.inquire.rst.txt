@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.inquire
-==============================
+﻿inquire
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.gmatrix
-==============================
+﻿gmatrix
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

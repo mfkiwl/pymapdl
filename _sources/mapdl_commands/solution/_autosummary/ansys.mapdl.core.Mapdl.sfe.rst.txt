@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sfe
-==========================
+﻿sfe
+===
 
 .. currentmodule:: ansys.mapdl.core
 

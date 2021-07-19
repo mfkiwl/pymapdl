@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.edwrite
-==============================
+﻿edwrite
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

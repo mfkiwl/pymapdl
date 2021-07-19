@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.voffst
-=============================
+﻿voffst
+======
 
 .. currentmodule:: ansys.mapdl.core
 

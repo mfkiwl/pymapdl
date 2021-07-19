@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.tbdata
-=============================
+﻿tbdata
+======
 
 .. currentmodule:: ansys.mapdl.core
 

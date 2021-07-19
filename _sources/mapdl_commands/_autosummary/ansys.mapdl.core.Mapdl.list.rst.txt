@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.list
-===========================
+﻿list
+====
 
 .. currentmodule:: ansys.mapdl.core
 

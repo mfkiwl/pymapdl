@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.lfsurf
-=============================
+﻿lfsurf
+======
 
 .. currentmodule:: ansys.mapdl.core
 

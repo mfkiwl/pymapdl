@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rpr4
-===========================
+﻿rpr4
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.opncontrol
-=================================
+﻿opncontrol
+==========
 
 .. currentmodule:: ansys.mapdl.core
 

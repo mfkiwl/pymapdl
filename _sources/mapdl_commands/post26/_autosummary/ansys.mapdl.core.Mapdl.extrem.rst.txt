@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.extrem
-=============================
+﻿extrem
+======
 
 .. currentmodule:: ansys.mapdl.core
 

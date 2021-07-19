@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sspa
-===========================
+﻿sspa
+====
 
 .. currentmodule:: ansys.mapdl.core
 

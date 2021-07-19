@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.secnum
-=============================
+﻿secnum
+======
 
 .. currentmodule:: ansys.mapdl.core
 

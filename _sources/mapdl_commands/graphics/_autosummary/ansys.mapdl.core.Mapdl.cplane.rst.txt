@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cplane
-=============================
+﻿cplane
+======
 
 .. currentmodule:: ansys.mapdl.core
 

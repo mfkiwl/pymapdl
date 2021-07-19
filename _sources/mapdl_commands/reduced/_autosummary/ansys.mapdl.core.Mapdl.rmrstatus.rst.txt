@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rmrstatus
-================================
+﻿rmrstatus
+=========
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sfedele
-==============================
+﻿sfedele
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

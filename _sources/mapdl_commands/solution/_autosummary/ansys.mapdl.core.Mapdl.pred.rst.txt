@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.pred
-===========================
+﻿pred
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.scal
-===========================
+﻿scal
+====
 
 .. currentmodule:: ansys.mapdl.core
 

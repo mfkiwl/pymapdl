@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.MapdlMath.vec
-===================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. automethod:: MapdlMath.vec

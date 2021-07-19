@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.pletab
-=============================
+﻿pletab
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.fctyp
-============================
+﻿fctyp
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

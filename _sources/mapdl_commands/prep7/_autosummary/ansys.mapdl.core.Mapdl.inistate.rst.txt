@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.inistate
-===============================
+﻿inistate
+========
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.eddrelax
-===============================
+﻿eddrelax
+========
 
 .. currentmodule:: ansys.mapdl.core
 

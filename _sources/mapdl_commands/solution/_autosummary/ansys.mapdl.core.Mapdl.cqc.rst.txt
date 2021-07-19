@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cqc
-==========================
+﻿cqc
+===
 
 .. currentmodule:: ansys.mapdl.core
 

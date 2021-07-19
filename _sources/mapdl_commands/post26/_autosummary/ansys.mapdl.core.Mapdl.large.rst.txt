@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.large
-============================
+﻿large
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

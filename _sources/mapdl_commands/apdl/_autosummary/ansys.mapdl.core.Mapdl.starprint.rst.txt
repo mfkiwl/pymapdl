@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.starprint
-================================
+﻿starprint
+=========
 
 .. currentmodule:: ansys.mapdl.core
 

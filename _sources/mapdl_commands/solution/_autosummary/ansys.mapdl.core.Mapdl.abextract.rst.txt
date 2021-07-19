@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.abextract
-================================
+﻿abextract
+=========
 
 .. currentmodule:: ansys.mapdl.core
 

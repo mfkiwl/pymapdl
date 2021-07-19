@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mshape
-=============================
+﻿mshape
+======
 
 .. currentmodule:: ansys.mapdl.core
 

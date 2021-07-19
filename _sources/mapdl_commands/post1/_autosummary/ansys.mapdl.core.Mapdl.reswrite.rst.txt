@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.reswrite
-===============================
+﻿reswrite
+========
 
 .. currentmodule:: ansys.mapdl.core
 

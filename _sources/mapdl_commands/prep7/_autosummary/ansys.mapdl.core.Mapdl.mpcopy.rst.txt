@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mpcopy
-=============================
+﻿mpcopy
+======
 
 .. currentmodule:: ansys.mapdl.core
 

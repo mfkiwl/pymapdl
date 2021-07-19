@@ -1,6 +1,0 @@
-ansys.mapdl.core.parameters.Parameters.material
-===============================================
-
-.. currentmodule:: ansys.mapdl.core.parameters
-
-.. autoproperty:: Parameters.material

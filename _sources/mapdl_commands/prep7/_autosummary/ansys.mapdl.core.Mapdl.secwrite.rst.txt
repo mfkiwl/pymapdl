@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.secwrite
-===============================
+﻿secwrite
+========
 
 .. currentmodule:: ansys.mapdl.core
 

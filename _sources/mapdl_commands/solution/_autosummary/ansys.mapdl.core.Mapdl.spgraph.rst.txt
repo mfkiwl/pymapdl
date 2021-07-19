@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.spgraph
-==============================
+﻿spgraph
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

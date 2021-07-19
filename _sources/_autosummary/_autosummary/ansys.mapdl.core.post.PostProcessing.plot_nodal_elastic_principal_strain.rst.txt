@@ -1,6 +1,0 @@
-ansys.mapdl.core.post.PostProcessing.plot\_nodal\_elastic\_principal\_strain
-============================================================================
-
-.. currentmodule:: ansys.mapdl.core.post
-
-.. automethod:: PostProcessing.plot_nodal_elastic_principal_strain

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ksll
-===========================
+﻿ksll
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.ApdlMathObj.norm
-======================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. automethod:: ApdlMathObj.norm

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.lreverse
-===============================
+﻿lreverse
+========
 
 .. currentmodule:: ansys.mapdl.core
 

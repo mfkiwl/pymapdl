@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.lsba
-===========================
+﻿lsba
+====
 
 .. currentmodule:: ansys.mapdl.core
 

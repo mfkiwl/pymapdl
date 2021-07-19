@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rsplit
-=============================
+﻿rsplit
+======
 
 .. currentmodule:: ansys.mapdl.core
 

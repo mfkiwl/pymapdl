@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cbdof
-============================
+﻿cbdof
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

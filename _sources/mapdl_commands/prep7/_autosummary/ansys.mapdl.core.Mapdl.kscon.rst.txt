@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.kscon
-============================
+﻿kscon
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

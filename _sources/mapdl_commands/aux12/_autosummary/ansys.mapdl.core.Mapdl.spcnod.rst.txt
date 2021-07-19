@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.spcnod
-=============================
+﻿spcnod
+======
 
 .. currentmodule:: ansys.mapdl.core
 

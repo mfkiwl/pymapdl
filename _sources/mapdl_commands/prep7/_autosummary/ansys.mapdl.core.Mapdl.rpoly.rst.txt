@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rpoly
-============================
+﻿rpoly
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

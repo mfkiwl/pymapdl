@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.supl
-===========================
+﻿supl
+====
 
 .. currentmodule:: ansys.mapdl.core
 

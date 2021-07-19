@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.fileaux3
-===============================
+﻿fileaux3
+========
 
 .. currentmodule:: ansys.mapdl.core
 

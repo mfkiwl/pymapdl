@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sph5
-===========================
+﻿sph5
+====
 
 .. currentmodule:: ansys.mapdl.core
 

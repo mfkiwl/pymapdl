@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.paresu
-=============================
+﻿paresu
+======
 
 .. currentmodule:: ansys.mapdl.core
 

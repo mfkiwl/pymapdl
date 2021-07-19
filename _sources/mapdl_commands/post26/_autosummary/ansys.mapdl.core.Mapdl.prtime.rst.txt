@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.prtime
-=============================
+﻿prtime
+======
 
 .. currentmodule:: ansys.mapdl.core
 

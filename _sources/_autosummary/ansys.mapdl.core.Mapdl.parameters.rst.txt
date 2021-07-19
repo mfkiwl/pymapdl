@@ -1,6 +1,0 @@
-﻿ansys.mapdl.core.Mapdl.parameters
-=================================
-
-.. currentmodule:: ansys.mapdl.core
-
-.. autoproperty:: Mapdl.parameters

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.psdfrq
-=============================
+﻿psdfrq
+======
 
 .. currentmodule:: ansys.mapdl.core
 

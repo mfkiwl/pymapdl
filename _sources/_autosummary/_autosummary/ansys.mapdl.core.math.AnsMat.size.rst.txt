@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.AnsMat.size
-=================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. autoproperty:: AnsMat.size

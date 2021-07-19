@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mxpand
-=============================
+﻿mxpand
+======
 
 .. currentmodule:: ansys.mapdl.core
 

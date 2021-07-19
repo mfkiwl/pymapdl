@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.pcgopt
-=============================
+﻿pcgopt
+======
 
 .. currentmodule:: ansys.mapdl.core
 

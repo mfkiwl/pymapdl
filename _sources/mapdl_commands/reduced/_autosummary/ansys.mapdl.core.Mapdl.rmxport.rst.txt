@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rmxport
-==============================
+﻿rmxport
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cpcyc
-============================
+﻿cpcyc
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

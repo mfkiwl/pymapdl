@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.spoint
-=============================
+﻿spoint
+======
 
 .. currentmodule:: ansys.mapdl.core
 

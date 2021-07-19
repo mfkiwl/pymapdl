@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.post26
-=============================
+﻿post26
+======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.keyw
-===========================
+﻿keyw
+====
 
 .. currentmodule:: ansys.mapdl.core
 

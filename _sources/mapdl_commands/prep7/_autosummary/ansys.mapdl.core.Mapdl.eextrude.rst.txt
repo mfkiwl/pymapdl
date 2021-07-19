@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.eextrude
-===============================
+﻿eextrude
+========
 
 .. currentmodule:: ansys.mapdl.core
 

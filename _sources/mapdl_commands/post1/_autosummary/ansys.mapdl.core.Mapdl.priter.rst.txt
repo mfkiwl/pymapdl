@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.priter
-=============================
+﻿priter
+======
 
 .. currentmodule:: ansys.mapdl.core
 

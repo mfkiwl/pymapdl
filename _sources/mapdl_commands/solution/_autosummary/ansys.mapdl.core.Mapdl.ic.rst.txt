@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ic
-=========================
+﻿ic
+==
 
 .. currentmodule:: ansys.mapdl.core
 

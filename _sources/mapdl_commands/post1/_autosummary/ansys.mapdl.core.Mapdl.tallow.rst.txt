@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.tallow
-=============================
+﻿tallow
+======
 
 .. currentmodule:: ansys.mapdl.core
 

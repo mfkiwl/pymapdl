@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cgomga
-=============================
+﻿cgomga
+======
 
 .. currentmodule:: ansys.mapdl.core
 

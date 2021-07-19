@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cfopen
-=============================
+﻿cfopen
+======
 
 .. currentmodule:: ansys.mapdl.core
 

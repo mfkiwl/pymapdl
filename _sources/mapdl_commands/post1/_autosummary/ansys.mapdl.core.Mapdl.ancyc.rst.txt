@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ancyc
-============================
+﻿ancyc
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

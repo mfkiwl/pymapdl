@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.MapdlMath.damp
-====================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. automethod:: MapdlMath.damp

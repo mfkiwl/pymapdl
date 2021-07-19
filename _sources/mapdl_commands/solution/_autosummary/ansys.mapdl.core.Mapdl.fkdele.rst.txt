@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.fkdele
-=============================
+﻿fkdele
+======
 
 .. currentmodule:: ansys.mapdl.core
 

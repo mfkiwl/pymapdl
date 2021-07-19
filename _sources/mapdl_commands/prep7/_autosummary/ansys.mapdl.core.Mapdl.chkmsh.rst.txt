@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.chkmsh
-=============================
+﻿chkmsh
+======
 
 .. currentmodule:: ansys.mapdl.core
 

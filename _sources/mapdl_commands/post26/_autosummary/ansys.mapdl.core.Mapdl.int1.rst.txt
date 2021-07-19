@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.int1
-===========================
+﻿int1
+====
 
 .. currentmodule:: ansys.mapdl.core
 

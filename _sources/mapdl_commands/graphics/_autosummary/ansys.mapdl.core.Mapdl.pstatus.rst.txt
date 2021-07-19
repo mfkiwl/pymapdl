@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.pstatus
-==============================
+﻿pstatus
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

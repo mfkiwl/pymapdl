@@ -1,6 +1,0 @@
-ansys.mapdl.core.pool.LocalMapdlPool.map
-========================================
-
-.. currentmodule:: ansys.mapdl.core.pool
-
-.. automethod:: LocalMapdlPool.map

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.qsopt
-============================
+﻿qsopt
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

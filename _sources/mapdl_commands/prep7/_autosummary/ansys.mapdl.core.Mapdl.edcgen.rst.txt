@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.edcgen
-=============================
+﻿edcgen
+======
 
 .. currentmodule:: ansys.mapdl.core
 

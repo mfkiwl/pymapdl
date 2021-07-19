@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.bfescal
-==============================
+﻿bfescal
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,6 +1,0 @@
-ansys.mapdl.core.post.PostProcessing.nodal\_elastic\_strain\_intensity
-======================================================================
-
-.. currentmodule:: ansys.mapdl.core.post
-
-.. autoproperty:: PostProcessing.nodal_elastic_strain_intensity

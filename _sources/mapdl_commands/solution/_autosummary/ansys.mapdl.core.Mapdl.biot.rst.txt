@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.biot
-===========================
+﻿biot
+====
 
 .. currentmodule:: ansys.mapdl.core
 

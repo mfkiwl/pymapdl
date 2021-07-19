@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cycfiles
-===============================
+﻿cycfiles
+========
 
 .. currentmodule:: ansys.mapdl.core
 

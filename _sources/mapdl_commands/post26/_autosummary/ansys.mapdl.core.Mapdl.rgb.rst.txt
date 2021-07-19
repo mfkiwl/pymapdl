@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rgb
-==========================
+﻿rgb
+===
 
 .. currentmodule:: ansys.mapdl.core
 

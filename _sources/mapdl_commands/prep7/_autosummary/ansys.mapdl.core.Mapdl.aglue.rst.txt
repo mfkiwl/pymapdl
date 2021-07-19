@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.aglue
-============================
+﻿aglue
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

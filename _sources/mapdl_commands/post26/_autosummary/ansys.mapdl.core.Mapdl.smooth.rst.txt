@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.smooth
-=============================
+﻿smooth
+======
 
 .. currentmodule:: ansys.mapdl.core
 

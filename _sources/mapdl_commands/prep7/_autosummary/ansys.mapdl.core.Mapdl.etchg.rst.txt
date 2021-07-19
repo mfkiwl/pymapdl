@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.etchg
-============================
+﻿etchg
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

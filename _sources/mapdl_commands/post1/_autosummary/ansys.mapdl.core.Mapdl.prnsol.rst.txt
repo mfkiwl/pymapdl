@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.prnsol
-=============================
+﻿prnsol
+======
 
 .. currentmodule:: ansys.mapdl.core
 

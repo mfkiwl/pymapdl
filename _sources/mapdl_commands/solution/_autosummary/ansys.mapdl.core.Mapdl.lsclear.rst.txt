@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.lsclear
-==============================
+﻿lsclear
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

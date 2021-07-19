@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cmacel
-=============================
+﻿cmacel
+======
 
 .. currentmodule:: ansys.mapdl.core
 

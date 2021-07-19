@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rmresume
-===============================
+﻿rmresume
+========
 
 .. currentmodule:: ansys.mapdl.core
 

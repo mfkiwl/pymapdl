@@ -1,6 +1,0 @@
-ansys.mapdl.core.solution.Solution.\_\_init\_\_
-===============================================
-
-.. currentmodule:: ansys.mapdl.core.solution
-
-.. automethod:: Solution.__init__

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.plnear
-=============================
+﻿plnear
+======
 
 .. currentmodule:: ansys.mapdl.core
 

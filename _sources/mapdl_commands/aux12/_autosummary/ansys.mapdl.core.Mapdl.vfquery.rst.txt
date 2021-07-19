@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vfquery
-==============================
+﻿vfquery
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

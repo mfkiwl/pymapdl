@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.exprofile
-================================
+﻿exprofile
+=========
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dynopt
-=============================
+﻿dynopt
+======
 
 .. currentmodule:: ansys.mapdl.core
 

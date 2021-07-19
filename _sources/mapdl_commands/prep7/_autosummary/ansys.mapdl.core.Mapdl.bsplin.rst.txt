@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.bsplin
-=============================
+﻿bsplin
+======
 
 .. currentmodule:: ansys.mapdl.core
 

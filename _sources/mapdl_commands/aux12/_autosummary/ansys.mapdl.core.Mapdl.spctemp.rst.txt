@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.spctemp
-==============================
+﻿spctemp
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.psdwav
-=============================
+﻿psdwav
+======
 
 .. currentmodule:: ansys.mapdl.core
 

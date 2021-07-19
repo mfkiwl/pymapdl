@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.trnopt
-=============================
+﻿trnopt
+======
 
 .. currentmodule:: ansys.mapdl.core
 

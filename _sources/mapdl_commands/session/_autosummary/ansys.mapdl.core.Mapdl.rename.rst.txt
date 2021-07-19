@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rename
-=============================
+﻿rename
+======
 
 .. currentmodule:: ansys.mapdl.core
 

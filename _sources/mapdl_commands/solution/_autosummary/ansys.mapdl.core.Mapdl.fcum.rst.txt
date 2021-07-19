@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.fcum
-===========================
+﻿fcum
+====
 
 .. currentmodule:: ansys.mapdl.core
 

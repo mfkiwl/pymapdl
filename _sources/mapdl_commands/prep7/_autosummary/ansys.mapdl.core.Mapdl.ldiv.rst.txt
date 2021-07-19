@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ldiv
-===========================
+﻿ldiv
+====
 
 .. currentmodule:: ansys.mapdl.core
 

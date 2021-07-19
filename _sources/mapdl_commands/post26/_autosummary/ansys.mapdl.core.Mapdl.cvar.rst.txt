@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cvar
-===========================
+﻿cvar
+====
 
 .. currentmodule:: ansys.mapdl.core
 

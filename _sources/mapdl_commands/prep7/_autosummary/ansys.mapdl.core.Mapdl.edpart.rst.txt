@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.edpart
-=============================
+﻿edpart
+======
 
 .. currentmodule:: ansys.mapdl.core
 

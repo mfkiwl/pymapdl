@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.catiain
-==============================
+﻿catiain
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.iclwid
-=============================
+﻿iclwid
+======
 
 .. currentmodule:: ansys.mapdl.core
 

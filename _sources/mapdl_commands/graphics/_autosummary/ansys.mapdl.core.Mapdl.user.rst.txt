@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.user
-===========================
+﻿user
+====
 
 .. currentmodule:: ansys.mapdl.core
 

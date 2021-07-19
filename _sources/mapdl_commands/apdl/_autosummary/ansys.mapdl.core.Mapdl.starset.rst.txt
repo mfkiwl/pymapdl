@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.starset
-==============================
+﻿starset
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

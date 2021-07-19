@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.nrefine
-==============================
+﻿nrefine
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

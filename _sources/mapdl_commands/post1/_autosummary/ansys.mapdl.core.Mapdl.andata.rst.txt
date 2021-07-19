@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.andata
-=============================
+﻿andata
+======
 
 .. currentmodule:: ansys.mapdl.core
 

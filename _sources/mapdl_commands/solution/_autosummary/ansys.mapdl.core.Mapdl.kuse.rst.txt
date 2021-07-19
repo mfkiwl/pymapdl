@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.kuse
-===========================
+﻿kuse
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vwrite
-=============================
+﻿vwrite
+======
 
 .. currentmodule:: ansys.mapdl.core
 

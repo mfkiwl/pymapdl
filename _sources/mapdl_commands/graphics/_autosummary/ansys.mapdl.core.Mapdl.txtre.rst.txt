@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.txtre
-============================
+﻿txtre
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

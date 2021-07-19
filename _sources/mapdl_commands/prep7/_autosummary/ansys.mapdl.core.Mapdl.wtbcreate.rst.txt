@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.wtbcreate
-================================
+﻿wtbcreate
+=========
 
 .. currentmodule:: ansys.mapdl.core
 

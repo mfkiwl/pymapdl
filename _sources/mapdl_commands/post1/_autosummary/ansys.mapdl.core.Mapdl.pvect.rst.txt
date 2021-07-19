@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.pvect
-============================
+﻿pvect
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.pras
-===========================
+﻿pras
+====
 
 .. currentmodule:: ansys.mapdl.core
 

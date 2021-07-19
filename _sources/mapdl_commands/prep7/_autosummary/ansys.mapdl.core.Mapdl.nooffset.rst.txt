@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.nooffset
-===============================
+﻿nooffset
+========
 
 .. currentmodule:: ansys.mapdl.core
 

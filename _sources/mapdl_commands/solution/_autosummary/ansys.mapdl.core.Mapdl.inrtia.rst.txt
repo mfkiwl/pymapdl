@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.inrtia
-=============================
+﻿inrtia
+======
 
 .. currentmodule:: ansys.mapdl.core
 

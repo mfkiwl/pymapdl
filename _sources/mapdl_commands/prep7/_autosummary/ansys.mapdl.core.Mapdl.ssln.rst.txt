@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ssln
-===========================
+﻿ssln
+====
 
 .. currentmodule:: ansys.mapdl.core
 

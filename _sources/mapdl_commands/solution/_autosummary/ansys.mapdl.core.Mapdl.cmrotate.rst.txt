@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cmrotate
-===============================
+﻿cmrotate
+========
 
 .. currentmodule:: ansys.mapdl.core
 

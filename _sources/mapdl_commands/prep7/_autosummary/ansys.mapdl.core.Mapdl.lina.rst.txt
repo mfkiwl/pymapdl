@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.lina
-===========================
+﻿lina
+====
 
 .. currentmodule:: ansys.mapdl.core
 

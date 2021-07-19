@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.ncnv
-===========================
+﻿ncnv
+====
 
 .. currentmodule:: ansys.mapdl.core
 

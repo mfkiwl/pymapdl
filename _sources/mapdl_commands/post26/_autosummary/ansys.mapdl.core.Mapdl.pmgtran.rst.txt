@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.pmgtran
-==============================
+﻿pmgtran
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rmore
-============================
+﻿rmore
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.race
-===========================
+﻿race
+====
 
 .. currentmodule:: ansys.mapdl.core
 

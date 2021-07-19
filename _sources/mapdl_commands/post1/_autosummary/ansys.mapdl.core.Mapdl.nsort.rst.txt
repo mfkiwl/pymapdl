@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.nsort
-============================
+﻿nsort
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

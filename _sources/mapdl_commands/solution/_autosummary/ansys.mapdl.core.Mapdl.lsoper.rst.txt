@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.lsoper
-=============================
+﻿lsoper
+======
 
 .. currentmodule:: ansys.mapdl.core
 

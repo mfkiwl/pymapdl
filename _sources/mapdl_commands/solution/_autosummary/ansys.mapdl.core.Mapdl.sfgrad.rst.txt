@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sfgrad
-=============================
+﻿sfgrad
+======
 
 .. currentmodule:: ansys.mapdl.core
 

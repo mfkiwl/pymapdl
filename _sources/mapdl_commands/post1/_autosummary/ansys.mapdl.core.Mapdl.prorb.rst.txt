@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.prorb
-============================
+﻿prorb
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

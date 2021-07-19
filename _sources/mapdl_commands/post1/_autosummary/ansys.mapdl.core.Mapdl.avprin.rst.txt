@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.avprin
-=============================
+﻿avprin
+======
 
 .. currentmodule:: ansys.mapdl.core
 

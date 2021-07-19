@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.plchist
-==============================
+﻿plchist
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

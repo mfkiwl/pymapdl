@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.edcurve
-==============================
+﻿edcurve
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

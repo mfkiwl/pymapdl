@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.upcoord
-==============================
+﻿upcoord
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

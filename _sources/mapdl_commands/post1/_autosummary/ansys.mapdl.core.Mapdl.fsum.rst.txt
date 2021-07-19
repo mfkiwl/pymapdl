@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.fsum
-===========================
+﻿fsum
+====
 
 .. currentmodule:: ansys.mapdl.core
 

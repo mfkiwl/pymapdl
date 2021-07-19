@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.l2ang
-============================
+﻿l2ang
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

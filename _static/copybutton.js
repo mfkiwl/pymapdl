@@ -81,7 +81,9 @@ const clearSelection = () => {
 // Changes tooltip text for two seconds, then changes it back
 const temporarilyChangeTooltip = (el, oldText, newText) => {
   el.setAttribute('data-tooltip', newText)
+  el.classList.add('success')
   setTimeout(() => el.setAttribute('data-tooltip', oldText), 2000)
+  setTimeout(() => el.classList.remove('success'), 2000)
 }
 
 // Changes the copy button icon for two seconds, then changes it back
@@ -104,10 +106,9 @@ const addCopyButtonToCodeCells = () => {
   codeCells.forEach((codeCell, index) => {
     const id = codeCellId(index)
     codeCell.setAttribute('id', id)
-    const pre_bg = getComputedStyle(codeCell).backgroundColor;
 
     const clipboardButton = id =>
-    `<button class="copybtn o-tooltip--left" style="background-color: ${pre_bg}" data-tooltip="${messages[locale]['copy']}" data-clipboard-target="#${id}">
+    `<button class="copybtn o-tooltip--left" data-tooltip="${messages[locale]['copy']}" data-clipboard-target="#${id}">
       <img src="${path_static}copy-button.svg" alt="${messages[locale]['copy_to_clipboard']}">
     </button>`
     codeCell.insertAdjacentHTML('afterend', clipboardButton(id))
@@ -175,7 +176,7 @@ function formatCopyText(textContent, copybuttonPromptText, isRegexp = false, onl
 
 var copyTargetText = (trigger) => {
   var target = document.querySelector(trigger.attributes['data-clipboard-target'].value);
-  return formatCopyText(target.innerText, '>>> ', false, true, true, true, '', '')
+  return formatCopyText(target.innerText, '>>> ?|\\.\\.\\. ', true, true, true, true, '', '')
 }
 
   // Initialize with a callback so we can modify the text before copy

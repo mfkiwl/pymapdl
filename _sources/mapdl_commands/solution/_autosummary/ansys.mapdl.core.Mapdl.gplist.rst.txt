@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.gplist
-=============================
+﻿gplist
+======
 
 .. currentmodule:: ansys.mapdl.core
 

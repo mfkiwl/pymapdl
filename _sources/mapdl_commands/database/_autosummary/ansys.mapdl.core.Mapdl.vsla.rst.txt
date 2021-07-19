@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.vsla
-===========================
+﻿vsla
+====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.kbc
-==========================
+﻿kbc
+===
 
 .. currentmodule:: ansys.mapdl.core
 

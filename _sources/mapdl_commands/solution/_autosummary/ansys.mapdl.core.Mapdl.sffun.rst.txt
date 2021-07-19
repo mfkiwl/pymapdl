@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sffun
-============================
+﻿sffun
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

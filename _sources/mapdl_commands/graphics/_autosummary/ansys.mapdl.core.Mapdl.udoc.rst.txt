@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.udoc
-===========================
+﻿udoc
+====
 
 .. currentmodule:: ansys.mapdl.core
 

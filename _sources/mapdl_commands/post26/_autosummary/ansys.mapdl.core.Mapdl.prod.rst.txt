@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.prod
-===========================
+﻿prod
+====
 
 .. currentmodule:: ansys.mapdl.core
 

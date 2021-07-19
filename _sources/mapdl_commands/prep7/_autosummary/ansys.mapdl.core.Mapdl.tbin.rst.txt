@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.tbin
-===========================
+﻿tbin
+====
 
 .. currentmodule:: ansys.mapdl.core
 

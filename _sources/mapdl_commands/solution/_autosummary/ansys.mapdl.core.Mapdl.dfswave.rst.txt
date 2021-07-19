@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.dfswave
-==============================
+﻿dfswave
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

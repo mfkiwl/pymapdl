@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.tintp
-============================
+﻿tintp
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

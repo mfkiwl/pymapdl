@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.slashstatus
-==================================
+﻿slashstatus
+===========
 
 .. currentmodule:: ansys.mapdl.core
 

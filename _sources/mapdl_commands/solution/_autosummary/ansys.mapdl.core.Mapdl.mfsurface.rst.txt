@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mfsurface
-================================
+﻿mfsurface
+=========
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.torus
-============================
+﻿torus
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

@@ -1,6 +1,0 @@
-ansys.mapdl.core.math.MapdlMath.\_\_init\_\_
-============================================
-
-.. currentmodule:: ansys.mapdl.core.math
-
-.. automethod:: MapdlMath.__init__

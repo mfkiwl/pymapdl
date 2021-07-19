@@ -1,6 +1,0 @@
-﻿ansys.mapdl.core.Mapdl.set\_log\_level
-======================================
-
-.. currentmodule:: ansys.mapdl.core
-
-.. automethod:: Mapdl.set_log_level

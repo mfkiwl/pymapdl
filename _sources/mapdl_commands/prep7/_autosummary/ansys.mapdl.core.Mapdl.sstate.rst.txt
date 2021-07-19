@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.sstate
-=============================
+﻿sstate
+======
 
 .. currentmodule:: ansys.mapdl.core
 

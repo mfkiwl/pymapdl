@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.trlcy
-============================
+﻿trlcy
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

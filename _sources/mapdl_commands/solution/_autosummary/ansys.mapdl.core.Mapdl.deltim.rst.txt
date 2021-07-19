@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.deltim
-=============================
+﻿deltim
+======
 
 .. currentmodule:: ansys.mapdl.core
 

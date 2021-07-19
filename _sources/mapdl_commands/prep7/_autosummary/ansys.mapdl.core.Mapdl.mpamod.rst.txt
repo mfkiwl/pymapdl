@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.mpamod
-=============================
+﻿mpamod
+======
 
 .. currentmodule:: ansys.mapdl.core
 

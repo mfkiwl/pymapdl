@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.force
-============================
+﻿force
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

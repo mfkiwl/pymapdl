@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cmwrite
-==============================
+﻿cmwrite
+=======
 
 .. currentmodule:: ansys.mapdl.core
 

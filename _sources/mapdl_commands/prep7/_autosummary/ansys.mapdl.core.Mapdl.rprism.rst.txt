@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.rprism
-=============================
+﻿rprism
+======
 
 .. currentmodule:: ansys.mapdl.core
 

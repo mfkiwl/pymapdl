@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.lumpm
-============================
+﻿lumpm
+=====
 
 .. currentmodule:: ansys.mapdl.core
 

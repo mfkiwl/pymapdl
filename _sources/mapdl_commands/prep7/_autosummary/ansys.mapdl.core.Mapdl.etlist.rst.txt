@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.etlist
-=============================
+﻿etlist
+======
 
 .. currentmodule:: ansys.mapdl.core
 

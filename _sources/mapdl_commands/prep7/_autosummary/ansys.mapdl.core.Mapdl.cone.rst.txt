@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cone
-===========================
+﻿cone
+====
 
 .. currentmodule:: ansys.mapdl.core
 

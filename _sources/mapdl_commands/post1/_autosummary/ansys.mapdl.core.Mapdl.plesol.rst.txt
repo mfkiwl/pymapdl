@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.plesol
-=============================
+﻿plesol
+======
 
 .. currentmodule:: ansys.mapdl.core
 

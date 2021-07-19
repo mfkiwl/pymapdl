@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.cpsgen
-=============================
+﻿cpsgen
+======
 
 .. currentmodule:: ansys.mapdl.core
 

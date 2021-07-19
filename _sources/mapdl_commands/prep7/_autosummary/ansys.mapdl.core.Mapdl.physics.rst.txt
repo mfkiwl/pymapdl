@@ -1,5 +1,5 @@
-﻿ansys.mapdl.core.Mapdl.physics
-==============================
+﻿physics
+=======
 
 .. currentmodule:: ansys.mapdl.core
 
