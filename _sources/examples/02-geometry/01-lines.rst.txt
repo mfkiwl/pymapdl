@@ -825,8 +825,8 @@ plotting methods.
  .. code-block:: none
 
 
-    [(0.6275130957365036, 0.45521561801433563, 3.055163818333988),
-     (0.6275130957365036, 0.45521561801433563, 0.4910610169172287),
+    [(0.4966197917237878, 0.5385003238916397, 3.3706398909255033),
+     (0.4966197917237878, 0.5385003238916397, 0.6016056835651398),
      (0.0, 1.0, 0.0)]
 
 
@@ -834,7 +834,7 @@ plotting methods.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  4.172 seconds)
+   **Total running time of the script:** ( 0 minutes  4.660 seconds)
 
 
 .. _sphx_glr_download_examples_02-geometry_01-lines.py:
