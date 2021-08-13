@@ -8568,7 +8568,7 @@
 <h1>nplot<a class="headerlink" href="#nplot" title="Permalink to this headline">¶</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="ansys.mapdl.core.Mapdl.nplot">
-<span class="sig-prename descclassname"><span class="pre">Mapdl.</span></span><span class="sig-name descname"><span class="pre">nplot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">knum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vtk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.core.Mapdl.nplot" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">Mapdl.</span></span><span class="sig-name descname"><span class="pre">nplot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nnum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vtk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.core.Mapdl.nplot" title="Permalink to this definition">¶</a></dt>
 <dd><p>APDL Command: NPLOT</p>
 <p>Displays nodes.</p>
 <div class="admonition note">
@@ -8579,11 +8579,15 @@ values set with the <code class="docutils literal notranslate"><span class="pre"
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>knum</strong> (<em>bool</em><em>, </em><em>int</em><em>, </em><em>optional</em>) – <p>Node number key:</p>
+<li><p><strong>nnum</strong> (<em>bool</em><em>, </em><em>int</em><em>, </em><em>optional</em>) – <p>Node number key:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">False</span></code> : No node numbers on display (default).</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">True</span></code> : Include node numbers on display.</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This parameter is only valid when <code class="docutils literal notranslate"><span class="pre">vtk==True</span></code></p>
+</div>
 </p></li>
 <li><p><strong>vtk</strong> (<em>bool</em><em>, </em><em>optional</em>) – Plot the currently selected nodes using <code class="docutils literal notranslate"><span class="pre">pyvista</span></code>.
 Defaults to current <code class="docutils literal notranslate"><span class="pre">use_vtk</span></code> setting as set on the
@@ -8597,7 +8601,7 @@ initialization of MAPDL.</p></li>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">n</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">n</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">nplot</span><span class="p">(</span><span class="n">knum</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">vtk</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mapdl</span><span class="o">.</span><span class="n">nplot</span><span class="p">(</span><span class="n">nnum</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">vtk</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span>
 <span class="go">                show_bounds=True)</span>
 </pre></div>
 </div>
