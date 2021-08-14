@@ -283,7 +283,7 @@ individual meshes.
  .. code-block:: none
 
 
-    [UnstructuredGrid (0x7f883403cad0)
+    [UnstructuredGrid (0x7f66d0bd0ad0)
       N Cells:	12
       N Points:	24
       X Bounds:	0.000e+00, 1.000e+00
@@ -519,8 +519,8 @@ camera direction from the following:
  .. code-block:: none
 
 
-    [(11.522184262831253, 16.093982754670744, 8.771050256050279),
-     (2.7511340067809753, 7.322932498620466, 0.0),
+    [(13.933995027160357, 14.198015940180358, 7.979930956260358),
+     (5.9540640708999995, 6.21808498392, 0.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -528,7 +528,7 @@ camera direction from the following:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.663 seconds)
+   **Total running time of the script:** ( 0 minutes  2.504 seconds)
 
 
 .. _sphx_glr_download_examples_02-geometry_02-areas.py:

@@ -5,28 +5,28 @@
 
 Computation times
 =================
-**01:34.618** total execution time for **examples_00-mapdl-examples** files:
+**01:30.344** total execution time for **examples_00-mapdl-examples** files:
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-mapdl-examples_2d_plate_with_a_hole.py` (``2d_plate_with_a_hole.py``)                                                         | 00:46.037 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-mapdl-examples_2d_plate_with_a_hole.py` (``2d_plate_with_a_hole.py``)                                                         | 00:44.065 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-mapdl-examples_geometry.py` (``geometry.py``)                                                                                 | 00:15.509 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-mapdl-examples_geometry.py` (``geometry.py``)                                                                                 | 00:14.149 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-mapdl-examples_pyvista_mesh.py` (``pyvista_mesh.py``)                                                                         | 00:11.408 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-mapdl-examples_pyvista_mesh.py` (``pyvista_mesh.py``)                                                                         | 00:10.852 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-mapdl-examples_transient_thermal.py` (``transient_thermal.py``)                                                               | 00:07.016 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-mapdl-examples_transient_thermal.py` (``transient_thermal.py``)                                                               | 00:06.829 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-mapdl-examples_3d_notch.py` (``3d_notch.py``)                                                                                 | 00:06.090 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-mapdl-examples_3d_notch.py` (``3d_notch.py``)                                                                                 | 00:05.973 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-mapdl-examples_path_operations.py` (``path_operations.py``)                                                                   | 00:04.289 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-mapdl-examples_path_operations.py` (``path_operations.py``)                                                                   | 00:04.383 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-mapdl-examples_contact_elements.py` (``contact_elements.py``)                                                                 | 00:01.650 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-mapdl-examples_contact_elements.py` (``contact_elements.py``)                                                                 | 00:01.551 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-mapdl-examples_3d_plate_thermal.py` (``3d_plate_thermal.py``)                                                                 | 00:01.185 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-mapdl-examples_3d_plate_thermal.py` (``3d_plate_thermal.py``)                                                                 | 00:01.169 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-mapdl-examples_mapdl_3d_beam.py` (``mapdl_3d_beam.py``)                                                                       | 00:00.790 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-mapdl-examples_mapdl_3d_beam.py` (``mapdl_3d_beam.py``)                                                                       | 00:00.719 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-mapdl-examples_mapdl_beam.py` (``mapdl_beam.py``)                                                                             | 00:00.490 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-mapdl-examples_mapdl_beam.py` (``mapdl_beam.py``)                                                                             | 00:00.508 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+
-| :ref:`sphx_glr_examples_00-mapdl-examples_statically_indeterminate_reaction_force_analysis.py` (``statically_indeterminate_reaction_force_analysis.py``) | 00:00.153 | 0.0 MB |
+| :ref:`sphx_glr_examples_00-mapdl-examples_statically_indeterminate_reaction_force_analysis.py` (``statically_indeterminate_reaction_force_analysis.py``) | 00:00.145 | 0.0 MB |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+--------+
