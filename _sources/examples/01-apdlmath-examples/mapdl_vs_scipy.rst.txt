@@ -268,7 +268,7 @@ Solve the eigenproblem using PyMapdl with APDLMath.
  .. code-block:: none
 
 
-    Elapsed time to solve this problem :  0.5392735004425049
+    Elapsed time to solve this problem :  0.5244951248168945
 
 
 
@@ -447,7 +447,7 @@ Solve the eigenproblem
  .. code-block:: none
 
 
-    Elapsed time to solve this problem :  2.930169105529785
+    Elapsed time to solve this problem :  3.095679998397827
 
 
 
@@ -578,7 +578,7 @@ MAPDL is faster than SciPy.
 
  .. code-block:: none
 
-    Mapdl is 5.43 times faster
+    Mapdl is 5.9 times faster
 
 
 
@@ -586,7 +586,7 @@ MAPDL is faster than SciPy.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  6.139 seconds)
+   **Total running time of the script:** ( 0 minutes  5.883 seconds)
 
 
 .. _sphx_glr_download_examples_01-apdlmath-examples_mapdl_vs_scipy.py:
