@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ansys.mapdl.core.math.MapdlMath &#8212; ansys.mapdl.core 0.59.dev0 documentation</title>
+    <title>ansys.mapdl.core.math.MapdlMath &#8212; ansys.mapdl.core 0.59.5 documentation</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -1724,7 +1724,7 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.add.html#ansys.mapdl.core.math.MapdlMath.add" title="ansys.mapdl.core.math.MapdlMath.add"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.add</span></code></a>(obj1, obj2)</p></td>
 <td><p>Add two APDLMath vectors or matrices.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.damp.html#ansys.mapdl.core.math.MapdlMath.damp" title="ansys.mapdl.core.math.MapdlMath.damp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.damp</span></code></a>([dtype, fname])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.damp.html#ansys.mapdl.core.math.MapdlMath.damp" title="ansys.mapdl.core.math.MapdlMath.damp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.damp</span></code></a>([dtype, fname, asarray])</p></td>
 <td><p>Load the damping matrix from the full file</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.dot.html#ansys.mapdl.core.math.MapdlMath.dot" title="ansys.mapdl.core.math.MapdlMath.dot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.dot</span></code></a>(vec_a, vec_b)</p></td>
@@ -1739,13 +1739,13 @@
 <tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.free.html#ansys.mapdl.core.math.MapdlMath.free" title="ansys.mapdl.core.math.MapdlMath.free"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.free</span></code></a>()</p></td>
 <td><p>Delete all vectors.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.get_vec.html#ansys.mapdl.core.math.MapdlMath.get_vec" title="ansys.mapdl.core.math.MapdlMath.get_vec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.get_vec</span></code></a>([dtype, fname, mat_id])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.get_vec.html#ansys.mapdl.core.math.MapdlMath.get_vec" title="ansys.mapdl.core.math.MapdlMath.get_vec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.get_vec</span></code></a>([dtype, fname, mat_id, …])</p></td>
 <td><p>Load a vector from a file.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.load_matrix_from_file.html#ansys.mapdl.core.math.MapdlMath.load_matrix_from_file" title="ansys.mapdl.core.math.MapdlMath.load_matrix_from_file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.load_matrix_from_file</span></code></a>([dtype, …])</p></td>
 <td><p>Import a matrix from an existing FULL file.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.mass.html#ansys.mapdl.core.math.MapdlMath.mass" title="ansys.mapdl.core.math.MapdlMath.mass"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.mass</span></code></a>([dtype, fname])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.mass.html#ansys.mapdl.core.math.MapdlMath.mass" title="ansys.mapdl.core.math.MapdlMath.mass"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.mass</span></code></a>([dtype, fname, asarray])</p></td>
 <td><p>Load the mass matrix from a full file.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.mat.html#ansys.mapdl.core.math.MapdlMath.mat" title="ansys.mapdl.core.math.MapdlMath.mat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.mat</span></code></a>([nrow, ncol, dtype, init, name])</p></td>
@@ -1766,7 +1766,7 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.rand.html#ansys.mapdl.core.math.MapdlMath.rand" title="ansys.mapdl.core.math.MapdlMath.rand"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.rand</span></code></a>(nrow[, ncol, dtype])</p></td>
 <td><p>Create a vector or matrix containing all random values</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.rhs.html#ansys.mapdl.core.math.MapdlMath.rhs" title="ansys.mapdl.core.math.MapdlMath.rhs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.rhs</span></code></a>([dtype, fname])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.rhs.html#ansys.mapdl.core.math.MapdlMath.rhs" title="ansys.mapdl.core.math.MapdlMath.rhs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.rhs</span></code></a>([dtype, fname, asarray])</p></td>
 <td><p>Return the load vector from a full file.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.set_vec.html#ansys.mapdl.core.math.MapdlMath.set_vec" title="ansys.mapdl.core.math.MapdlMath.set_vec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.set_vec</span></code></a>(data[, name])</p></td>
@@ -1778,7 +1778,7 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.status.html#ansys.mapdl.core.math.MapdlMath.status" title="ansys.mapdl.core.math.MapdlMath.status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.status</span></code></a>()</p></td>
 <td><p>Print out the status of all APDLMath Objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.stiff.html#ansys.mapdl.core.math.MapdlMath.stiff" title="ansys.mapdl.core.math.MapdlMath.stiff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.stiff</span></code></a>([dtype, fname])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.stiff.html#ansys.mapdl.core.math.MapdlMath.stiff" title="ansys.mapdl.core.math.MapdlMath.stiff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.stiff</span></code></a>([dtype, fname, asarray])</p></td>
 <td><p>Load the stiffness matrix from a full file.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="_autosummary/ansys.mapdl.core.math.MapdlMath.subtract.html#ansys.mapdl.core.math.MapdlMath.subtract" title="ansys.mapdl.core.math.MapdlMath.subtract"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MapdlMath.subtract</span></code></a>(obj1, obj2)</p></td>
