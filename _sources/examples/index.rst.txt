@@ -91,12 +91,12 @@ These examples demonstrate full examples using the PyMAPDL module.
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="Begin by launching MAPDL.">
+    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to create contact elements for general contact.">
 
 .. only:: html
 
  .. figure:: /examples/00-mapdl-examples/images/thumb/sphx_glr_contact_elements_thumb.png
-     :alt: This example demonstrates how to create contact elements for general
+     :alt: Contact Element Example
 
      :ref:`sphx_glr_examples_00-mapdl-examples_contact_elements.py`
 

@@ -20,12 +20,15 @@
 
 .. _ref_contact_example:
 
+Contact Element Example
+~~~~~~~~~~~~~~~~~~~~~~~
+
 This example demonstrates how to create contact elements for general
 contact.
 
 Begin by launching MAPDL.
 
-.. GENERATED FROM PYTHON SOURCE LINES 10-14
+.. GENERATED FROM PYTHON SOURCE LINES 13-17
 
 .. code-block:: default
 
@@ -40,13 +43,13 @@ Begin by launching MAPDL.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 15-18
+.. GENERATED FROM PYTHON SOURCE LINES 18-21
 
 Enter the pre-processor, create a block and mesh it with tetrahedral
 elements.
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 18-28
+.. GENERATED FROM PYTHON SOURCE LINES 21-31
 
 .. code-block:: default
 
@@ -81,7 +84,7 @@ elements.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 29-34
+.. GENERATED FROM PYTHON SOURCE LINES 32-37
 
 Second a volume block above the existing block and mesh it with
 quadratic hexahedral elements.  Ensure that these blocks do not
@@ -89,7 +92,7 @@ touch by starting it slightly higher than the existing block.
 
 Note how these two blocks do not touch and the mesh is non-conformal.
 
-.. GENERATED FROM PYTHON SOURCE LINES 34-43
+.. GENERATED FROM PYTHON SOURCE LINES 37-46
 
 .. code-block:: default
 
@@ -123,12 +126,12 @@ Note how these two blocks do not touch and the mesh is non-conformal.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 44-46
+.. GENERATED FROM PYTHON SOURCE LINES 47-49
 
 Select all the elements at the intersection between the two blocks
 and generate contact elements.
 
-.. GENERATED FROM PYTHON SOURCE LINES 46-52
+.. GENERATED FROM PYTHON SOURCE LINES 49-55
 
 .. code-block:: default
 
@@ -160,7 +163,7 @@ and generate contact elements.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 53-58
+.. GENERATED FROM PYTHON SOURCE LINES 56-61
 
 Plot the contact element pairs.  Note from the command output above
 that the section IDs are 5 and 6.
@@ -168,7 +171,7 @@ that the section IDs are 5 and 6.
 Here, we plot the element mesh as a wire-frame to show that the
 contact pairs overlap.
 
-.. GENERATED FROM PYTHON SOURCE LINES 58-61
+.. GENERATED FROM PYTHON SOURCE LINES 61-64
 
 .. code-block:: default
 
@@ -199,7 +202,7 @@ contact pairs overlap.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.835 seconds)
+   **Total running time of the script:** ( 0 minutes  1.822 seconds)
 
 
 .. _sphx_glr_download_examples_00-mapdl-examples_contact_elements.py:
