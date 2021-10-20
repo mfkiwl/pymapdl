@@ -39,7 +39,7 @@ of our square.
 
     # start MAPDL and enter the pre-processing routine
     from ansys.mapdl.core import launch_mapdl
-    from ansys.mapdl.core.inline_functions import Query
+
     mapdl = launch_mapdl()
     mapdl.prep7()
 
@@ -79,7 +79,7 @@ freedom. Following this we:
 .. code-block:: default
 
 
-    mapdl.et(1, 'SHELL181')
+    mapdl.et(1, "SHELL181")
     mapdl.mp("EX", 1, 2e5)
     mapdl.mp("PRXY", 1, 0.3)
     mapdl.rectng(0, 1, 0, 1)
@@ -92,9 +92,10 @@ freedom. Following this we:
 
 
 
-.. image:: /examples/03-tips-n-tricks/images/sphx_glr_04-rotational-displacement_001.png
-    :alt: 04 rotational displacement
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/03-tips-n-tricks/images/sphx_glr_04-rotational-displacement_001.png
+   :alt: 04 rotational displacement
+   :srcset: /examples/03-tips-n-tricks/images/sphx_glr_04-rotational-displacement_001.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -103,6 +104,10 @@ freedom. Following this we:
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1192: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(2.077350269189626, 2.077350269189626, 1.5773502691896262),
      (0.5, 0.5, 0.0),
@@ -126,8 +131,8 @@ Applying Boundary Conditions
 .. code-block:: default
 
 
-    mapdl.run('/SOLU')
-    mapdl.antype('STATIC')
+    mapdl.run("/SOLU")
+    mapdl.antype("STATIC")
     mapdl.nsel("s", "loc", "x", 0)
     mapdl.d("all", "all")
     mapdl.nsel("s", "loc", "x", 1)
@@ -159,25 +164,24 @@ Plotting Stresses
   - Set the colormap to 'plasma' because it is perceptually uniform
   - Show displacement so that we can see any deformation
 
-.. GENERATED FROM PYTHON SOURCE LINES 75-84
+.. GENERATED FROM PYTHON SOURCE LINES 75-82
 
 .. code-block:: default
 
 
     result = mapdl.result
-    result.plot_principal_nodal_stress(0,
-                                       'SEQV',
-                                       show_edges=True,
-                                       cmap='plasma',
-                                       show_displacement=True)
+    result.plot_principal_nodal_stress(
+        0, "SEQV", show_edges=True, cmap="plasma", show_displacement=True
+    )
 
 
 
 
 
-.. image:: /examples/03-tips-n-tricks/images/sphx_glr_04-rotational-displacement_002.png
-    :alt: 04 rotational displacement
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/03-tips-n-tricks/images/sphx_glr_04-rotational-displacement_002.png
+   :alt: 04 rotational displacement
+   :srcset: /examples/03-tips-n-tricks/images/sphx_glr_04-rotational-displacement_002.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -186,28 +190,30 @@ Plotting Stresses
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1192: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
-    [(2.0812887279276824, 2.0812887279276824, 1.5312887279276826),
-     (0.5, 0.5, -0.05),
-     (0.0, 0.0, 1.0)]
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 85-91
+.. GENERATED FROM PYTHON SOURCE LINES 83-90
 
 Extracting Rotational Displacements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- Create a :class:`ansys.mapdl.core.inline_functions.Query` instance
+- Get a :class:`ansys.mapdl.core.inline_functions.Query` instance from the
+  ``queries`` property
 - Locate the nodes at the four corners of the square
 - Extract all 3 rotational displacement components for each one
 - Print them all
 
-.. GENERATED FROM PYTHON SOURCE LINES 91-121
+.. GENERATED FROM PYTHON SOURCE LINES 90-120
 
 .. code-block:: default
 
 
-    q = Query(mapdl)
+    q = mapdl.queries
 
     node1 = q.node(0, 0, 0)
     node2 = q.node(0, 1, 0)
@@ -232,7 +238,7 @@ Extracting Rotational Displacements
     B | {rotations[1][0]:11.6f},{rotations[1][1]:11.6f},{rotations[1][2]:11.6f}
     C | {rotations[2][0]:11.6f},{rotations[2][1]:11.6f},{rotations[2][2]:11.6f}
     D | {rotations[3][0]:11.6f},{rotations[3][1]:11.6f},{rotations[3][2]:11.6f}
- 
+
     """
 
     print(message)
@@ -260,7 +266,7 @@ Extracting Rotational Displacements
     B |    0.000000,   0.000000,   0.000000
     C |   -0.000996,   0.155360,   0.000000
     D |    0.000996,   0.155360,   0.000000
- 
+
 
 
 
@@ -269,7 +275,7 @@ Extracting Rotational Displacements
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.038 seconds)
+   **Total running time of the script:** ( 0 minutes  0.890 seconds)
 
 
 .. _sphx_glr_download_examples_03-tips-n-tricks_04-rotational-displacement.py:

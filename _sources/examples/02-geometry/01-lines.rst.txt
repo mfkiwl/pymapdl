@@ -52,7 +52,7 @@ using Pythonic PREP7 line commands.
 
     Product:             Ansys Mechanical Enterprise
     MAPDL Version:       21.2
-    ansys.mapdl Version: 0.59.dev0
+    ansys.mapdl Version: 0.60.0
 
 
 
@@ -98,25 +98,27 @@ APDL Command: LARC
 Create a circular arc that travels between ``(0, 0, 0)`` and
 ``(1, 1, 0)`` with a radius of curvature of 2.  Plot the result.
 
-.. GENERATED FROM PYTHON SOURCE LINES 38-47
+.. GENERATED FROM PYTHON SOURCE LINES 38-48
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
     k0 = mapdl.k("", 0, 0, 0)
     k1 = mapdl.k("", 1, 1, 0)
     k2 = mapdl.k("", 0, 1, 0)
     lnum = mapdl.larc(k0, k1, k2, 2)
-    mapdl.lplot(background='w', color='k', line_width=5, cpos='xy')
+    mapdl.lplot(background="w", color="k", line_width=5, cpos="xy")
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_001.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_001.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_001.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -125,6 +127,8 @@ Create a circular arc that travels between ``(0, 0, 0)`` and
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.5, 0.5, 2.7320508075688776),
      (0.5, 0.5, 0.0),
@@ -132,17 +136,18 @@ Create a circular arc that travels between ``(0, 0, 0)`` and
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 48-51
+.. GENERATED FROM PYTHON SOURCE LINES 49-52
 
 APDL Command: L2ANG
 ~~~~~~~~~~~~~~~~~~~
 Create two circles and join them with a line.  Plot the result.
 
-.. GENERATED FROM PYTHON SOURCE LINES 51-62
+.. GENERATED FROM PYTHON SOURCE LINES 52-64
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
     k0 = mapdl.k("", 0, 0, 0)
     k1 = mapdl.k("", 0, 0, 1)
@@ -150,15 +155,16 @@ Create two circles and join them with a line.  Plot the result.
     carc0 = mapdl.circle(k0, 1, k1)
     carc1 = mapdl.circle(k2, 1, k1)
     lnum = mapdl.l2ang(carc0[0], carc1[0], 90, 90)
-    mapdl.lplot(background='w', color='k', line_width=5)
+    mapdl.lplot(background="w", color="k", line_width=5)
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_002.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_002.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_002.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -167,6 +173,8 @@ Create two circles and join them with a line.  Plot the result.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(3.203613541114848, 3.203613541114848, 3.453613541114848),
      (0.0, 0.0, 0.25),
@@ -174,17 +182,18 @@ Create two circles and join them with a line.  Plot the result.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 63-66
+.. GENERATED FROM PYTHON SOURCE LINES 65-68
 
 APDL Command: L2TAN
 ~~~~~~~~~~~~~~~~~~~
 Create two circular arcs and connect them with a spline.  Plot the result.
 
-.. GENERATED FROM PYTHON SOURCE LINES 66-78
+.. GENERATED FROM PYTHON SOURCE LINES 68-81
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
     k0 = mapdl.k("", 0, 0, 0)
     k1 = mapdl.k("", 0, 0, 1)
@@ -193,15 +202,16 @@ Create two circular arcs and connect them with a spline.  Plot the result.
     carc0 = mapdl.circle(k0, 1, k1, arc=90)
     carc1 = mapdl.circle(k2, 1, k3, arc=90)
     lnum = mapdl.l2tan(1, 2)
-    mapdl.lplot(background='w', color='k', line_width=5, cpos='xy')
+    mapdl.lplot(background="w", color="k", line_width=5, cpos="xy")
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_003.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_003.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_003.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -210,6 +220,8 @@ Create two circular arcs and connect them with a spline.  Plot the result.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(-0.25, 1.25, 6.830127018922194),
      (-0.25, 1.25, 0.0),
@@ -217,33 +229,35 @@ Create two circular arcs and connect them with a spline.  Plot the result.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 79-83
+.. GENERATED FROM PYTHON SOURCE LINES 82-86
 
 APDL Command: LANG
 ~~~~~~~~~~~~~~~~~~
 Create a line from a line from ``(0, 0, 0)`` to ``(1, 0, 0)`` to a
 keypoint at ``(1, 1, 1)`` at an angle of 60 degrees.  Plot the result.
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-93
+.. GENERATED FROM PYTHON SOURCE LINES 86-97
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
     k0 = mapdl.k("", 0, 0, 0)
     k1 = mapdl.k("", 1, 0, 0)
     lnum = mapdl.l(k0, k1)
     k2 = mapdl.k("", 1, 1, 0)
     lnum = mapdl.lang(lnum, k2, 60)
-    mapdl.lplot(background='w', color='k', line_width=5, cpos='xy')
+    mapdl.lplot(background="w", color="k", line_width=5, cpos="xy")
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_004.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_004.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_004.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -252,6 +266,8 @@ keypoint at ``(1, 1, 1)`` at an angle of 60 degrees.  Plot the result.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.5, 0.5, 2.7320508075688776),
      (0.5, 0.5, 0.0),
@@ -259,17 +275,18 @@ keypoint at ``(1, 1, 1)`` at an angle of 60 degrees.  Plot the result.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 94-97
+.. GENERATED FROM PYTHON SOURCE LINES 98-101
 
 APDL Command: LAREA
 ~~~~~~~~~~~~~~~~~~~
 Generate a line on a square between its two corners.
 
-.. GENERATED FROM PYTHON SOURCE LINES 97-108
+.. GENERATED FROM PYTHON SOURCE LINES 101-113
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
     k0 = mapdl.k("", 0, 0, 0)
     k1 = mapdl.k("", 1, 0, 0)
@@ -277,15 +294,16 @@ Generate a line on a square between its two corners.
     k3 = mapdl.k("", 0, 1, 0)
     a0 = mapdl.a(k0, k1, k2, k3)
     lnum = mapdl.larea(k0, k2, a0)
-    mapdl.lplot(background='w', color='k', line_width=5, cpos='xy')
+    mapdl.lplot(background="w", color="k", line_width=5, cpos="xy")
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_005.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_005.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_005.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -294,6 +312,8 @@ Generate a line on a square between its two corners.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.50000000015, 0.50000000015, 2.7320508083884927),
      (0.50000000015, 0.50000000015, 0.0),
@@ -301,13 +321,13 @@ Generate a line on a square between its two corners.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 109-112
+.. GENERATED FROM PYTHON SOURCE LINES 114-117
 
 APDL Command: LCOMB
 ~~~~~~~~~~~~~~~~~~~
 Create two lines and combine them.
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-121
+.. GENERATED FROM PYTHON SOURCE LINES 117-126
 
 .. code-block:: default
 
@@ -327,31 +347,33 @@ Create two lines and combine them.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 122-125
+.. GENERATED FROM PYTHON SOURCE LINES 127-130
 
 APDL Command: LDIV
 ~~~~~~~~~~~~~~~~~~
 Create a single line and divide it into 5 pieces.
 
-.. GENERATED FROM PYTHON SOURCE LINES 125-134
+.. GENERATED FROM PYTHON SOURCE LINES 130-140
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
     k0 = mapdl.k("", 0, 0, 0)
     k1 = mapdl.k("", 1, 0, 0)
     l0 = mapdl.l(k0, k1)
     mapdl.ldiv(l0, ndiv=5)
-    mapdl.lplot(background='w', color='k', line_width=5, cpos='xy')
+    mapdl.lplot(background="w", color="k", line_width=5, cpos="xy")
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_006.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_006.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_006.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -360,6 +382,8 @@ Create a single line and divide it into 5 pieces.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.5, 0.0, 1.9318516525781368),
      (0.5, 0.0, 0.0),
@@ -367,31 +391,33 @@ Create a single line and divide it into 5 pieces.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 135-138
+.. GENERATED FROM PYTHON SOURCE LINES 141-144
 
 APDL Command: LEXTND
 ~~~~~~~~~~~~~~~~~~~~
 Create a circular arc and extend it at one of its keypoints.
 
-.. GENERATED FROM PYTHON SOURCE LINES 138-147
+.. GENERATED FROM PYTHON SOURCE LINES 144-154
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
     k0 = mapdl.k("", 0, 0, 0)
     k1 = mapdl.k("", 0, 0, 1)
     carcs = mapdl.circle(k0, 1, k1, arc=90)
     lnum = mapdl.lextnd(carcs[0], 3, 1)
-    mapdl.lplot(background='w', color='k', line_width=5, cpos='xy')
+    mapdl.lplot(background="w", color="k", line_width=5, cpos="xy")
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_007.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_007.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_007.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -400,6 +426,8 @@ Create a circular arc and extend it at one of its keypoints.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.5, 0.0, 4.319751617610021),
      (0.5, 0.0, 0.0),
@@ -407,18 +435,19 @@ Create a circular arc and extend it at one of its keypoints.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 148-152
+.. GENERATED FROM PYTHON SOURCE LINES 155-159
 
 APDL Command: LFILLT
 ~~~~~~~~~~~~~~~~~~~~
 Create two intersecting lines at a right angle and add a
 fillet between them.
 
-.. GENERATED FROM PYTHON SOURCE LINES 152-163
+.. GENERATED FROM PYTHON SOURCE LINES 159-171
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
     k0 = mapdl.k("", 0, 0, 0)
     k1 = mapdl.k("", 0, 1, 0)
@@ -426,15 +455,16 @@ fillet between them.
     l0 = mapdl.l(k0, k1)
     l1 = mapdl.l(k0, k2)
     lnum = mapdl.lfillt(l0, l1, 0.25)
-    mapdl.lplot(background='w', color='k', line_width=5, cpos='xy')
+    mapdl.lplot(background="w", color="k", line_width=5, cpos="xy")
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_008.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_008.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_008.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -443,6 +473,8 @@ fillet between them.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.5, 0.5, 2.7320508075688776),
      (0.5, 0.5, 0.0),
@@ -450,33 +482,35 @@ fillet between them.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 164-168
+.. GENERATED FROM PYTHON SOURCE LINES 172-176
 
 APDL Command: LTAN
 ~~~~~~~~~~~~~~~~~~
 Create a circular arc and generate a tangent spline at the end of it
 directed to a new keypoint.
 
-.. GENERATED FROM PYTHON SOURCE LINES 168-178
+.. GENERATED FROM PYTHON SOURCE LINES 176-187
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
     k0 = mapdl.k("", 0, 0, 0)
     k1 = mapdl.k("", 0, 0, 1)
     k2 = mapdl.k("", -1, 1.5, 0)
     carc = mapdl.circle(k0, 1, k1, arc=90)
     lnum = mapdl.ltan(carc[0], k2)
-    mapdl.lplot(background='w', color='k', line_width=5, cpos='xy')
+    mapdl.lplot(background="w", color="k", line_width=5, cpos="xy")
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_009.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_009.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_009.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -485,6 +519,8 @@ directed to a new keypoint.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.0, 0.75, 4.8296291314453415),
      (0.0, 0.75, 0.0),
@@ -492,33 +528,35 @@ directed to a new keypoint.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 179-182
+.. GENERATED FROM PYTHON SOURCE LINES 188-191
 
 APDL Command: SPLINE
 ~~~~~~~~~~~~~~~~~~~~
 Generate a segmented spline through 5 keypoints.
 
-.. GENERATED FROM PYTHON SOURCE LINES 182-193
+.. GENERATED FROM PYTHON SOURCE LINES 191-203
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
-    k0 = mapdl.k('', 0, 0, 0)
-    k1 = mapdl.k('', 0.2, 0.2, 0)
-    k2 = mapdl.k('', 0.4, 0.3, 0)
-    k3 = mapdl.k('', 0.6, 0.5, 0)
-    k4 = mapdl.k('', 0.8, 0.3, 0)
+    k0 = mapdl.k("", 0, 0, 0)
+    k1 = mapdl.k("", 0.2, 0.2, 0)
+    k2 = mapdl.k("", 0.4, 0.3, 0)
+    k3 = mapdl.k("", 0.6, 0.5, 0)
+    k4 = mapdl.k("", 0.8, 0.3, 0)
     mapdl.spline(k0, k1, k2, k3, k4)
-    mapdl.lplot(background='w', color='k', line_width=5, cpos='xy')
+    mapdl.lplot(background="w", color="k", line_width=5, cpos="xy")
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_010.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_010.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_010.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -527,6 +565,8 @@ Generate a segmented spline through 5 keypoints.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.4, 0.25208733064211125, 1.8267923549699552),
      (0.4, 0.25208733064211125, 0.0),
@@ -534,7 +574,7 @@ Generate a segmented spline through 5 keypoints.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 194-201
+.. GENERATED FROM PYTHON SOURCE LINES 204-211
 
 APDL Command: BSPLIN
 ~~~~~~~~~~~~~~~~~~~~
@@ -544,25 +584,27 @@ Generate through ``(0, 0, 0)``, ``(0, 1, 0)`` and ``(1, 2, 0)``
 This is different than the ``spline`` method as this creates a
 single line rather than multiple lines.
 
-.. GENERATED FROM PYTHON SOURCE LINES 201-210
+.. GENERATED FROM PYTHON SOURCE LINES 211-221
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
     k0 = mapdl.k("", 0, 0, 0)
     k1 = mapdl.k("", 0, 1, 0)
     k2 = mapdl.k("", 1, 2, 0)
     lnum = mapdl.bsplin(k0, k1, k2)
-    mapdl.lplot(background='w', color='k', line_width=5, cpos='xy')
+    mapdl.lplot(background="w", color="k", line_width=5, cpos="xy")
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_011.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_011.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_011.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -571,6 +613,8 @@ single line rather than multiple lines.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.45194711247094027, 1.0, 4.405912813957279),
      (0.45194711247094027, 1.0, 0.0),
@@ -578,13 +622,13 @@ single line rather than multiple lines.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 211-214
+.. GENERATED FROM PYTHON SOURCE LINES 222-225
 
 Line IDs
 ~~~~~~~~
 Return an array of the line IDs
 
-.. GENERATED FROM PYTHON SOURCE LINES 214-218
+.. GENERATED FROM PYTHON SOURCE LINES 225-229
 
 .. code-block:: default
 
@@ -607,14 +651,14 @@ Return an array of the line IDs
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 219-223
+.. GENERATED FROM PYTHON SOURCE LINES 230-234
 
 Line Geometry
 ~~~~~~~~~~~~~
 Get the VTK ``PolyData`` containing lines.  This VTK mesh can be
 saved or plotted.  For more details, visit https://docs.pyvista.com
 
-.. GENERATED FROM PYTHON SOURCE LINES 223-227
+.. GENERATED FROM PYTHON SOURCE LINES 234-238
 
 .. code-block:: default
 
@@ -625,6 +669,15 @@ saved or plotted.  For more details, visit https://docs.pyvista.com
 
 
 
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
 
 .. raw:: html
@@ -652,7 +705,7 @@ saved or plotted.  For more details, visit https://docs.pyvista.com
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 228-236
+.. GENERATED FROM PYTHON SOURCE LINES 239-247
 
 Line Selection
 ~~~~~~~~~~~~~~
@@ -663,17 +716,19 @@ useful for selecting lines in a pythonic manner.
 
 This example generates a series of random lines and selects them
 
-.. GENERATED FROM PYTHON SOURCE LINES 236-252
+.. GENERATED FROM PYTHON SOURCE LINES 247-265
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
 
     def generate_random_line():
-        k0 = mapdl.k('', *np.random.random(3))
-        k1 = mapdl.k('', *np.random.random(3))
+        k0 = mapdl.k("", *np.random.random(3))
+        k1 = mapdl.k("", *np.random.random(3))
         mapdl.l(k0, k1)
+
 
     # create 20 random lines
     for _ in range(20):
@@ -698,15 +753,15 @@ This example generates a series of random lines and selects them
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 253-254
+.. GENERATED FROM PYTHON SOURCE LINES 266-267
 
 Select every other line with the old style command.
 
-.. GENERATED FROM PYTHON SOURCE LINES 254-258
+.. GENERATED FROM PYTHON SOURCE LINES 267-271
 
 .. code-block:: default
 
-    mapdl.ksel('S', 'KP', '', 1, 20, 2)
+    mapdl.ksel("S", "KP", "", 1, 20, 2)
     print(mapdl.geometry.lnum)
 
 
@@ -725,14 +780,14 @@ Select every other line with the old style command.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 259-263
+.. GENERATED FROM PYTHON SOURCE LINES 272-276
 
 Select every other line with the new style command.
 
 Note that the item IDs are 1 based in MAPDL, while Python ranges are
 0 based.
 
-.. GENERATED FROM PYTHON SOURCE LINES 263-267
+.. GENERATED FROM PYTHON SOURCE LINES 276-280
 
 .. code-block:: default
 
@@ -755,7 +810,7 @@ Note that the item IDs are 1 based in MAPDL, while Python ranges are
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 268-275
+.. GENERATED FROM PYTHON SOURCE LINES 281-288
 
 Select lines from a list
 
@@ -765,7 +820,7 @@ areas.
 
 Note that you could use a numpy array here as well.
 
-.. GENERATED FROM PYTHON SOURCE LINES 275-279
+.. GENERATED FROM PYTHON SOURCE LINES 288-292
 
 .. code-block:: default
 
@@ -788,7 +843,7 @@ Note that you could use a numpy array here as well.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 280-286
+.. GENERATED FROM PYTHON SOURCE LINES 293-299
 
 APDL Command: LPLOT
 ~~~~~~~~~~~~~~~~~~~
@@ -797,25 +852,28 @@ Plot colored lines while displaying the keypoint numbers.
 There are a variety of plotting options available for all the common
 plotting methods.
 
-.. GENERATED FROM PYTHON SOURCE LINES 286-295
+.. GENERATED FROM PYTHON SOURCE LINES 299-310
 
 .. code-block:: default
 
 
-    mapdl.lplot(show_keypoint_numbering=True,
-                color_lines=True,
-                show_line_numbering=False,
-                background='black',
-                show_bounds=True,
-                line_width=5,
-                cpos='xy',
-                font_size=26)
+    mapdl.lplot(
+        show_keypoint_numbering=True,
+        color_lines=True,
+        show_line_numbering=False,
+        background="black",
+        show_bounds=True,
+        line_width=5,
+        cpos="xy",
+        font_size=26,
+    )
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_01-lines_012.png
-    :alt: 01 lines
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_01-lines_012.png
+   :alt: 01 lines
+   :srcset: /examples/02-geometry/images/sphx_glr_01-lines_012.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -824,9 +882,11 @@ plotting methods.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
-    [(0.4807801619172096, 0.526522058993578, 2.8344084684086055),
-     (0.4807801619172096, 0.526522058993578, 0.3730733646079898),
+    [(0.5525963976979256, 0.48026324808597565, 3.0903874680292214),
+     (0.5525963976979256, 0.48026324808597565, 0.4382809866219759),
      (0.0, 1.0, 0.0)]
 
 
@@ -834,7 +894,7 @@ plotting methods.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  5.077 seconds)
+   **Total running time of the script:** ( 0 minutes  4.328 seconds)
 
 
 .. _sphx_glr_download_examples_02-geometry_01-lines.py:

@@ -79,7 +79,7 @@ After this preamble is complete, the first code block begins.
  .. code-block:: none
 
 
-    <ansys.mapdl.core.mapdl_grpc.MapdlGrpc object at 0x7f146fbca7d0>
+    <ansys.mapdl.core.mapdl_grpc.MapdlGrpc object at 0x7f8f24124580>
 
 
 
@@ -121,10 +121,10 @@ printed to the screen according to its ``__repr__``.  Otherwise, you can use ``p
 
     Product:             Ansys Mechanical Enterprise
     MAPDL Version:       21.2
-    ansys.mapdl Version: 0.59.dev0
+    ansys.mapdl Version: 0.60.0
 
 
-    <ansys.mapdl.core.mapdl_grpc.MapdlGrpc object at 0x7f146fbca7d0>
+    <ansys.mapdl.core.mapdl_grpc.MapdlGrpc object at 0x7f8f24124580>
 
 
 
@@ -146,9 +146,10 @@ rendered in the page. Like so:
 
 
 
-.. image:: /examples/03-tips-n-tricks/images/sphx_glr_00-example-template_001.png
-    :alt: 00 example template
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/03-tips-n-tricks/images/sphx_glr_00-example-template_001.png
+   :alt: 00 example template
+   :srcset: /examples/03-tips-n-tricks/images/sphx_glr_00-example-template_001.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -157,6 +158,10 @@ rendered in the page. Like so:
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1192: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(2.431851652578137, 2.431851652578137, 2.431851652578137),
      (0.5, 0.5, 0.5),
@@ -180,17 +185,18 @@ Matplotlib plots will also be rendered in the html.
     fig = plt.figure()
     ax = fig.add_subplot(111)
     x = list(range(10))
-    y = [i**2 + 3*i - 1 for i in x]
+    y = [i ** 2 + 3 * i - 1 for i in x]
     ax.plot(x, y)
-    ax.set_xlabel('x')
-    ax.set_ylabel('y')
+    ax.set_xlabel("x")
+    ax.set_ylabel("y")
 
 
 
 
-.. image:: /examples/03-tips-n-tricks/images/sphx_glr_00-example-template_002.png
-    :alt: 00 example template
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/03-tips-n-tricks/images/sphx_glr_00-example-template_002.png
+   :alt: 00 example template
+   :srcset: /examples/03-tips-n-tricks/images/sphx_glr_00-example-template_002.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -218,13 +224,13 @@ Once your example is complete and you've verified builds locally, you can make a
 Branches containing examples should be prefixed with `doc/` as per the branch
 naming conventions found here: :ref:`contributing`.
 
-Note that you only need to create the python source example (*.py).  The jupyter
+Note that you only need to create the python source example (.py).  The jupyter
 notebook, the example html and the demo script will all be auto-generated via ``sphinx-gallery``.
 
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.780 seconds)
+   **Total running time of the script:** ( 0 minutes  0.632 seconds)
 
 
 .. _sphx_glr_download_examples_03-tips-n-tricks_00-example-template.py:

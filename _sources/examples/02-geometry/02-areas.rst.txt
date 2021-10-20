@@ -52,7 +52,7 @@ using Pythonic PREP7 area commands.
 
     Product:             Ansys Mechanical Enterprise
     MAPDL Version:       21.2
-    ansys.mapdl Version: 0.59.dev0
+    ansys.mapdl Version: 0.60.0
 
 
 
@@ -73,15 +73,16 @@ Create a simple triangle in the XY plane using three keypoints.
     k1 = mapdl.k("", 1, 0, 0)
     k2 = mapdl.k("", 0, 1, 0)
     a0 = mapdl.a(k0, k1, k2)
-    mapdl.aplot(show_lines=True, line_width=5, show_bounds=True, cpos='xy')
+    mapdl.aplot(show_lines=True, line_width=5, show_bounds=True, cpos="xy")
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_02-areas_001.png
-    :alt: 02 areas
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_02-areas_001.png
+   :alt: 02 areas
+   :srcset: /examples/02-geometry/images/sphx_glr_02-areas_001.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -90,6 +91,10 @@ Create a simple triangle in the XY plane using three keypoints.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1192: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.5, 0.5, 2.7320508075688776),
      (0.5, 0.5, 0.0),
@@ -103,11 +108,12 @@ APDL Command: AL
 ~~~~~~~~~~~~~~~~
 Create an area from four lines.
 
-.. GENERATED FROM PYTHON SOURCE LINES 37-51
+.. GENERATED FROM PYTHON SOURCE LINES 37-52
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
     k0 = mapdl.k("", 0, 0, 0)
     k1 = mapdl.k("", 1, 0, 0)
@@ -118,15 +124,16 @@ Create an area from four lines.
     l2 = mapdl.l(k2, k3)
     l3 = mapdl.l(k3, k0)
     anum = mapdl.al(l0, l1, l2, l3)
-    mapdl.aplot(show_lines=True, line_width=5, show_bounds=True, cpos='xy')
+    mapdl.aplot(show_lines=True, line_width=5, show_bounds=True, cpos="xy")
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_02-areas_002.png
-    :alt: 02 areas
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_02-areas_002.png
+   :alt: 02 areas
+   :srcset: /examples/02-geometry/images/sphx_glr_02-areas_002.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -135,6 +142,10 @@ Create an area from four lines.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1192: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.5, 0.5, 2.7320508075688776),
      (0.5, 0.5, 0.0),
@@ -142,7 +153,7 @@ Create an area from four lines.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 52-57
+.. GENERATED FROM PYTHON SOURCE LINES 53-58
 
 APDL Command: ADRAG
 ~~~~~~~~~~~~~~~~~~~
@@ -150,11 +161,12 @@ Generate areas by dragging a line pattern along a path.
 
 Drag a circle between two keypoints to create an area
 
-.. GENERATED FROM PYTHON SOURCE LINES 57-67
+.. GENERATED FROM PYTHON SOURCE LINES 58-69
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
     k0 = mapdl.k("", 0, 0, 0)
     k1 = mapdl.k("", 0, 0, 1)
@@ -167,9 +179,10 @@ Drag a circle between two keypoints to create an area
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_02-areas_003.png
-    :alt: 02 areas
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_02-areas_003.png
+   :alt: 02 areas
+   :srcset: /examples/02-geometry/images/sphx_glr_02-areas_003.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -178,6 +191,10 @@ Drag a circle between two keypoints to create an area
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1192: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(2.431851652578137, 2.431851652578137, 2.431851652578137),
      (0.5, 0.5, 0.5),
@@ -185,30 +202,32 @@ Drag a circle between two keypoints to create an area
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 68-71
+.. GENERATED FROM PYTHON SOURCE LINES 70-73
 
 APDL Command: ASBA
 ~~~~~~~~~~~~~~~~~~
 Subtract a ``0.5 x 0.5`` rectangle from a ``1 x 1`` rectangle.
 
-.. GENERATED FROM PYTHON SOURCE LINES 71-79
+.. GENERATED FROM PYTHON SOURCE LINES 73-82
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
     anum0 = mapdl.blc4(0, 0, 1, 1)
     anum1 = mapdl.blc4(0.25, 0.25, 0.5, 0.5)
     aout = mapdl.asba(anum0, anum1)
-    mapdl.aplot(show_lines=True, line_width=5, show_bounds=True, cpos='xy')
+    mapdl.aplot(show_lines=True, line_width=5, show_bounds=True, cpos="xy")
 
 
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_02-areas_004.png
-    :alt: 02 areas
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_02-areas_004.png
+   :alt: 02 areas
+   :srcset: /examples/02-geometry/images/sphx_glr_02-areas_004.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -217,6 +236,10 @@ Subtract a ``0.5 x 0.5`` rectangle from a ``1 x 1`` rectangle.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1192: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
     [(0.5, 0.5, 2.7320508075688776),
      (0.5, 0.5, 0.0),
@@ -224,13 +247,13 @@ Subtract a ``0.5 x 0.5`` rectangle from a ``1 x 1`` rectangle.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 80-83
+.. GENERATED FROM PYTHON SOURCE LINES 83-86
 
 Area IDs
 ~~~~~~~~
 Return an array of the area IDs
 
-.. GENERATED FROM PYTHON SOURCE LINES 83-87
+.. GENERATED FROM PYTHON SOURCE LINES 86-90
 
 .. code-block:: default
 
@@ -253,7 +276,7 @@ Return an array of the area IDs
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 88-96
+.. GENERATED FROM PYTHON SOURCE LINES 91-99
 
 Area Geometry
 ~~~~~~~~~~~~~
@@ -264,7 +287,7 @@ Note that this is a method so you can select the quality of the
 areas (mesh density), and if you would like a merged output or
 individual meshes.
 
-.. GENERATED FROM PYTHON SOURCE LINES 96-100
+.. GENERATED FROM PYTHON SOURCE LINES 99-103
 
 .. code-block:: default
 
@@ -282,8 +305,12 @@ individual meshes.
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1192: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
-    [UnstructuredGrid (0x7f1481c60440)
+    [UnstructuredGrid (0x7f8f24835e80)
       N Cells:	12
       N Points:	24
       X Bounds:	0.000e+00, 1.000e+00
@@ -294,12 +321,12 @@ individual meshes.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 101-103
+.. GENERATED FROM PYTHON SOURCE LINES 104-106
 
 Merged Area Geometry
 ~~~~~~~~~~~~~~~~~~~~
 
-.. GENERATED FROM PYTHON SOURCE LINES 103-111
+.. GENERATED FROM PYTHON SOURCE LINES 106-114
 
 .. code-block:: default
 
@@ -314,6 +341,17 @@ Merged Area Geometry
 
 
 
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1192: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
 
 .. raw:: html
@@ -341,7 +379,7 @@ Merged Area Geometry
     <br />
     <br />
 
-.. GENERATED FROM PYTHON SOURCE LINES 112-120
+.. GENERATED FROM PYTHON SOURCE LINES 115-123
 
 Area Selection
 ~~~~~~~~~~~~~~
@@ -352,16 +390,18 @@ useful for selecting areas in a pythonic manner.
 
 This example generates a series of random squares and selects them
 
-.. GENERATED FROM PYTHON SOURCE LINES 120-135
+.. GENERATED FROM PYTHON SOURCE LINES 123-140
 
 .. code-block:: default
 
-    mapdl.clear(); mapdl.prep7()
+    mapdl.clear()
+    mapdl.prep7()
 
 
     def generate_random_area():
         start_x, start_y, height, width = np.random.random(4)
-        mapdl.blc4(start_x*10, start_y*10, height, width)
+        mapdl.blc4(start_x * 10, start_y * 10, height, width)
+
 
     # create 20 random rectangles
     for i in range(20):
@@ -386,15 +426,15 @@ This example generates a series of random squares and selects them
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 136-137
+.. GENERATED FROM PYTHON SOURCE LINES 141-142
 
 Select every other area with the old style command.
 
-.. GENERATED FROM PYTHON SOURCE LINES 137-141
+.. GENERATED FROM PYTHON SOURCE LINES 142-146
 
 .. code-block:: default
 
-    mapdl.asel('S', 'AREA', '', 1, 20, 2)
+    mapdl.asel("S", "AREA", "", 1, 20, 2)
     print(mapdl.geometry.anum)
 
 
@@ -413,13 +453,13 @@ Select every other area with the old style command.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 142-145
+.. GENERATED FROM PYTHON SOURCE LINES 147-150
 
 Select every other area with the new style command.
 
 Note that the Area IDs are 1 based in MAPDL, while Python ranges are 0 based.
 
-.. GENERATED FROM PYTHON SOURCE LINES 145-149
+.. GENERATED FROM PYTHON SOURCE LINES 150-154
 
 .. code-block:: default
 
@@ -442,7 +482,7 @@ Note that the Area IDs are 1 based in MAPDL, while Python ranges are 0 based.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 150-155
+.. GENERATED FROM PYTHON SOURCE LINES 155-160
 
 Select areas from a list
 
@@ -450,7 +490,7 @@ Note that you can ``return_selected`` if you want to see what you
 have selected.  This is helpful when reselecting from existing
 areas.
 
-.. GENERATED FROM PYTHON SOURCE LINES 155-159
+.. GENERATED FROM PYTHON SOURCE LINES 160-164
 
 .. code-block:: default
 
@@ -473,7 +513,7 @@ areas.
 
 
 
-.. GENERATED FROM PYTHON SOURCE LINES 160-179
+.. GENERATED FROM PYTHON SOURCE LINES 165-184
 
 APDL Command: APLOT
 ~~~~~~~~~~~~~~~~~~~
@@ -495,21 +535,19 @@ camera direction from the following:
 - 'zx' - ZX Plane view
 - 'zy' - ZY Plane view
 
-.. GENERATED FROM PYTHON SOURCE LINES 179-184
+.. GENERATED FROM PYTHON SOURCE LINES 184-186
 
 .. code-block:: default
 
 
-    mapdl.aplot(quality=1,
-                show_bounds=True,
-                cpos='iso',
-                show_lines=True)
+    mapdl.aplot(quality=1, show_bounds=True, cpos="iso", show_lines=True)
 
 
 
-.. image:: /examples/02-geometry/images/sphx_glr_02-areas_005.png
-    :alt: 02 areas
-    :class: sphx-glr-single-img
+.. image-sg:: /examples/02-geometry/images/sphx_glr_02-areas_005.png
+   :alt: 02 areas
+   :srcset: /examples/02-geometry/images/sphx_glr_02-areas_005.png
+   :class: sphx-glr-single-img
 
 
 .. rst-class:: sphx-glr-script-out
@@ -518,9 +556,13 @@ camera direction from the following:
 
  .. code-block:: none
 
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1192: PyvistaDeprecationWarning: Use of `point_arrays` is deprecated. Use `point_data` instead.
+      warnings.warn(
+    /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
+      warnings.warn(
 
-    [(17.84729412287213, 16.68554276009252, 12.11059871799706),
-     (5.736695404875066, 4.574944042095461, 0.0),
+    [(16.029540609876697, 17.77027885577609, 11.018845225356092),
+     (5.010695384520605, 6.75143363042, 0.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -528,7 +570,7 @@ camera direction from the following:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  3.180 seconds)
+   **Total running time of the script:** ( 0 minutes  2.705 seconds)
 
 
 .. _sphx_glr_download_examples_02-geometry_02-areas.py:
