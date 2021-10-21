@@ -52,7 +52,7 @@ using Pythonic PREP7 area commands.
 
     Product:             Ansys Mechanical Enterprise
     MAPDL Version:       21.2
-    ansys.mapdl Version: 0.60.0
+    ansys.mapdl Version: 0.60.1
 
 
 
@@ -310,7 +310,7 @@ individual meshes.
     /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
-    [UnstructuredGrid (0x7f8f24835e80)
+    [UnstructuredGrid (0x7f5d9e80ed00)
       N Cells:	12
       N Points:	24
       X Bounds:	0.000e+00, 1.000e+00
@@ -561,8 +561,8 @@ camera direction from the following:
     /opt/hostedtoolcache/Python/3.8.12/x64/lib/python3.8/site-packages/pyvista/core/dataset.py:1332: PyvistaDeprecationWarning: Use of `cell_arrays` is deprecated. Use `cell_data` instead.
       warnings.warn(
 
-    [(16.029540609876697, 17.77027885577609, 11.018845225356092),
-     (5.010695384520605, 6.75143363042, 0.0),
+    [(13.458188106005633, 17.116085180358212, 8.285503558540633),
+     (5.172684547465, 8.83058162181758, 0.0),
      (0.0, 0.0, 1.0)]
 
 
@@ -570,7 +570,7 @@ camera direction from the following:
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.705 seconds)
+   **Total running time of the script:** ( 0 minutes  3.115 seconds)
 
 
 .. _sphx_glr_download_examples_02-geometry_02-areas.py:

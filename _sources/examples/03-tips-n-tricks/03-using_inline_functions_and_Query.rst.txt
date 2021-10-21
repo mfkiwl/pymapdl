@@ -263,18 +263,18 @@ Using ``Query``
         ************************
         Displacement at Node 28:
         ************************
-        X | 1.757716378392638e-05
-        Y | 3.0362575469027852e-09
-        Z | -7.982690758480541e-07
+        X | 1.757716378392642e-05
+        Y | 3.0362575469018145e-09
+        Z | -7.982690758480545e-07
 
     
 
         ************************
         Displacement at Node 49:
         ************************
-        X | 1.7612417675184464e-05
-        Y | 1.2866314989089652e-19
-        Z | 8.070989838529116e-07
+        X | 1.76124176751845e-05
+        Y | 1.274913808467143e-19
+        Z | 8.070989838529135e-07
 
     
 
@@ -284,7 +284,7 @@ Using ``Query``
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.374 seconds)
+   **Total running time of the script:** ( 0 minutes  1.533 seconds)
 
 
 .. _sphx_glr_download_examples_03-tips-n-tricks_03-using_inline_functions_and_Query.py:
