@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ansys.mapdl.core.mesh_grpc.MeshGrpc &#8212; ansys.mapdl.core 0.60.2 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>ansys.mapdl.core.mesh_grpc.MeshGrpc &#8212; ansys.mapdl.core 0.60.3 documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,27 +24,35 @@
 
     
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/thebelab.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/thebelab-helper.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="element_coord_system" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.element_coord_system.html" />
     <link rel="prev" title="Mesh" href="../mesh.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -63,7 +72,7 @@
     
     
 
-<a class="navbar-brand" href="../../index.html">
+<a class="navbar-brand" href="https://docs.pyansys.com/">
   <img src="../../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
 </a>
 
@@ -232,6 +241,11 @@
       </a>
      </li>
      <li class="toctree-l3">
+      <a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.enum_all.html">
+       enum_all
+      </a>
+     </li>
+     <li class="toctree-l3">
       <a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.etype.html">
        etype
       </a>
@@ -377,11 +391,11 @@
               
               <div>
                 
-  <div class="section" id="ansys-mapdl-core-mesh-grpc-meshgrpc">
+  <section id="ansys-mapdl-core-mesh-grpc-meshgrpc">
 <h1>ansys.mapdl.core.mesh_grpc.MeshGrpc<a class="headerlink" href="#ansys-mapdl-core-mesh-grpc-meshgrpc" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="ansys.mapdl.core.mesh_grpc.MeshGrpc">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.core.mesh_grpc.</span></span><span class="sig-name descname"><span class="pre">MeshGrpc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mapdl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.core.mesh_grpc.MeshGrpc" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ansys.mapdl.core.mesh_grpc.</span></span><span class="sig-name descname"><span class="pre">MeshGrpc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mapdl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ansys.mapdl.core.mesh_grpc.MeshGrpc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Provides an interface to the gRPC mesh from MAPDL.</p>
 <p class="rubric">Methods</p>
 <table class="longtable table autosummary">
@@ -420,53 +434,56 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.enum.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.enum" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.enum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.enum</span></code></a></p></td>
 <td><p>Element numbers of currently selected elements</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.etype.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.etype" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.etype"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.etype</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.enum_all.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.enum_all" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.enum_all"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.enum_all</span></code></a></p></td>
+<td><p>Array of all element numbers, even those not selected.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.etype.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.etype" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.etype"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.etype</span></code></a></p></td>
 <td><p>Element type of each element.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.grid.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.grid" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.grid</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.grid.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.grid" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.grid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.grid</span></code></a></p></td>
 <td><p>VTK representation of the underlying finite element mesh.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.key_option.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.key_option" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.key_option"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.key_option</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.key_option.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.key_option" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.key_option"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.key_option</span></code></a></p></td>
 <td><p>Key options of selected element types.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.material_type.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.material_type" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.material_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.material_type</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.material_type.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.material_type" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.material_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.material_type</span></code></a></p></td>
 <td><p>Material type index of each element in the archive.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.n_elem.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.n_elem" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.n_elem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.n_elem</span></code></a></p></td>
-<td><p>Number of currently selected nodes in MAPDL</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.n_elem.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.n_elem" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.n_elem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.n_elem</span></code></a></p></td>
+<td><p>Number of currently selected elements in MAPDL.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.n_node.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.n_node" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.n_node"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.n_node</span></code></a></p></td>
-<td><p>Number of currently selected nodes in MAPDL</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.n_node.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.n_node" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.n_node"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.n_node</span></code></a></p></td>
+<td><p>Number of currently selected nodes in MAPDL.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.nnum.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.nnum" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.nnum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.nnum</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.nnum.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.nnum" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.nnum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.nnum</span></code></a></p></td>
 <td><p>Array of currently selected node numbers.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.nnum_all.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.nnum_all" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.nnum_all"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.nnum_all</span></code></a></p></td>
-<td><p>Array of all node numbers.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.nnum_all.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.nnum_all" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.nnum_all"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.nnum_all</span></code></a></p></td>
+<td><p>Array of all node numbers, even those not selected.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.node_angles.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.node_angles" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.node_angles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.node_angles</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.node_angles.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.node_angles" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.node_angles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.node_angles</span></code></a></p></td>
 <td><p>Not yet implemented</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.node_components.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.node_components" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.node_components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.node_components</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.node_components.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.node_components" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.node_components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.node_components</span></code></a></p></td>
 <td><p>Node components for the archive.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.nodes.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.nodes" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.nodes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.nodes</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.nodes.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.nodes" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.nodes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.nodes</span></code></a></p></td>
 <td><p>Array of nodes.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.rlblock.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.rlblock" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.rlblock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.rlblock</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.rlblock.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.rlblock" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.rlblock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.rlblock</span></code></a></p></td>
 <td><p>Real constant data from the RLBLOCK.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.rlblock_num.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.rlblock_num" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.rlblock_num"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.rlblock_num</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.rlblock_num.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.rlblock_num" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.rlblock_num"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.rlblock_num</span></code></a></p></td>
 <td><p>Indices from the real constant data</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.section.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.section" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.section"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.section</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ansys.mapdl.core.mesh_grpc.MeshGrpc.section.html#ansys.mapdl.core.mesh_grpc.MeshGrpc.section" title="ansys.mapdl.core.mesh_grpc.MeshGrpc.section"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MeshGrpc.section</span></code></a></p></td>
 <td><p>Section number</p></td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
-</div>
+</section>
 
 
               </div>
@@ -478,20 +495,19 @@
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br/>
+    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.2.0.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
 </p>
     </div>
     

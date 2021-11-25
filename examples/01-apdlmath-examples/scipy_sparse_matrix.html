@@ -4,11 +4,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transfer APDLMath Sparse Matrices to and from SciPy Sparse Matrices &#8212; ansys.mapdl.core 0.60.2 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Transfer APDLMath Sparse Matrices to and from SciPy Sparse Matrices &#8212; ansys.mapdl.core 0.60.3 documentation</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -23,27 +24,35 @@
 
     
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/blank.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/thebelab.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-dataframe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery-rendered-html.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/thebelab-helper.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Use APDLMath to Solve a Dense Matrix Linear System" href="solve_dense_matrix.html" />
     <link rel="prev" title="Compute Eigenvalues using MAPDL or SciPy" href="mapdl_vs_scipy.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -63,7 +72,7 @@
     
     
 
-<a class="navbar-brand" href="../../index.html">
+<a class="navbar-brand" href="https://docs.pyansys.com/">
   <img src="../../_static/pyansys-logo-black-cropped.png" class="logo" alt="logo">
 </a>
 
@@ -213,6 +222,13 @@
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="../00-mapdl-examples/pressure_vessel.html">
+   Pressure Vessel
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../00-mapdl-examples/pyvista_mesh.html">
    PyVista Mesh Integration
   </a>
@@ -222,34 +238,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../00-mapdl-examples/transient_thermal.html">
    Example Thermal Transient Analysis
-  </a>
- </li>
-</ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../00-mapdl-examples/vm-001-statically_indeterminate_reaction_force_analysis.html">
-   Statically Indeterminate Reaction Force Analysis
-  </a>
- </li>
-</ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../00-mapdl-examples/vm-003-thermally_loaded_support_structure.html">
-   Thermally Loaded Support Structure
-  </a>
- </li>
-</ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../00-mapdl-examples/vm-004-deflection_of_a_hinged_support.html">
-   Deflection of a Hinged Support
-  </a>
- </li>
-</ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../00-mapdl-examples/vm-005-laterally_loaded_tapered_support_structure.html">
-   Statically Indeterminate Reaction Force Analysis
   </a>
  </li>
 </ul>
@@ -372,6 +360,34 @@
   </a>
  </li>
 </ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-verif-manual/vm-001-statically_indeterminate_reaction_force_analysis.html">
+   Statically Indeterminate Reaction Force Analysis
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-verif-manual/vm-003-thermally_loaded_support_structure.html">
+   Thermally Loaded Support Structure
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-verif-manual/vm-004-deflection_of_a_hinged_support.html">
+   Deflection of a Hinged Support
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06-verif-manual/vm-005-laterally_loaded_tapered_support_structure.html">
+   Statically Indeterminate Reaction Force Analysis
+  </a>
+ </li>
+</ul>
 
     
   </div>
@@ -428,7 +444,7 @@
 <p>Click <a class="reference internal" href="#sphx-glr-download-examples-01-apdlmath-examples-scipy-sparse-matrix-py"><span class="std std-ref">here</span></a>
 to download the full example code</p>
 </div>
-<div class="sphx-glr-example-title section" id="transfer-apdlmath-sparse-matrices-to-and-from-scipy-sparse-matrices">
+<section class="sphx-glr-example-title" id="transfer-apdlmath-sparse-matrices-to-and-from-scipy-sparse-matrices">
 <span id="sphx-glr-examples-01-apdlmath-examples-scipy-sparse-matrix-py"></span><h1>Transfer APDLMath Sparse Matrices to and from SciPy Sparse Matrices<a class="headerlink" href="#transfer-apdlmath-sparse-matrices-to-and-from-scipy-sparse-matrices" title="Permalink to this headline">¶</a></h1>
 <p>This tutorial will show how to get APDLMath sparse matrices (typically
 stiffness or mass matrices extracted from APDL .Full Files) into SciPy
@@ -460,7 +476,7 @@ graph of the sparse matrix</p>
 </pre></div>
 </div>
 <img src="../../_images/sphx_glr_scipy_sparse_matrix_001.png" srcset="../../_images/sphx_glr_scipy_sparse_matrix_001.png" alt="scipy sparse matrix" class = "sphx-glr-single-img"/><p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.lines.Line2D object at 0x7ff74c313f40&gt;
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.lines.Line2D object at 0x7f7ef3fae9d0&gt;
 </pre></div>
 </div>
 <p>You can access the 3 vectors that describe this sparse matrix with.</p>
@@ -504,7 +520,7 @@ We compute the norm of the difference, should be zero</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>0.0
 </pre></div>
 </div>
-<div class="section" id="csr-representation-in-mapdl">
+<section id="csr-representation-in-mapdl">
 <h2>CSR Representation in MAPDL<a class="headerlink" href="#csr-representation-in-mapdl" title="Permalink to this headline">¶</a></h2>
 <p>Printing the list of objects in the MAPDL space, we find:</p>
 <ul class="simple">
@@ -523,16 +539,16 @@ We compute the norm of the difference, should be zero</p>
 
   Name                   Type            Mem. (MB)       Dims            Workspace
 
-   EWJJTB                SMAT            0.011           [126:126]               1
+   IQFZJB                SMAT            0.011           [126:126]               1
    MY_MAT                SMAT            0.000           [126:126]               1
-   YAUPSV                SMAT            0.011           [126:126]               1
+   WNWCAG                SMAT            0.011           [126:126]               1
    MY_MAT_DATA           VEC             0.006           738             1
    MY_MAT_IND            VEC             0.001           127             1
    MY_MAT_PTR            VEC             0.003           738             1
 </pre></div>
 </div>
-</div>
-<div class="section" id="mapdl-python-matrix-correspondence">
+</section>
+<section id="mapdl-python-matrix-correspondence">
 <h2>MAPDL Python Matrix Correspondence<a class="headerlink" href="#mapdl-python-matrix-correspondence" title="Permalink to this headline">¶</a></h2>
 <p>To determine which MAPDL object corresponds to which Python object,
 access the id property of the Python object.</p>
@@ -542,12 +558,12 @@ access the id property of the Python object.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>name(k)=YAUPSV
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>name(k)=WNWCAG
 name(my_mat)=my_mat
-name(msub)=EWJJTB
+name(msub)=IQFZJB
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.654 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.644 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-01-apdlmath-examples-scipy-sparse-matrix-py">
 <div class="sphx-glr-download sphx-glr-download-python docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/a43f44db93b6d446819bd0f8ca94d98b/scipy_sparse_matrix.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">scipy_sparse_matrix.py</span></code></a></p>
@@ -557,8 +573,8 @@ name(msub)=EWJJTB
 </div>
 </div>
 <p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
@@ -570,20 +586,19 @@ name(msub)=EWJJTB
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  <footer class="footer mt-5 mt-md-0">
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+<footer class="footer mt-5 mt-md-0">
   <div class="container">
     
     <div class="footer-item">
       <p class="copyright">
-    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br/>
+    &copy; Copyright (c) 2021 ANSYS, Inc. All rights reserved.<br>
 </p>
     </div>
     
     <div class="footer-item">
       <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.2.0.<br/>
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.3.0.<br>
 </p>
     </div>
     
