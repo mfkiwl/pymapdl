@@ -30,6 +30,8 @@ from ansys.mapdl.core.inline_functions import Query
 from ansys.mapdl.core import LOG as logger
 from ansys.mapdl.reader.rst import Result
 
+from ansys.mapdl.core.remote import Remote
+
 _PERMITTED_ERRORS = [
     r"(\*\*\* ERROR \*\*\*).*(?:[\r\n]+.*)+highly distorted.",
     r"(\*\*\* ERROR \*\*\*).*[\r\n]+.*is turning inside out.",
@@ -158,6 +160,25 @@ class _MapdlCore(Commands):
             self.open_apdl_log(log_apdl, mode='w')
 
         self._post = PostProcessing(self)
+
+        self._remote = Remote(self)
+
+    @property
+    def remote(self):
+        """Query a remote active MAPDL session.
+
+        Examples
+        --------
+        Check existence of environment variables.
+
+        >>> mapdl.remote.exist_var('var')
+        False
+        """
+        if self._exited:
+            raise RuntimeError(
+                "MAPDL exited.\n\nCan only do remote on a live " "MAPDL instance."
+            )
+        return self._remote
 
     @property
     def _name(self):  # pragma: no cover
