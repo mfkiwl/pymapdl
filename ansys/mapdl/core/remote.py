@@ -50,25 +50,25 @@ class Remote:
         """Forbidden"""
         pass
 
-    def exist_var(self, env_name):
-        if self._remote_os == 'posix':
-            cmd = r'if [ -n "${' + env_name + '+set}" ]; then echo "exist"; else echo "do not exist"; fi'
-        elif self._remote_os == 'nt':
-            cmd = r"if defined " + env_name + " (echo 'exist') else (echo 'do not exist')"
+    def exist_env_var(self, env_name):
+        if self.remote_os == 'posix':
+            cmd = r'if [ -n "$\{' + env_name + '+set\}" ]; then echo "exist"; else echo "do not exist"; fi'
+        elif self.remote_os == 'nt':
+            cmd = f""" "if defined {env_name} (echo 'exist') else (echo 'do not exist')" """
 
-        output = self._mapdl.sys(cmd, mute=False)
+        output = self._mapdl.sys(cmd)
 
         if 'not exist' in output:
             return False
         elif 'exist' in output:
             return True
 
-    # def get_env_var(self, env_name):
-    #     """Check the existence of env variables in the remote MAPDL system."""
-    #     if self._remote_os == 'posix':
-    #         cmd = r'MyVar="${' + env_name + '}:-' + '__non_set__' + '}"'
+    def get_env_var(self, env_name):
+        """Check the existence of env variables in the remote MAPDL system."""
+        if self.remote_os == 'posix':
+            cmd = f"echo ${env_name}"
 
-    #     elif self._remote_os == 'nt':
-    #         cmd =
+        elif self.remote_os == 'nt':
+            cmd = f'echo %{env_name}%'
 
-    #     out = self._mapdl.run(f"/sys,{cmd}")
+        out = self._mapdl.run(f"/sys,{cmd}")
